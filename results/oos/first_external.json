@@ -1,0 +1,3923 @@
+{
+  "version": "obi-external-v1",
+  "model_sha256": "a113817a95b9eee78df3f9a864b15e02217e2d2d4460fe0ecc7334087d5bdb20",
+  "protocol_sha256": "87d4f6eef8e458081363cf3f78bde430439b947e01ff64898b47410037c4e6e3",
+  "session": {
+    "session_id": "95a74716c1c140eb8e896cb11f924151",
+    "start_utc": "2026-10-08T01:56:14.396905+00:00",
+    "end_utc": "2026-10-08T02:39:50.017688+00:00",
+    "first_ns": 1791424574396905000,
+    "last_ns": 1791427190017688000,
+    "wall_seconds": 2615.620783,
+    "rows": 16945,
+    "dates": [
+      "2026-10-08"
+    ],
+    "rows_by_date": {
+      "2026-10-08": 16945
+    },
+    "complete_quote_rows": 16945,
+    "numeric_valid_quotes": 16945,
+    "invalid_quote_ratio": 0.0,
+    "crossed_quotes": 0,
+    "duplicate_event_ids": 0,
+    "cross_session_duplicate_ids": 0,
+    "duplicate_receipts": 0,
+    "exchange_reversals": 0,
+    "exchange_timestamp_field_mismatches": 0,
+    "negative_lag": 0,
+    "lag_over_2s": 0,
+    "lag_quantiles_seconds": [
+      0.162014,
+      0.276507,
+      0.5120658,
+      1.692953
+    ],
+    "gaps_over_2s": 4,
+    "max_gap_seconds": 3.425431,
+    "grid_rows": 2616,
+    "valid_grid_rows": 2614,
+    "valid_grid_by_date": {
+      "2026-10-08": 2614
+    },
+    "checks": {
+      "raw_rows": 16945,
+      "other_session_rows": 0,
+      "receipt_gaps_over_2s": 4,
+      "unusable_grid_rows": 2,
+      "grid_rows": 2616,
+      "valid_grid_rows": 2614
+    },
+    "admission_error": null,
+    "overlap_pilot_interval_rows": 0,
+    "original_session": false,
+    "role": "first_external"
+  },
+  "admission_checks": {
+    "raw_rows": 16945,
+    "other_session_rows": 0,
+    "receipt_gaps_over_2s": 4,
+    "unusable_grid_rows": 2,
+    "grid_rows": 2616,
+    "valid_grid_rows": 2614
+  },
+  "not_used_in_fit": true,
+  "role": "first external, one new date only",
+  "horizons": {
+    "1": {
+      "labels": 2612,
+      "up": 258,
+      "down": 180,
+      "zero": 2174,
+      "directional": 438,
+      "models": {
+        "baseline": {
+          "n": 438,
+          "accuracy": 0.589041095890411,
+          "balanced_accuracy": 0.5,
+          "roc_auc": 0.5,
+          "confusion_matrix": [
+            [
+              0,
+              180
+            ],
+            [
+              0,
+              258
+            ]
+          ]
+        },
+        "price_change": {
+          "n": 438,
+          "accuracy": 0.678082191780822,
+          "balanced_accuracy": 0.6158914728682171,
+          "roc_auc": 0.7589793281653747,
+          "confusion_matrix": [
+            [
+              48,
+              132
+            ],
+            [
+              9,
+              249
+            ]
+          ]
+        },
+        "obi": {
+          "n": 438,
+          "accuracy": 0.9041095890410958,
+          "balanced_accuracy": 0.9093669250645995,
+          "roc_auc": 0.9614987080103359,
+          "confusion_matrix": [
+            [
+              169,
+              11
+            ],
+            [
+              31,
+              227
+            ]
+          ]
+        },
+        "obi_spread_microprice": {
+          "n": 438,
+          "accuracy": 0.9041095890410958,
+          "balanced_accuracy": 0.9093669250645995,
+          "roc_auc": 0.9527347114556417,
+          "confusion_matrix": [
+            [
+              169,
+              11
+            ],
+            [
+              31,
+              227
+            ]
+          ]
+        }
+      },
+      "correlation": 0.3048433710896257,
+      "quantiles": [
+        {
+          "quantile": 1,
+          "n": 986,
+          "mean_return_bps": -0.12441799033868739,
+          "probability_up": 0.015212981744421906
+        },
+        {
+          "quantile": 2,
+          "n": 386,
+          "mean_return_bps": 0.004525737808186557,
+          "probability_up": 0.03626943005181347
+        },
+        {
+          "quantile": 3,
+          "n": 347,
+          "mean_return_bps": 0.03087647560898541,
+          "probability_up": 0.069164265129683
+        },
+        {
+          "quantile": 4,
+          "n": 371,
+          "mean_return_bps": 0.05988712081392492,
+          "probability_up": 0.09703504043126684
+        },
+        {
+          "quantile": 5,
+          "n": 522,
+          "mean_return_bps": 0.18032594570393493,
+          "probability_up": 0.32375478927203066
+        }
+      ],
+      "bootstrap": {
+        "30s_offset0": {
+          "block_seconds": 30,
+          "offset_seconds": 0,
+          "blocks": 88,
+          "nonempty_blocks": 88,
+          "blocks_with_both_classes": 40,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 88
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.273477198745956,
+              0.33568401097264616
+            ],
+            "baseline_accuracy": [
+              0.5065665418107311,
+              0.671099261481359
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.61340113918756,
+              0.7429232314252318
+            ],
+            "price_change_balanced_accuracy": [
+              0.5881214611281504,
+              0.6414168235683075
+            ],
+            "obi_accuracy": [
+              0.8706677081918218,
+              0.9356491498318479
+            ],
+            "obi_balanced_accuracy": [
+              0.8789496945238517,
+              0.9392716603428908
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.8706677081918218,
+              0.9356491498318479
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.8789496945238517,
+              0.9392716603428908
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.12065936382403397,
+              -0.056372549019607865
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.14141682356830756,
+              -0.08812146112815043
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.056372549019607865,
+              0.12065936382403396
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.08812146112815043,
+              0.14141682356830756
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.22087536441268293,
+              0.4068183309472679
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.37894969452385174,
+              0.4392716603428907
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.15162624845886732,
+              0.30162663013041047
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.2590679531282538,
+              0.32962515674434417
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.22087536441268293,
+              0.4068183309472679
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.37894969452385174,
+              0.4392716603428907
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.15162624845886732,
+              0.30162663013041047
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.2590679531282538,
+              0.32962515674434417
+            ],
+            "q0_return_bps": [
+              -0.16243739142252092,
+              -0.08937374699838233
+            ],
+            "q0_up_probability": [
+              0.007638358147284958,
+              0.025181534245709906
+            ],
+            "q1_return_bps": [
+              -0.010532397326900967,
+              0.022425358564409758
+            ],
+            "q1_up_probability": [
+              0.01643835616438356,
+              0.06389013213981244
+            ],
+            "q2_return_bps": [
+              0.015174905339889272,
+              0.052300311673074314
+            ],
+            "q2_up_probability": [
+              0.03823078597189405,
+              0.10902426520847573
+            ],
+            "q3_return_bps": [
+              0.02870226721930703,
+              0.0992537895187731
+            ],
+            "q3_up_probability": [
+              0.06793430531514102,
+              0.13096382783882785
+            ],
+            "q4_return_bps": [
+              0.1374147974268605,
+              0.2361290565022439
+            ],
+            "q4_up_probability": [
+              0.26168676123272305,
+              0.4039831310232029
+            ],
+            "top_minus_bottom_return_bps": [
+              0.24371535226662908,
+              0.3690165797368507
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "30s_offset15": {
+          "block_seconds": 30,
+          "offset_seconds": 15,
+          "blocks": 88,
+          "nonempty_blocks": 88,
+          "blocks_with_both_classes": 42,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 88
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.27340363678012025,
+              0.3376331045845051
+            ],
+            "baseline_accuracy": [
+              0.5082234250684753,
+              0.6789077375800588
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.6134581429637584,
+              0.7479627410042272
+            ],
+            "price_change_balanced_accuracy": [
+              0.579601405002544,
+              0.6486117487500564
+            ],
+            "obi_accuracy": [
+              0.8704008425085553,
+              0.9362188240900005
+            ],
+            "obi_balanced_accuracy": [
+              0.8768953835019786,
+              0.9383297811776339
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.8704008425085553,
+              0.9362188240900005
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.8768953835019786,
+              0.9383297811776339
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.12709974261969745,
+              -0.04858624609264002
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.14861174875005645,
+              -0.07960140500254402
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.04858624609264001,
+              0.12709974261969745
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.07960140500254402,
+              0.14861174875005645
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.22104433380749172,
+              0.40482878940209355
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.3768953835019786,
+              0.43832978117763394
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.1558718598891379,
+              0.29396417322834645
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.25858986020227037,
+              0.33757221894342015
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.22104433380749172,
+              0.40482878940209355
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.3768953835019786,
+              0.43832978117763394
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.1558718598891379,
+              0.29396417322834645
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.25858986020227037,
+              0.33757221894342015
+            ],
+            "q0_return_bps": [
+              -0.16198606226569054,
+              -0.09122142200147254
+            ],
+            "q0_up_probability": [
+              0.007389284829544372,
+              0.025048637935054793
+            ],
+            "q1_return_bps": [
+              -0.00933434024534845,
+              0.019207489404485835
+            ],
+            "q1_up_probability": [
+              0.015783337878374694,
+              0.0579787943451587
+            ],
+            "q2_return_bps": [
+              0.01215973694660948,
+              0.052132250461764604
+            ],
+            "q2_up_probability": [
+              0.03429943615137167,
+              0.10844874826408436
+            ],
+            "q3_return_bps": [
+              0.026284848136294742,
+              0.10551004565218784
+            ],
+            "q3_up_probability": [
+              0.06596154863877948,
+              0.13556824860417277
+            ],
+            "q4_return_bps": [
+              0.13692396898451342,
+              0.2258556400257487
+            ],
+            "q4_up_probability": [
+              0.2608890978425534,
+              0.3953044645701543
+            ],
+            "top_minus_bottom_return_bps": [
+              0.24752017484211625,
+              0.366068942945535
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "60s_offset0": {
+          "block_seconds": 60,
+          "offset_seconds": 0,
+          "blocks": 44,
+          "nonempty_blocks": 44,
+          "blocks_with_both_classes": 35,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 44
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.2752084963534789,
+              0.3374608353526499
+            ],
+            "baseline_accuracy": [
+              0.504143059490085,
+              0.6722501947257149
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5945323613086771,
+              0.7488192308973234
+            ],
+            "price_change_balanced_accuracy": [
+              0.5862112060982724,
+              0.6450823122382707
+            ],
+            "obi_accuracy": [
+              0.8718956552616227,
+              0.9349008413461539
+            ],
+            "obi_balanced_accuracy": [
+              0.8789870715747589,
+              0.9382061941541724
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.8718956552616227,
+              0.9349008413461539
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.8789870715747589,
+              0.9382061941541724
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.11807377863100753,
+              -0.06129931085943166
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.14508231223827073,
+              -0.08621120609827239
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.06129931085943165,
+              0.11807377863100753
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.08621120609827239,
+              0.14508231223827073
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.23151954866722477,
+              0.40591890299426864
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.3789870715747588,
+              0.4382061941541724
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.15250240802566375,
+              0.3068964283952444
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.259034608274658,
+              0.33000455182072835
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.23151954866722477,
+              0.40591890299426864
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.3789870715747588,
+              0.4382061941541724
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.15250240802566375,
+              0.3068964283952444
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.259034608274658,
+              0.33000455182072835
+            ],
+            "q0_return_bps": [
+              -0.1712635438071741,
+              -0.086289830458519
+            ],
+            "q0_up_probability": [
+              0.007681601515926779,
+              0.024691944796507534
+            ],
+            "q1_return_bps": [
+              -0.010429125633872967,
+              0.01939129576682881
+            ],
+            "q1_up_probability": [
+              0.015787818603111552,
+              0.060522753980022936
+            ],
+            "q2_return_bps": [
+              0.014784767324027804,
+              0.05244647320201238
+            ],
+            "q2_up_probability": [
+              0.041663961038961035,
+              0.10493040960254074
+            ],
+            "q3_return_bps": [
+              0.026983035127647405,
+              0.1012663453444637
+            ],
+            "q3_up_probability": [
+              0.06581763513737998,
+              0.13166572589180417
+            ],
+            "q4_return_bps": [
+              0.13817392444786736,
+              0.2336744394208505
+            ],
+            "q4_up_probability": [
+              0.2548028136531365,
+              0.39889894742143434
+            ],
+            "top_minus_bottom_return_bps": [
+              0.2366816501287302,
+              0.37919845157058524
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "60s_offset30": {
+          "block_seconds": 60,
+          "offset_seconds": 30,
+          "blocks": 45,
+          "nonempty_blocks": 45,
+          "blocks_with_both_classes": 33,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 45
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.269929215748426,
+              0.3382415268839091
+            ],
+            "baseline_accuracy": [
+              0.4999704491725768,
+              0.6694678315311352
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.6037604517795385,
+              0.7392347713124454
+            ],
+            "price_change_balanced_accuracy": [
+              0.5808181323795399,
+              0.6480564991478079
+            ],
+            "obi_accuracy": [
+              0.8711431418040302,
+              0.9323358094030256
+            ],
+            "obi_balanced_accuracy": [
+              0.8783498988055419,
+              0.9357735010994447
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.8711431418040302,
+              0.9323358094030256
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.8783498988055419,
+              0.9357735010994447
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.12972080985052678,
+              -0.05158206987475285
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.14805649914780794,
+              -0.08081813237953997
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.05158206987475284,
+              0.12972080985052678
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.08081813237953996,
+              0.14805649914780794
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.2270425412029863,
+              0.40782470329914666
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.378349898805542,
+              0.4357735010994447
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.16123932915313136,
+              0.2959446502570678
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.25608230650002733,
+              0.3313047146388722
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.2270425412029863,
+              0.40782470329914666
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.378349898805542,
+              0.4357735010994447
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.16123932915313136,
+              0.2959446502570678
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.25608230650002733,
+              0.3313047146388722
+            ],
+            "q0_return_bps": [
+              -0.16499460364902646,
+              -0.08969497419710697
+            ],
+            "q0_up_probability": [
+              0.007962568499735614,
+              0.02442166876544937
+            ],
+            "q1_return_bps": [
+              -0.010480614821132609,
+              0.023074028847395033
+            ],
+            "q1_up_probability": [
+              0.015525355665905571,
+              0.0629733273524033
+            ],
+            "q2_return_bps": [
+              0.012473616658185948,
+              0.05570096791426618
+            ],
+            "q2_up_probability": [
+              0.035472952617372024,
+              0.1171468370339338
+            ],
+            "q3_return_bps": [
+              0.029185645077347416,
+              0.09773782219320866
+            ],
+            "q3_up_probability": [
+              0.07031008326800432,
+              0.12937710437710437
+            ],
+            "q4_return_bps": [
+              0.1254969642016328,
+              0.23956442907518946
+            ],
+            "q4_up_probability": [
+              0.24716403542549095,
+              0.40548355283254345
+            ],
+            "top_minus_bottom_return_bps": [
+              0.23451564797285196,
+              0.38059058157977727
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "120s_offset0": {
+          "block_seconds": 120,
+          "offset_seconds": 0,
+          "blocks": 22,
+          "nonempty_blocks": 22,
+          "blocks_with_both_classes": 21,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 22
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.26962059948566947,
+              0.3461523747870455
+            ],
+            "baseline_accuracy": [
+              0.4949365403617635,
+              0.687328174834913
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5999639423076922,
+              0.7546424897119342
+            ],
+            "price_change_balanced_accuracy": [
+              0.58160066496004,
+              0.6440640205341261
+            ],
+            "obi_accuracy": [
+              0.8632673744888115,
+              0.9449193751696855
+            ],
+            "obi_balanced_accuracy": [
+              0.8725074092151154,
+              0.9454789591964955
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.8632673744888115,
+              0.9449193751696855
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.8725074092151154,
+              0.9454789591964955
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.12442422378380634,
+              -0.05392123830664344
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.1440640205341261,
+              -0.08160066496004004
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.05392123830664344,
+              0.12442422378380634
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.08160066496004004,
+              0.1440640205341261
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.21940754119894912,
+              0.4124100497044932
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.3725074092151154,
+              0.44547895919649544
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.14693309701620952,
+              0.3127949301874113
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.24965776693023034,
+              0.3413930297464913
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.21940754119894912,
+              0.4124100497044932
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.3725074092151154,
+              0.44547895919649544
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.14693309701620952,
+              0.3127949301874113
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.24965776693023034,
+              0.3413930297464913
+            ],
+            "q0_return_bps": [
+              -0.18023508521773615,
+              -0.08571433205126795
+            ],
+            "q0_up_probability": [
+              0.007660863501077197,
+              0.025034742120777782
+            ],
+            "q1_return_bps": [
+              -0.010506330488004142,
+              0.02121792561623773
+            ],
+            "q1_up_probability": [
+              0.01107580366375569,
+              0.06330037269583319
+            ],
+            "q2_return_bps": [
+              0.010737516245185064,
+              0.057960304848858196
+            ],
+            "q2_up_probability": [
+              0.03395803997134317,
+              0.11401068250019235
+            ],
+            "q3_return_bps": [
+              0.021730970264975696,
+              0.10763193872117573
+            ],
+            "q3_up_probability": [
+              0.061638575903501795,
+              0.141893190066178
+            ],
+            "q4_return_bps": [
+              0.13732331489602737,
+              0.24354025589280787
+            ],
+            "q4_up_probability": [
+              0.23933627809271676,
+              0.41364085488440094
+            ],
+            "top_minus_bottom_return_bps": [
+              0.2364965755114303,
+              0.39918444470127645
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "120s_offset60": {
+          "block_seconds": 120,
+          "offset_seconds": 60,
+          "blocks": 23,
+          "nonempty_blocks": 23,
+          "blocks_with_both_classes": 23,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 23
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.2671901136555296,
+              0.34262910260661295
+            ],
+            "baseline_accuracy": [
+              0.4894805131218175,
+              0.6862270544947201
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.597760989010989,
+              0.7619074861065708
+            ],
+            "price_change_balanced_accuracy": [
+              0.5778077461153472,
+              0.6474769136396399
+            ],
+            "obi_accuracy": [
+              0.8620642027052772,
+              0.938998485573091
+            ],
+            "obi_balanced_accuracy": [
+              0.8746208526598157,
+              0.9412438155323049
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.8620642027052772,
+              0.938998485573091
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.8746208526598157,
+              0.9412438155323049
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.12222343522561853,
+              -0.05643188708892129
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.14747691363963986,
+              -0.07780774611534719
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.05643188708892129,
+              0.12222343522561853
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.07780774611534719,
+              0.14747691363963986
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.2178288611336066,
+              0.41692415006217204
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.37462085265981565,
+              0.44124381553230485
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.14283868586194173,
+              0.3194958429421046
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.25040161116578075,
+              0.34800413161134536
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.2178288611336066,
+              0.41692415006217204
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.37462085265981565,
+              0.44124381553230485
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.14283868586194173,
+              0.3194958429421046
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.25040161116578075,
+              0.34800413161134536
+            ],
+            "q0_return_bps": [
+              -0.17047526846383448,
+              -0.08386987981272041
+            ],
+            "q0_up_probability": [
+              0.006734150786275481,
+              0.02579779434344675
+            ],
+            "q1_return_bps": [
+              -0.011434435572083982,
+              0.019837383248399437
+            ],
+            "q1_up_probability": [
+              0.011798542425819885,
+              0.06424680766161213
+            ],
+            "q2_return_bps": [
+              0.012212987959208782,
+              0.05432357785257253
+            ],
+            "q2_up_probability": [
+              0.03694962251957538,
+              0.10998402252063756
+            ],
+            "q3_return_bps": [
+              0.024144241094992126,
+              0.10228891381232627
+            ],
+            "q3_up_probability": [
+              0.06895706558485463,
+              0.12937086498407255
+            ],
+            "q4_return_bps": [
+              0.1268580813065759,
+              0.23881164949062797
+            ],
+            "q4_up_probability": [
+              0.24411819045608107,
+              0.403423731313926
+            ],
+            "top_minus_bottom_return_bps": [
+              0.2283154959088571,
+              0.3853972225972742
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        }
+      },
+      "quantile_returns_nondecreasing": true
+    },
+    "5": {
+      "labels": 2604,
+      "up": 645,
+      "down": 547,
+      "zero": 1412,
+      "directional": 1192,
+      "models": {
+        "baseline": {
+          "n": 1192,
+          "accuracy": 0.5411073825503355,
+          "balanced_accuracy": 0.5,
+          "roc_auc": 0.5,
+          "confusion_matrix": [
+            [
+              0,
+              547
+            ],
+            [
+              0,
+              645
+            ]
+          ]
+        },
+        "price_change": {
+          "n": 1192,
+          "accuracy": 0.5981543624161074,
+          "balanced_accuracy": 0.5653515298385839,
+          "roc_auc": 0.651881297563879,
+          "confusion_matrix": [
+            [
+              91,
+              456
+            ],
+            [
+              23,
+              622
+            ]
+          ]
+        },
+        "obi": {
+          "n": 1192,
+          "accuracy": 0.7986577181208053,
+          "balanced_accuracy": 0.7996485410200813,
+          "roc_auc": 0.8712299647123847,
+          "confusion_matrix": [
+            [
+              444,
+              103
+            ],
+            [
+              137,
+              508
+            ]
+          ]
+        },
+        "obi_spread_microprice": {
+          "n": 1192,
+          "accuracy": 0.7978187919463087,
+          "balanced_accuracy": 0.7988733472216317,
+          "roc_auc": 0.8689114691835664,
+          "confusion_matrix": [
+            [
+              444,
+              103
+            ],
+            [
+              138,
+              507
+            ]
+          ]
+        }
+      },
+      "correlation": 0.37624889538521644,
+      "quantiles": [
+        {
+          "quantile": 1,
+          "n": 980,
+          "mean_return_bps": -0.40367695178257573,
+          "probability_up": 0.07142857142857142
+        },
+        {
+          "quantile": 2,
+          "n": 388,
+          "mean_return_bps": 0.01830984553949156,
+          "probability_up": 0.17268041237113402
+        },
+        {
+          "quantile": 3,
+          "n": 340,
+          "mean_return_bps": 0.1087401068995691,
+          "probability_up": 0.25
+        },
+        {
+          "quantile": 4,
+          "n": 370,
+          "mean_return_bps": 0.2827982775241015,
+          "probability_up": 0.3081081081081081
+        },
+        {
+          "quantile": 5,
+          "n": 526,
+          "mean_return_bps": 0.5534989332723227,
+          "probability_up": 0.5874524714828897
+        }
+      ],
+      "bootstrap": {
+        "30s_offset0": {
+          "block_seconds": 30,
+          "offset_seconds": 0,
+          "blocks": 88,
+          "nonempty_blocks": 88,
+          "blocks_with_both_classes": 44,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 88
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.3231056655350781,
+              0.4260960903272345
+            ],
+            "baseline_accuracy": [
+              0.4623347219007946,
+              0.6247323105566628
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5329252132441524,
+              0.6672614183205672
+            ],
+            "price_change_balanced_accuracy": [
+              0.5460252285296084,
+              0.5827396253094047
+            ],
+            "obi_accuracy": [
+              0.7555485915918638,
+              0.8406712656300841
+            ],
+            "obi_balanced_accuracy": [
+              0.7548960948669153,
+              0.8416251590294029
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.7537170918241691,
+              0.8398199044716739
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.754102852605337,
+              0.8396050875566942
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.08033380640676592,
+              -0.03322383893605989
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.08273962530940475,
+              -0.04602522852960848
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.03322383893605989,
+              0.0803338064067659
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.04602522852960848,
+              0.08273962530940474
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.1586565927562535,
+              0.35136656673353917
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.25489609486691533,
+              0.341625159029403
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.12000239934737754,
+              0.2807301195489086
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.19662324268523154,
+              0.2734613044109758
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.1580345618815431,
+              0.3511315736086379
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.254102852605337,
+              0.33960508755669416
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.11864092906465779,
+              0.2791602536179275
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.19570569686509712,
+              0.2728294839404656
+            ],
+            "q0_return_bps": [
+              -0.5527226540982919,
+              -0.24929382071076908
+            ],
+            "q0_up_probability": [
+              0.04119177388394908,
+              0.10465143938220521
+            ],
+            "q1_return_bps": [
+              -0.11255720161517886,
+              0.16376525177894308
+            ],
+            "q1_up_probability": [
+              0.10647901891252955,
+              0.2443908929627439
+            ],
+            "q2_return_bps": [
+              0.002101411909726128,
+              0.2261721869079081
+            ],
+            "q2_up_probability": [
+              0.16879487258496903,
+              0.3448432601880878
+            ],
+            "q3_return_bps": [
+              0.1386570863448712,
+              0.49327190043199803
+            ],
+            "q3_up_probability": [
+              0.22782129764128103,
+              0.3980672182800932
+            ],
+            "q4_return_bps": [
+              0.4065650769908673,
+              0.7307996066473251
+            ],
+            "q4_up_probability": [
+              0.5103800526525001,
+              0.6721713625834536
+            ],
+            "top_minus_bottom_return_bps": [
+              0.7501898251136976,
+              1.1914825508118327
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "30s_offset15": {
+          "block_seconds": 30,
+          "offset_seconds": 15,
+          "blocks": 88,
+          "nonempty_blocks": 88,
+          "blocks_with_both_classes": 46,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 88
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.31670423705247075,
+              0.4307861504501751
+            ],
+            "baseline_accuracy": [
+              0.47057001991548064,
+              0.6216956654456655
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5399135260815212,
+              0.6647783336279861
+            ],
+            "price_change_balanced_accuracy": [
+              0.5460898970768138,
+              0.5826042878588704
+            ],
+            "obi_accuracy": [
+              0.7493748343834649,
+              0.8441361688589987
+            ],
+            "obi_balanced_accuracy": [
+              0.7502452765365031,
+              0.8441303785771971
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.7486193697512565,
+              0.8433182936833471
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.7491414953994119,
+              0.8432725015853513
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.07912687350506774,
+              -0.0326565934448343
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.08260428785887045,
+              -0.04608989707681377
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.0326565934448343,
+              0.07912687350506774
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.04608989707681377,
+              0.08260428785887045
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.16441948129432724,
+              0.3414639471722228
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.2502452765365031,
+              0.3441303785771971
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.12499273818745159,
+              0.2714786542138147
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.19242691545111013,
+              0.27659787884406006
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.16358465171258588,
+              0.3397417877475013
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.2491414953994119,
+              0.34327250158535133
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.12468061300532546,
+              0.2697837566004526
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.19114004967318018,
+              0.2759093195220261
+            ],
+            "q0_return_bps": [
+              -0.570763733389448,
+              -0.2562436897436412
+            ],
+            "q0_up_probability": [
+              0.04072572494356218,
+              0.10896596110445397
+            ],
+            "q1_return_bps": [
+              -0.0973551027306845,
+              0.13205700060677852
+            ],
+            "q1_up_probability": [
+              0.11179071481208548,
+              0.24010817029017817
+            ],
+            "q2_return_bps": [
+              0.0012335049014330847,
+              0.23382827838996206
+            ],
+            "q2_up_probability": [
+              0.16665531335149864,
+              0.34557486131854065
+            ],
+            "q3_return_bps": [
+              0.09317113625413986,
+              0.5142775620565058
+            ],
+            "q3_up_probability": [
+              0.2252624536846439,
+              0.40159798589529044
+            ],
+            "q4_return_bps": [
+              0.4008205719527403,
+              0.7255646714165261
+            ],
+            "q4_up_probability": [
+              0.49271193002581015,
+              0.6850467710019787
+            ],
+            "top_minus_bottom_return_bps": [
+              0.7381736541238677,
+              1.1992059061307936
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "60s_offset0": {
+          "block_seconds": 60,
+          "offset_seconds": 0,
+          "blocks": 44,
+          "nonempty_blocks": 44,
+          "blocks_with_both_classes": 37,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 44
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.3281053221663922,
+              0.42687377349588
+            ],
+            "baseline_accuracy": [
+              0.4580370919442593,
+              0.6231120663613786
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5265255421029528,
+              0.6659497840467989
+            ],
+            "price_change_balanced_accuracy": [
+              0.5452495389431945,
+              0.581552328455999
+            ],
+            "obi_accuracy": [
+              0.7574261853509212,
+              0.8375522272457085
+            ],
+            "obi_balanced_accuracy": [
+              0.7577835119794912,
+              0.8370488074473239
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.7567632997800777,
+              0.8360431848751647
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.7570602182109454,
+              0.8358378033677094
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.07957220305831512,
+              -0.035994775948182976
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.08155232845599898,
+              -0.04524953894319449
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.03599477594818297,
+              0.07957220305831512
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.04524953894319449,
+              0.08155232845599898
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.17275248079024116,
+              0.3478242458993606
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.2577835119794913,
+              0.3370488074473239
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.12731497118760304,
+              0.2746863714621651
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.19816668463108836,
+              0.27047592723110936
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.17238341345040617,
+              0.34535027417973024
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.2570602182109453,
+              0.33583780336770935
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.1264467610362228,
+              0.2721621238096333
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.19642753199973387,
+              0.26934022422083825
+            ],
+            "q0_return_bps": [
+              -0.584058287011759,
+              -0.25802745040601116
+            ],
+            "q0_up_probability": [
+              0.04318786925560735,
+              0.10308476150681761
+            ],
+            "q1_return_bps": [
+              -0.09338663512912897,
+              0.13592427582829103
+            ],
+            "q1_up_probability": [
+              0.10730081300813007,
+              0.23915095514045445
+            ],
+            "q2_return_bps": [
+              0.006189163999215559,
+              0.236698445220029
+            ],
+            "q2_up_probability": [
+              0.17114577796676236,
+              0.35024952219154804
+            ],
+            "q3_return_bps": [
+              0.12843074433999233,
+              0.47414857248274767
+            ],
+            "q3_up_probability": [
+              0.21391919378698224,
+              0.3967372816677206
+            ],
+            "q4_return_bps": [
+              0.40198931527373843,
+              0.7310614096228667
+            ],
+            "q4_up_probability": [
+              0.5034729701193116,
+              0.6718804505813953
+            ],
+            "top_minus_bottom_return_bps": [
+              0.7513331434593269,
+              1.2013670452663046
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "60s_offset30": {
+          "block_seconds": 60,
+          "offset_seconds": 30,
+          "blocks": 45,
+          "nonempty_blocks": 45,
+          "blocks_with_both_classes": 35,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 45
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.31600524621897713,
+              0.4335611416630466
+            ],
+            "baseline_accuracy": [
+              0.4560227690787371,
+              0.618188737998443
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5244347319958471,
+              0.6604307235923685
+            ],
+            "price_change_balanced_accuracy": [
+              0.5461764141050863,
+              0.5845920968696608
+            ],
+            "obi_accuracy": [
+              0.7495657202680591,
+              0.8398387618269689
+            ],
+            "obi_balanced_accuracy": [
+              0.7510620797483916,
+              0.8395850609356278
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.7490622472839885,
+              0.8386791030292172
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.7501316309999024,
+              0.8383504844628811
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.0825913262264365,
+              -0.03296681212677997
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.08459209686966085,
+              -0.04617641410508638
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.03296681212677997,
+              0.0825913262264365
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.04617641410508638,
+              0.08459209686966085
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.16488326259749445,
+              0.3559204470762865
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.2510620797483915,
+              0.3395850609356278
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.1253170130398365,
+              0.28164804140423005
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.1941770743700006,
+              0.2687107885051777
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.16352983522636383,
+              0.35502561003683236
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.25013163099990243,
+              0.338350484462881
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.12392987249544626,
+              0.28081889405974203
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.19415103867701403,
+              0.26788560741093725
+            ],
+            "q0_return_bps": [
+              -0.5794135980665307,
+              -0.260060506652838
+            ],
+            "q0_up_probability": [
+              0.04434304839760678,
+              0.1062275074323267
+            ],
+            "q1_return_bps": [
+              -0.1153505534712856,
+              0.14608131903862936
+            ],
+            "q1_up_probability": [
+              0.105120908387805,
+              0.24214318786896633
+            ],
+            "q2_return_bps": [
+              -0.007467181492220155,
+              0.2340398384817704
+            ],
+            "q2_up_probability": [
+              0.1631250687586213,
+              0.355049450030685
+            ],
+            "q3_return_bps": [
+              0.1253757316137522,
+              0.48391939510194487
+            ],
+            "q3_up_probability": [
+              0.2238657234689778,
+              0.393863830117027
+            ],
+            "q4_return_bps": [
+              0.3879249929170892,
+              0.751233215185813
+            ],
+            "q4_up_probability": [
+              0.48797228464419473,
+              0.6847215473887814
+            ],
+            "top_minus_bottom_return_bps": [
+              0.7214444203831327,
+              1.2199947732201397
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "120s_offset0": {
+          "block_seconds": 120,
+          "offset_seconds": 0,
+          "blocks": 22,
+          "nonempty_blocks": 22,
+          "blocks_with_both_classes": 22,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 22
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.32127938324318245,
+              0.42344354624761177
+            ],
+            "baseline_accuracy": [
+              0.45076849672827457,
+              0.6328905249679898
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5150779474252322,
+              0.6730626474759015
+            ],
+            "price_change_balanced_accuracy": [
+              0.5458452157446675,
+              0.5814013308715729
+            ],
+            "obi_accuracy": [
+              0.7566217478131847,
+              0.837842596117244
+            ],
+            "obi_balanced_accuracy": [
+              0.7582410700424013,
+              0.8359989074033551
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.7551296865468536,
+              0.8369229874817623
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.7580337289803597,
+              0.8356611146007105
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.07783186303632213,
+              -0.033092983329550706
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.0814013308715729,
+              -0.045845215744667454
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.0330929833295507,
+              0.07783186303632211
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.045845215744667454,
+              0.0814013308715729
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.17465821598169828,
+              0.3446074557871767
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.25824107004240127,
+              0.3359989074033552
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.13137254763972414,
+              0.2739847145137347
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.19679283250905732,
+              0.2707895269694534
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.17464758133507388,
+              0.3419349419715805
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.2580337289803597,
+              0.33566111460071046
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.130569526032027,
+              0.2738756367077685
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.19659164639670235,
+              0.27001733934064803
+            ],
+            "q0_return_bps": [
+              -0.5756460304187639,
+              -0.2576484087427163
+            ],
+            "q0_up_probability": [
+              0.04211780866192631,
+              0.1049432497013142
+            ],
+            "q1_return_bps": [
+              -0.10937578181675152,
+              0.1525469830704833
+            ],
+            "q1_up_probability": [
+              0.097958514344703,
+              0.252055584385631
+            ],
+            "q2_return_bps": [
+              -0.004170765301874513,
+              0.245939491458891
+            ],
+            "q2_up_probability": [
+              0.16519671422395157,
+              0.3843540184803563
+            ],
+            "q3_return_bps": [
+              0.13637864566696942,
+              0.4676256566031971
+            ],
+            "q3_up_probability": [
+              0.21371611774203159,
+              0.4067992451217775
+            ],
+            "q4_return_bps": [
+              0.37516453606457767,
+              0.7669936337739672
+            ],
+            "q4_up_probability": [
+              0.47872881029681624,
+              0.6925297424331118
+            ],
+            "top_minus_bottom_return_bps": [
+              0.7259815760870467,
+              1.211984450663669
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "120s_offset60": {
+          "block_seconds": 120,
+          "offset_seconds": 60,
+          "blocks": 23,
+          "nonempty_blocks": 23,
+          "blocks_with_both_classes": 23,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 23
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.32017171765755537,
+              0.42900536787393934
+            ],
+            "baseline_accuracy": [
+              0.4611881801615822,
+              0.6314164734118505
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.533776763404626,
+              0.6683045106454598
+            ],
+            "price_change_balanced_accuracy": [
+              0.550206981794484,
+              0.5797008032791703
+            ],
+            "obi_accuracy": [
+              0.758341023515782,
+              0.8383165540588293
+            ],
+            "obi_balanced_accuracy": [
+              0.7583350022541686,
+              0.836673688028606
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.757945086093396,
+              0.8373812032133218
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.75820418608799,
+              0.8357895568304702
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.07834327279298821,
+              -0.034805457189610325
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.07970080327917028,
+              -0.050206981794484
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.034805457189610325,
+              0.07834327279298821
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.05020698179448399,
+              0.07970080327917028
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.16830892709196354,
+              0.3474909350745503
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.25833500225416867,
+              0.3366736880286059
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.1284798534798535,
+              0.27788972566488773
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.1953341577602051,
+              0.2750532276484003
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.16830892709196354,
+              0.34580402476594746
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.25820418608798995,
+              0.3357895568304702
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.1282994678277698,
+              0.2744771396183639
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.19485156579028223,
+              0.2736166899096877
+            ],
+            "q0_return_bps": [
+              -0.595044662890346,
+              -0.22362381914511814
+            ],
+            "q0_up_probability": [
+              0.03856456481091219,
+              0.11295562063527821
+            ],
+            "q1_return_bps": [
+              -0.12000207901901086,
+              0.13450065333694478
+            ],
+            "q1_up_probability": [
+              0.09785016994198972,
+              0.2474554156524995
+            ],
+            "q2_return_bps": [
+              -0.001684733761346452,
+              0.24993286442847285
+            ],
+            "q2_up_probability": [
+              0.16619609967497292,
+              0.3607703570753826
+            ],
+            "q3_return_bps": [
+              0.1314644003226164,
+              0.48494970191260134
+            ],
+            "q3_up_probability": [
+              0.2200933014354067,
+              0.39688002313298915
+            ],
+            "q4_return_bps": [
+              0.38423431292918503,
+              0.7533485733613785
+            ],
+            "q4_up_probability": [
+              0.4899388402295379,
+              0.6777988128959551
+            ],
+            "top_minus_bottom_return_bps": [
+              0.7177359772942064,
+              1.2398056228397762
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        }
+      },
+      "quantile_returns_nondecreasing": true
+    },
+    "10": {
+      "labels": 2594,
+      "up": 900,
+      "down": 808,
+      "zero": 886,
+      "directional": 1708,
+      "models": {
+        "baseline": {
+          "n": 1708,
+          "accuracy": 0.5269320843091335,
+          "balanced_accuracy": 0.5,
+          "roc_auc": 0.5,
+          "confusion_matrix": [
+            [
+              0,
+              808
+            ],
+            [
+              0,
+              900
+            ]
+          ]
+        },
+        "price_change": {
+          "n": 1708,
+          "accuracy": 0.5667447306791569,
+          "balanced_accuracy": 0.5442931793179318,
+          "roc_auc": 0.6041426017601761,
+          "confusion_matrix": [
+            [
+              103,
+              705
+            ],
+            [
+              35,
+              865
+            ]
+          ]
+        },
+        "obi": {
+          "n": 1708,
+          "accuracy": 0.7254098360655737,
+          "balanced_accuracy": 0.7261606160616061,
+          "roc_auc": 0.7979469196919693,
+          "confusion_matrix": [
+            [
+              598,
+              210
+            ],
+            [
+              259,
+              641
+            ]
+          ]
+        },
+        "obi_spread_microprice": {
+          "n": 1708,
+          "accuracy": 0.7254098360655737,
+          "balanced_accuracy": 0.7261606160616061,
+          "roc_auc": 0.7965360286028603,
+          "confusion_matrix": [
+            [
+              598,
+              210
+            ],
+            [
+              259,
+              641
+            ]
+          ]
+        }
+      },
+      "correlation": 0.35619491624384064,
+      "quantiles": [
+        {
+          "quantile": 1,
+          "n": 963,
+          "mean_return_bps": -0.575345663803776,
+          "probability_up": 0.14018691588785046
+        },
+        {
+          "quantile": 2,
+          "n": 395,
+          "mean_return_bps": -0.011530792387671338,
+          "probability_up": 0.3139240506329114
+        },
+        {
+          "quantile": 3,
+          "n": 322,
+          "mean_return_bps": 0.17710853198193813,
+          "probability_up": 0.34782608695652173
+        },
+        {
+          "quantile": 4,
+          "n": 372,
+          "mean_return_bps": 0.35425181957506363,
+          "probability_up": 0.4327956989247312
+        },
+        {
+          "quantile": 5,
+          "n": 542,
+          "mean_return_bps": 0.8475601199357461,
+          "probability_up": 0.6789667896678967
+        }
+      ],
+      "bootstrap": {
+        "30s_offset0": {
+          "block_seconds": 30,
+          "offset_seconds": 0,
+          "blocks": 87,
+          "nonempty_blocks": 87,
+          "blocks_with_both_classes": 47,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 87
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.2842657550371064,
+              0.42093959948589005
+            ],
+            "baseline_accuracy": [
+              0.44707752709577525,
+              0.6052032968162644
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.4987041201527944,
+              0.6359619979391766
+            ],
+            "price_change_balanced_accuracy": [
+              0.5277957782078482,
+              0.5612531283438364
+            ],
+            "obi_accuracy": [
+              0.6812402619118195,
+              0.7682860974627637
+            ],
+            "obi_balanced_accuracy": [
+              0.6803902659818921,
+              0.7668996252274569
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.6812402619118195,
+              0.7682860974627637
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.6803902659818921,
+              0.7668996252274569
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.06024042564540222,
+              -0.02070320127434351
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.06125312834383643,
+              -0.02779577820784818
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.020703201274343507,
+              0.060240425645402204
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.027795778207848173,
+              0.06125312834383643
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.10863889573239166,
+              0.29848275187064266
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.18039026598189212,
+              0.26689962522745697
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.0807366172923839,
+              0.24426033349966725
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.13856906041322625,
+              0.2200499425392393
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.10863889573239166,
+              0.29848275187064266
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.18039026598189212,
+              0.26689962522745697
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.0807366172923839,
+              0.24426033349966725
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.13856906041322625,
+              0.2200499425392393
+            ],
+            "q0_return_bps": [
+              -0.8922097951438739,
+              -0.2923792716349648
+            ],
+            "q0_up_probability": [
+              0.09180934391060398,
+              0.19584205991516435
+            ],
+            "q1_return_bps": [
+              -0.35193193263275074,
+              0.2884999475580689
+            ],
+            "q1_up_probability": [
+              0.22024479356960175,
+              0.4136294991190536
+            ],
+            "q2_return_bps": [
+              -0.06438641278683091,
+              0.4632850947264435
+            ],
+            "q2_up_probability": [
+              0.24997775800711744,
+              0.4537545537340619
+            ],
+            "q3_return_bps": [
+              0.08449066324767708,
+              0.6947706091465017
+            ],
+            "q3_up_probability": [
+              0.32082776717557254,
+              0.556165975292194
+            ],
+            "q4_return_bps": [
+              0.5434904619394745,
+              1.1567364763252315
+            ],
+            "q4_up_probability": [
+              0.5756979460986742,
+              0.7685361839835502
+            ],
+            "top_minus_bottom_return_bps": [
+              1.0174976829416125,
+              1.811485443146555
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "30s_offset15": {
+          "block_seconds": 30,
+          "offset_seconds": 15,
+          "blocks": 88,
+          "nonempty_blocks": 88,
+          "blocks_with_both_classes": 47,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 88
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.2828107807743513,
+              0.428316162887535
+            ],
+            "baseline_accuracy": [
+              0.45793460405339426,
+              0.607855897502562
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5071637251306408,
+              0.635012456590669
+            ],
+            "price_change_balanced_accuracy": [
+              0.5289553459593463,
+              0.5592454943437821
+            ],
+            "obi_accuracy": [
+              0.6739619423750113,
+              0.7763109264227305
+            ],
+            "obi_balanced_accuracy": [
+              0.6755331693520913,
+              0.7757088238046465
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.6739619423750113,
+              0.7763109264227305
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.6755331693520913,
+              0.7757088238046465
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.05860550535339182,
+              -0.021618715489683235
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.05924549434378215,
+              -0.028955345959346363
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.02161871548968323,
+              0.05860550535339182
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.02895534595934636,
+              0.059245494343782144
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.10567238269131042,
+              0.28644441202630966
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.17553316935209126,
+              0.27570882380464645
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.08062750476315621,
+              0.23401840142211253
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.1342313544360877,
+              0.22637782588347627
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.10567238269131042,
+              0.28644441202630966
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.17553316935209126,
+              0.27570882380464645
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.08062750476315621,
+              0.23401840142211253
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.1342313544360877,
+              0.22637782588347627
+            ],
+            "q0_return_bps": [
+              -0.8630379439359823,
+              -0.3163558535330834
+            ],
+            "q0_up_probability": [
+              0.0892923875160298,
+              0.19878219101024838
+            ],
+            "q1_return_bps": [
+              -0.3049403038852505,
+              0.2817634783194538
+            ],
+            "q1_up_probability": [
+              0.22091156390014935,
+              0.4195991116295764
+            ],
+            "q2_return_bps": [
+              -0.06043985217025552,
+              0.44612972703479764
+            ],
+            "q2_up_probability": [
+              0.2416680653463131,
+              0.4523363363363363
+            ],
+            "q3_return_bps": [
+              0.02235497822902716,
+              0.7163301079050189
+            ],
+            "q3_up_probability": [
+              0.3192156862745098,
+              0.5506199677938808
+            ],
+            "q4_return_bps": [
+              0.5993872851857309,
+              1.14390016570299
+            ],
+            "q4_up_probability": [
+              0.5865683213832378,
+              0.7658584557895268
+            ],
+            "top_minus_bottom_return_bps": [
+              1.0641676171672187,
+              1.8000916412189558
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "60s_offset0": {
+          "block_seconds": 60,
+          "offset_seconds": 0,
+          "blocks": 44,
+          "nonempty_blocks": 44,
+          "blocks_with_both_classes": 37,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 44
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.28957080115968065,
+              0.4228836315545498
+            ],
+            "baseline_accuracy": [
+              0.4463309086382523,
+              0.606269987013514
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.494897078098295,
+              0.637257605433813
+            ],
+            "price_change_balanced_accuracy": [
+              0.5285579973836945,
+              0.5586550243811382
+            ],
+            "obi_accuracy": [
+              0.6804613135388496,
+              0.7670476080544684
+            ],
+            "obi_balanced_accuracy": [
+              0.6800200798481407,
+              0.7673726884296016
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.6804613135388496,
+              0.7670476080544684
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.6800200798481407,
+              0.7673726884296016
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.05822195184282137,
+              -0.022790172203953175
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.05865502438113829,
+              -0.028557997383694432
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.02279017220395317,
+              0.058221951842821355
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.028557997383694432,
+              0.05865502438113829
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.11431291333394478,
+              0.28686733646964613
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.18002007984814075,
+              0.26737268842960155
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.08514041958365105,
+              0.2367556823092213
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.14012045722518882,
+              0.22298682327355482
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.11431291333394478,
+              0.28686733646964613
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.18002007984814075,
+              0.26737268842960155
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.08514041958365105,
+              0.2367556823092213
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.14012045722518882,
+              0.22298682327355482
+            ],
+            "q0_return_bps": [
+              -0.9057319196562825,
+              -0.29909236069707307
+            ],
+            "q0_up_probability": [
+              0.09765270557080827,
+              0.19005459668897498
+            ],
+            "q1_return_bps": [
+              -0.3074680699214195,
+              0.3163521487853874
+            ],
+            "q1_up_probability": [
+              0.21255551659654043,
+              0.41798613625510966
+            ],
+            "q2_return_bps": [
+              -0.06255550562890845,
+              0.46863044485495675
+            ],
+            "q2_up_probability": [
+              0.25587350050585345,
+              0.451148556444492
+            ],
+            "q3_return_bps": [
+              0.09665704827520906,
+              0.6191720323760198
+            ],
+            "q3_up_probability": [
+              0.303023352793995,
+              0.5495545919053382
+            ],
+            "q4_return_bps": [
+              0.5553902698293287,
+              1.1683617681779286
+            ],
+            "q4_up_probability": [
+              0.5877250409165303,
+              0.7611069024911485
+            ],
+            "top_minus_bottom_return_bps": [
+              1.0365947044585557,
+              1.8752617834474061
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "60s_offset30": {
+          "block_seconds": 60,
+          "offset_seconds": 30,
+          "blocks": 44,
+          "nonempty_blocks": 44,
+          "blocks_with_both_classes": 36,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 44
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.27498865405542633,
+              0.42669707135820856
+            ],
+            "baseline_accuracy": [
+              0.44205619722337136,
+              0.6082135637088224
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.4927658197161014,
+              0.6367795541691037
+            ],
+            "price_change_balanced_accuracy": [
+              0.5251766995220756,
+              0.5607630523647549
+            ],
+            "obi_accuracy": [
+              0.6772414545908184,
+              0.7650586332815061
+            ],
+            "obi_balanced_accuracy": [
+              0.6768177803724414,
+              0.7638432903527764
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.6772414545908184,
+              0.7650586332815061
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.6768177803724414,
+              0.7638432903527764
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.06105336049591326,
+              -0.018696717188652654
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.06076305236475493,
+              -0.02517669952207561
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.018696717188652644,
+              0.061053360495913256
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.02517669952207561,
+              0.060763052364754926
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.10216989498636568,
+              0.29838797308058124
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.17681778037244147,
+              0.2638432903527764
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.07638891229305256,
+              0.24647810582903
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.14094220807661934,
+              0.2204517314337301
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.10216989498636568,
+              0.29838797308058124
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.17681778037244147,
+              0.2638432903527764
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.07638891229305256,
+              0.24647810582903
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.14094220807661934,
+              0.2204517314337301
+            ],
+            "q0_return_bps": [
+              -0.8774652786380452,
+              -0.2767431370704934
+            ],
+            "q0_up_probability": [
+              0.09304593235390644,
+              0.1966548358746489
+            ],
+            "q1_return_bps": [
+              -0.31904656398548215,
+              0.31087369396750314
+            ],
+            "q1_up_probability": [
+              0.2172528531090064,
+              0.4152866919714745
+            ],
+            "q2_return_bps": [
+              -0.025169874723518462,
+              0.4050395822802847
+            ],
+            "q2_up_probability": [
+              0.24393320705502422,
+              0.4600448504983389
+            ],
+            "q3_return_bps": [
+              0.07729407834422962,
+              0.6917505032469089
+            ],
+            "q3_up_probability": [
+              0.31481157731157733,
+              0.5486047668806289
+            ],
+            "q4_return_bps": [
+              0.5758723419956723,
+              1.185932994511713
+            ],
+            "q4_up_probability": [
+              0.5726633738601823,
+              0.7773467923754868
+            ],
+            "top_minus_bottom_return_bps": [
+              0.9937585542413521,
+              1.866542237736618
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "120s_offset0": {
+          "block_seconds": 120,
+          "offset_seconds": 0,
+          "blocks": 22,
+          "nonempty_blocks": 22,
+          "blocks_with_both_classes": 22,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 22
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.28790195571662563,
+              0.4148432217100997
+            ],
+            "baseline_accuracy": [
+              0.43688544283120057,
+              0.6202583275347355
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.48529494879667,
+              0.6503825514053451
+            ],
+            "price_change_balanced_accuracy": [
+              0.5279858331154128,
+              0.5599924757950551
+            ],
+            "obi_accuracy": [
+              0.6815081641941109,
+              0.7653457288782695
+            ],
+            "obi_balanced_accuracy": [
+              0.6824092474642267,
+              0.7631611817419415
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.6815081641941109,
+              0.7653457288782695
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.6824092474642267,
+              0.7631611817419415
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.05762815930097045,
+              -0.021820419468528685
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.059992475795055046,
+              -0.027985833115412855
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.021820419468528685,
+              0.05762815930097044
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.02798583311541285,
+              0.05999247579505504
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.11043076187309304,
+              0.2833426143024619
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.18240924746422668,
+              0.2631611817419415
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.07835290593360965,
+              0.23448318950152713
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.14126246722341645,
+              0.2174257700320025
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.11043076187309304,
+              0.2833426143024619
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.18240924746422668,
+              0.2631611817419415
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.07835290593360965,
+              0.23448318950152713
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.14126246722341645,
+              0.2174257700320025
+            ],
+            "q0_return_bps": [
+              -0.8493889768382741,
+              -0.3185211688042141
+            ],
+            "q0_up_probability": [
+              0.09664150316324228,
+              0.18996380409122685
+            ],
+            "q1_return_bps": [
+              -0.36728647127689995,
+              0.34518494629726265
+            ],
+            "q1_up_probability": [
+              0.2077496556587298,
+              0.4263159956791125
+            ],
+            "q2_return_bps": [
+              -0.01921526633154766,
+              0.406647230887672
+            ],
+            "q2_up_probability": [
+              0.2609851971161221,
+              0.4672322942744085
+            ],
+            "q3_return_bps": [
+              0.11415596568622631,
+              0.6008234385905453
+            ],
+            "q3_up_probability": [
+              0.3213901689708142,
+              0.5501355013550135
+            ],
+            "q4_return_bps": [
+              0.4981603422730556,
+              1.2069634668891107
+            ],
+            "q4_up_probability": [
+              0.5542098422845902,
+              0.7776330048360647
+            ],
+            "top_minus_bottom_return_bps": [
+              1.0147499996107343,
+              1.8266006343619898
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        },
+        "120s_offset60": {
+          "block_seconds": 120,
+          "offset_seconds": 60,
+          "blocks": 23,
+          "nonempty_blocks": 23,
+          "blocks_with_both_classes": 23,
+          "blocks_by_session_date": {
+            "95a74716c1c140eb8e896cb11f924151|2026-10-08": 23
+          },
+          "repeats": 1000,
+          "valid_repeats": {
+            "correlation": 1000,
+            "baseline_accuracy": 1000,
+            "baseline_balanced_accuracy": 1000,
+            "price_change_accuracy": 1000,
+            "price_change_balanced_accuracy": 1000,
+            "obi_accuracy": 1000,
+            "obi_balanced_accuracy": 1000,
+            "obi_spread_microprice_accuracy": 1000,
+            "obi_spread_microprice_balanced_accuracy": 1000,
+            "baseline_minus_baseline_accuracy": 1000,
+            "baseline_minus_baseline_balanced_accuracy": 1000,
+            "baseline_minus_price_change_accuracy": 1000,
+            "baseline_minus_price_change_balanced_accuracy": 1000,
+            "price_change_minus_baseline_accuracy": 1000,
+            "price_change_minus_baseline_balanced_accuracy": 1000,
+            "price_change_minus_price_change_accuracy": 1000,
+            "price_change_minus_price_change_balanced_accuracy": 1000,
+            "obi_minus_baseline_accuracy": 1000,
+            "obi_minus_baseline_balanced_accuracy": 1000,
+            "obi_minus_price_change_accuracy": 1000,
+            "obi_minus_price_change_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_accuracy": 1000,
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_accuracy": 1000,
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": 1000,
+            "q0_return_bps": 1000,
+            "q0_up_probability": 1000,
+            "q1_return_bps": 1000,
+            "q1_up_probability": 1000,
+            "q2_return_bps": 1000,
+            "q2_up_probability": 1000,
+            "q3_return_bps": 1000,
+            "q3_up_probability": 1000,
+            "q4_return_bps": 1000,
+            "q4_up_probability": 1000,
+            "top_minus_bottom_return_bps": 1000
+          },
+          "ci95": {
+            "correlation": [
+              0.2812468804444682,
+              0.42149387172901986
+            ],
+            "baseline_accuracy": [
+              0.4516462458690753,
+              0.6074842849659507
+            ],
+            "baseline_balanced_accuracy": [
+              0.5,
+              0.5
+            ],
+            "price_change_accuracy": [
+              0.5025533920542548,
+              0.6343090697165427
+            ],
+            "price_change_balanced_accuracy": [
+              0.530710794467893,
+              0.5570342555149316
+            ],
+            "obi_accuracy": [
+              0.6877860128771862,
+              0.7626876598465473
+            ],
+            "obi_balanced_accuracy": [
+              0.6886763984817036,
+              0.7620053098922636
+            ],
+            "obi_spread_microprice_accuracy": [
+              0.6877860128771862,
+              0.7626876598465473
+            ],
+            "obi_spread_microprice_balanced_accuracy": [
+              0.6886763984817036,
+              0.7620053098922636
+            ],
+            "baseline_minus_baseline_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_baseline_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "baseline_minus_price_change_accuracy": [
+              -0.056511323576540935,
+              -0.022581711227009083
+            ],
+            "baseline_minus_price_change_balanced_accuracy": [
+              -0.05703425551493152,
+              -0.030710794467893033
+            ],
+            "price_change_minus_baseline_accuracy": [
+              0.02258171122700908,
+              0.056511323576540935
+            ],
+            "price_change_minus_baseline_balanced_accuracy": [
+              0.030710794467893033,
+              0.05703425551493152
+            ],
+            "price_change_minus_price_change_accuracy": [
+              0.0,
+              0.0
+            ],
+            "price_change_minus_price_change_balanced_accuracy": [
+              0.0,
+              0.0
+            ],
+            "obi_minus_baseline_accuracy": [
+              0.1141737745828368,
+              0.2846885263189611
+            ],
+            "obi_minus_baseline_balanced_accuracy": [
+              0.18867639848170362,
+              0.2620053098922636
+            ],
+            "obi_minus_price_change_accuracy": [
+              0.08664541120381407,
+              0.23495317692651585
+            ],
+            "obi_minus_price_change_balanced_accuracy": [
+              0.14260297266268557,
+              0.22124282915859445
+            ],
+            "obi_spread_microprice_minus_baseline_accuracy": [
+              0.1141737745828368,
+              0.2846885263189611
+            ],
+            "obi_spread_microprice_minus_baseline_balanced_accuracy": [
+              0.18867639848170362,
+              0.2620053098922636
+            ],
+            "obi_spread_microprice_minus_price_change_accuracy": [
+              0.08664541120381407,
+              0.23495317692651585
+            ],
+            "obi_spread_microprice_minus_price_change_balanced_accuracy": [
+              0.14260297266268557,
+              0.22124282915859445
+            ],
+            "q0_return_bps": [
+              -0.9098625758939454,
+              -0.24969363383977056
+            ],
+            "q0_up_probability": [
+              0.09320306209462009,
+              0.19323731345427386
+            ],
+            "q1_return_bps": [
+              -0.3536080843582867,
+              0.2942774930248215
+            ],
+            "q1_up_probability": [
+              0.19477137445887446,
+              0.42560629883743084
+            ],
+            "q2_return_bps": [
+              -0.06500935084039186,
+              0.4846956235792602
+            ],
+            "q2_up_probability": [
+              0.261135986210086,
+              0.4580541494094186
+            ],
+            "q3_return_bps": [
+              0.0842890435025578,
+              0.660215240049199
+            ],
+            "q3_up_probability": [
+              0.30888083468010263,
+              0.5521979030920507
+            ],
+            "q4_return_bps": [
+              0.4900696245698591,
+              1.2138480638264746
+            ],
+            "q4_up_probability": [
+              0.5923593749999999,
+              0.7636691853301443
+            ],
+            "top_minus_bottom_return_bps": [
+              0.9823251928745166,
+              1.8971069060789527
+            ]
+          },
+          "scope": "Conditional on fitted model and observed session composition; exploratory, not between-day uncertainty"
+        }
+      },
+      "quantile_returns_nondecreasing": true
+    }
+  }
+}

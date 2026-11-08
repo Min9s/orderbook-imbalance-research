@@ -1,0 +1,97 @@
+{
+  "version": "obi-final-v1",
+  "registered_utc": "2026-11-08T07:38:22.073018+00:00",
+  "holdout_session": "df37f36553464010ae9c34cd83d0eeac",
+  "models_sha256": "a113817a95b9eee78df3f9a864b15e02217e2d2d4460fe0ecc7334087d5bdb20",
+  "previous_protocol_sha256": "87d4f6eef8e458081363cf3f78bde430439b947e01ff64898b47410037c4e6e3",
+  "archive_fingerprint": "c8b2eb8d40537abf8a3703a8f8c1daa43a69082a76de0fd56d04f8fb71d4bf71",
+  "old_source_sha256": {
+    "src/obi_research/features.py": "4285b6d1d0aec3ea304fc509269d3ce7221411dc28e137ffee658262261519ca",
+    "src/obi_research/legacy_book.py": "a4276d7b9ba4a774b8b73a1211fd9046791346875d2c43ba253c442c042dfb3e",
+    "research/design.json": "2c85c036e26c677920ca66bb41e9fe91a41a56beca455a239a18f43b0f03559b",
+    "research/oos.py": "7cbbee84af89e0eb25b14b2e33284400db93f48cd6a22254dc6722d1505fb3b2"
+  },
+  "analysis_source_sha256": "b63877efaa0c6c2c66a9f0a48694ffda3f85b51fe65e07bfbcc077cf456fc79f",
+  "training_only_magnitude_lookup": {
+    "1": {
+      "bin_means_bps": [
+        -0.07374607683525335,
+        -0.002910760796148191,
+        0.014603009026665078,
+        0.010675461331942597,
+        0.08092972511448675
+      ],
+      "bin_counts": [
+        306,
+        306,
+        305,
+        306,
+        306
+      ],
+      "training_all_labels": 1529,
+      "all_time_training_majority": 0,
+      "absolute_spread_training_median": 1.0
+    },
+    "5": {
+      "bin_means_bps": [
+        -0.2837971837337341,
+        -0.02654051662427363,
+        0.04411174742029522,
+        0.09694996664561396,
+        0.31221700686311066
+      ],
+      "bin_counts": [
+        303,
+        302,
+        303,
+        302,
+        303
+      ],
+      "training_all_labels": 1513,
+      "all_time_training_majority": 0,
+      "absolute_spread_training_median": 1.0
+    },
+    "10": {
+      "bin_means_bps": [
+        -0.4127256342299659,
+        -0.06356014250080691,
+        0.10072353219535342,
+        0.23456073933649865,
+        0.4192876158683829
+      ],
+      "bin_counts": [
+        299,
+        298,
+        299,
+        298,
+        299
+      ],
+      "training_all_labels": 1493,
+      "all_time_training_majority": 0,
+      "absolute_spread_training_median": 1.0
+    }
+  },
+  "primary": {
+    "question": "A: direction conditional on nonzero forward return",
+    "endpoint": "1s frozen OBI Balanced Accuracy and paired BA gain versus original training-majority baseline",
+    "secondary": "5s/10s, other original models, Accuracy/AUC/matrices and paired gains; same labels and filters",
+    "models": "Unchanged saved parameters, preprocessing, feature order, C=1/lbfgs, threshold0.5; no fit",
+    "timing": "Original1s receipt as-of, lag[0,2]s, receipt age<=2s, complete valid path, exact1/5/10s endpoints; no crossing sessions/dates",
+    "uncertainty": "Original paired clock blocks30/60/120s and origin/half-block shifts,1000 replicates;60s main; no day bootstrap",
+    "coverage": "Valid features/all grid states; valid forward labels/possible grid pairs; nonzero-label fraction is outcome coverage, not decision coverage"
+  },
+  "exploratory": {
+    "question": "B: information and decisions over all admissible labels, including unchanged prices",
+    "policies": "Existing p>=0.5 forced up/down; fixed p>0.6 up,p<0.4 down,otherwise abstain; all-time original-training majority (flat) baseline",
+    "interpretation": "p remains conditional-on-move; not an unconditional probability. Abstention coded0 only for descriptive three-action agreement, not a fitted flat-probability model",
+    "coverage": "Ex-ante policy activity/valid feature states and activity/valid labels; direction-only subset is retrospective and separately identified",
+    "metrics": "All-label up-vs-not-up rank AUC (not calibration), fixed three-class agreement/macro recall, unconditional quantile mean returns and up/down/zero probabilities; block intervals",
+    "magnitude": "Five original-training all-label OBI-bin mean returns; separate exploratory lookup, not Logistic expected-return output",
+    "cost": "Compare abs(training-bin forecast) and realized signed mid changes with current full spread_bps; hypothetical additional round-trip cost0/1/5bps; no fills/PnL",
+    "delay": "Original features at t, benchmark log M(t+1+h)/M(t+1); both benchmark source receive AND exchange timestamps strictly after t; valid entire t..t+1+h path; no model/decision change",
+    "regimes": "Original training spread_bps,lag,past60s-vol medians; also original-training absolute-spread median; no holdout-derived cutoffs",
+    "small_sessions": "Report all sessions; additional sensitivity excluding sessions with fewer than100 nonzero1s labels in prior seen data; diagnostic, not winning-sample selection",
+    "uncertainty": "Session-date-stratified60s paired time-block bootstrap for all-time moments; no between-day generalization or multiplicity-adjusted claim"
+  },
+  "history": "Primary and exploratory rules fixed before first final-holdout disclosure; after first scoring this holdout is permanently seen, even on replay"
+}

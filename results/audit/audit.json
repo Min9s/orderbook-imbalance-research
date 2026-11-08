@@ -1,0 +1,5120 @@
+{
+  "session": {
+    "session_id": "e29a1088ea904b0f83335013adb7c384",
+    "events": 15295,
+    "first_receipt_ns": 1791350237181025000,
+    "last_receipt_ns": 1791352799788403000,
+    "receipt_interval_seconds_quantiles": [
+      4.9e-05,
+      0.11435200000000001,
+      0.48465389999999975,
+      4.015539
+    ]
+  },
+  "checks": {
+    "raw_rows": 15620,
+    "other_session_rows": 325,
+    "receipt_gaps_over_2s": 8,
+    "unusable_grid_rows": 4,
+    "grid_rows": 2562,
+    "valid_grid_rows": 2558
+  },
+  "input_sha256": {
+    "058c68e2bc0b4409a0b1741368d2cbcf.parquet": "febb2c0ec003d837d46477d1b2f7e56524f82b996eb213bbeea54f0bfcb95242",
+    "05ab3c851251451ba25e69f3d1c86901.parquet": "e3702a0d93795f96b6d80855a7350e1fc4136cf21eb17373ba08e704355e2e1a",
+    "062d078236a84cb196386914594b106b.parquet": "a74ea48cb80b3f6472aaa4595e5f3c8ffe27cd6f2bbf245e8fb46db66c193dff",
+    "0a9be2f9c2dc460e8fa846e14a24a2c5.parquet": "eb2e72eee38450a4f3799ef56a0a68fb250e5eabb7960c404b7ba96b3b6894c6",
+    "0e4a8edd6228435dabe6907be76cc7e8.parquet": "d9569e759edbb44ca3b92da3811ce6b23fd0918f9e10b47aa51f958d4ad804ea",
+    "1019877031014dada8dca4c0f291ad2a.parquet": "d5259aacf6d8a63e92526fbab866fb739c21975b699ec6ed1022d09b3e6e10ca",
+    "13e0e62f10a74b18be8b7deaaf6e000d.parquet": "8a5ea345e8e54607abc252edfd3c64e425cb0978868a4a8ccc5bb7787760a26d",
+    "146f61eb08714d0cbac4092baae1e161.parquet": "a2049ad582b4d0c62790081160ca04043cdc504ca27efa9496d545503700d2bc",
+    "165f6dc703ed4b70a20239f366627271.parquet": "6e2914b6b4f865958080e749a7e5e89cf2abe2380636d12cfbff94707347a9b5",
+    "177379c4f29c4c15a34e14258d964f82.parquet": "bd482cf47ae58ec295ec21a628e4fc404dc4116629a506cd55b43089627f3483",
+    "1b9758de54a84181989b836d78cddcd8.parquet": "a528a573e2d892455344b6b0a1c62047564c67f78a6bf5ab373c33496246850b",
+    "1f060bc0bfe945a9b9f79676a11d099a.parquet": "93bfc1bb1b0fa498f52d797ec0c914488778f471d471cf81360a16e1ff68102f",
+    "1f9b4ae86d074424b2c5308f91300504.parquet": "36823ad86958a7b5d5428e6c8461845eb4c5a9aea1b7473a9aad3fdfb58d8cb0",
+    "278c846fb3ee47eeacddf23e7b7fc900.parquet": "636a7f174d1f35f8fc2dbdf79c01e095cc120bcf698b55a1e09d4c6c0aef9271",
+    "28844dc493404aa2b2c81f9561b79f49.parquet": "67ba95ae3e45a323b4665221701bdc47b78e75e8477bc49d868c6ef250bf8c2b",
+    "2c91115bac0042debf3fc7a689fed65f.parquet": "d066776cdf54a7253040204bb1b0e307d1061d49404e118bac0bce0685261044",
+    "2de4121ed45149b4a0ebcafd5bf2c2c5.parquet": "928605f617e0adad23a5719d1179e59334ee3568d32f8658638a8465899f8036",
+    "2ec435b029644ee7b3c41c6a48c75840.parquet": "94abdd36310d54fe4517fd5f68c3ee501c444a38abf26730ea99533fcdd85e1f",
+    "32789b34412849e38eb0c3ec5fbcdbc7.parquet": "f248b312fe77a4509e019530352eb9566379f76dce025a8bff578039e433650e",
+    "3d2991c3faf44f2d82a2d5fb4ebd2632.parquet": "4173cdb019b04b5bdc9ed4abfaaa305f0ede55ac5aa3a11c3465247f0f849f5f",
+    "3e5bd608092c41f3a59cfce60a56b5e9.parquet": "284278bf81ca5227d7153086c16dffdaed9b24d87dd7a5e434d25b6305288234",
+    "40b6b212bd684a28917e3a2a33ce568a.parquet": "859fe846f61c44c0e1e2d3e79869deedf7a334b922357286f556288501d54de1",
+    "419b1ddcf1104480baf2dc6539f58e00.parquet": "718b1ffe0a96b83ac607cbccebc9bc5bef27cd2037428110fb30a21a15b1ee42",
+    "4343a2b6285b48f4967070e145fc7739.parquet": "ccf1712e5ea2cca5a2b7f3fdf777fb5a02055296e16e18d8a291a7541dd54363",
+    "45399c4ff1dd40e58db80a2dc39f7f38.parquet": "52fabc64b3e4406aba4c64e05a2e9f6b79191d7e9117aea4e053042f937bffe3",
+    "4551ccc25fb1424ab58418067681cc97.parquet": "3ad36312bcd81ee5bdd8f0ad2dbd74b00d025c18f83b61c5b38857ab01426b61",
+    "46a9c31ca8bc48eca9a39a0b6dd7d324.parquet": "4e2c073252505594ed110d8f140b3d561d6bd1081cd7adb39f86a8fffe2ddc58",
+    "4f9c8d8ae38f49fda21f208518aacc89.parquet": "7d7858116dfab6c2b3159ee3028fa454eb3e97dacabb6482cefa035b7f6bbdcc",
+    "51b6945bdfcd44fbb43bf68aa3452d1b.parquet": "bda6245c23f4a29e8d1e5cc5d7e8e2e0737547bed5dd9a52d9541799ec975c2c",
+    "52089a60cfcf42d0bec975b4db5e8da6.parquet": "a4c5e29a8f300b563b86ed998b4427348a518870a813adef5d11d7b48c38e25e",
+    "53724b2d9fa24e6fa15beceea41d9fb0.parquet": "7441ea5d6b4b53487b60fe3144863e64c04c41594c4f59e6427a1d698975190d",
+    "53c3a27bc3744b658df97a74b52bfb5f.parquet": "b8149d973b8d9703c19bdc4fbe201c999cd1beeff1f018e7f3383fb9a0f535a3",
+    "5477d22a8a1c4729abbf6064457a808b.parquet": "a391971f1a6ae6d766216ebbc0d8015f9e922d3d2434e3220f506da5c2304bde",
+    "54d4ecb1904248339154369db84e6fa1.parquet": "a353c11a8331e1c4b4093ddc67223c2642edc789abf278226b4881b913c49c0d",
+    "55521c2755484387867286385a14a087.parquet": "c7ab991f89602642fe4a3ac41ec2f139031e1c5e8168dcf4737c6971518e8d24",
+    "56318c4e64564710a515279c43bbc4a1.parquet": "41eae5e0fb4362e6a124a61233483f5157add9fd274e27b28ae9a82430c49114",
+    "58363488d1ec4714b9e202ea3e83783d.parquet": "9fc4c659f98ddbc4ec91aaf648d2832fabd54eda3c54654e2cf20e3aa16fb951",
+    "5dba8e53b06e4440965f52c999e90813.parquet": "0d02f024ce2b4c2f70496d1dfa385372027c9dc91768779d11a5c9b19ed27bb6",
+    "633b649453984741aa31cd11aa89b117.parquet": "5456a75b64149677dc395a27b595da728694abdafc87f45958e3679d89861f87",
+    "6364c3d717d048b4abc5331e844fe211.parquet": "971b1ddd9cb3fcc0be986d8c1087bc32f5c0d835d778506bf13e69df3e4173a5",
+    "6e4d6f132f9d4876ad8d568336027605.parquet": "830ba6e5ff026d15631ffb5dd2273b2b677d34143e3810c903ac39382377f118",
+    "6f4d18dca1da4db5bd1602be253e4f04.parquet": "76062e35a950d5cc8d1bc0eb7b505da73cbbcca54448cf574b9c2595f971a5d0",
+    "75288c7fc2ae43b9aa3b8cc3dda2ecd8.parquet": "37161345f6bd5576109f61db8d6d499c926455fda27d6db008c1af37f0a74302",
+    "7728d421a7f6471e95ed3abd56972102.parquet": "862098a2855492aa4f65937e3ddc9a53e97ef200839c058b87a3e0fb41663673",
+    "7a748ca8ae8b47ce806639d7a0321eae.parquet": "978b07b32982b49519d1ecd0e1e56f7d6e49ed79f07d7fbc636d8e03fa59d392",
+    "7ecd3c4f92cc4411ad853fb539efb479.parquet": "72472909f602489ab0b622d21f12b8f2687d3e69ebe720b3a1c74900627d10cd",
+    "8412a69c78c6490181d76a84e4887e62.parquet": "6a8b15850a9c6ed301c7e735b5f649cc9529fc138c9779d15e37f7aae2bace0c",
+    "84352f51092241eb9cedac0b18f4788f.parquet": "a7f59890b722cd591a94cdd6efce5d90352e51d355dd70d22cc7634b31787713",
+    "847055a862124efabd46698b2f95b54d.parquet": "72b030887419e0f4fc146c2809b3cf95797ee8dbab6299abdc8d0da39355c433",
+    "878ca579a08d4518a496c1e1025dacb4.parquet": "ea7e66aa263146827e948b413466ddf7b692660c945ba5d608d655501e15cbd2",
+    "8d43c86e352642edb6488fa27a8f439c.parquet": "b846ceee0ad3ee130dcd18b50b581a554d61b6e820740bf471df40c4d428a425",
+    "91536ff384374c978ca28823e07df218.parquet": "a6e7be8c22675bd48048b40dc4b09ebbd7e147bacd56b597fa10e1a5fc23f724",
+    "9214408ebd7141c2b2872268d94bb60b.parquet": "3b4518859e147ed97dc6f4bb273d681435eeb7715855ac08d42c145f4478f2de",
+    "9833502745c945fd91bdc93a7b49dd8f.parquet": "ca12da7fda26ccde0e2d02a6dd76d3b7d246589407a7c100f955ad9366518ceb",
+    "9d59e6585e154b12b258634fc1aaeace.parquet": "8af41e99f812f6a11eff1f6ec4d28bc4ad84eceb51e906c5376b2b37cbf0ad84",
+    "9e42cb0e3fac46aca0cec41f3e423c4c.parquet": "91a56d4e6dab79223dae6c9a2782ded7b3d70bd1471580c628ec0de3fd7e9bce",
+    "9f17d596c37e4ccb86bf5f219de3f4b2.parquet": "b719e264fe82a8a688257eff7869690e34faf871d62be12daff4b6c49853d32b",
+    "a2932c3e10894911944ba8acbf6c9eb5.parquet": "ceba66e9866ce687dd0bf07dcb3cae6a37e7f5d8e0b00f7cb70fe7a1734b011f",
+    "a613bb0ac1824bc99d5b1ea10feca4dc.parquet": "4418b51b2a65605e8c72c49ef9ece10964af6300726b8f9de19590f30842c83a",
+    "a9a61cf34ed345cdb6c5f0c913b773a7.parquet": "fe63afbd29e45ea745ffefead604b4ccd61d51aaea7e03b328f514e09bf78c9d",
+    "aaf03f67b16a47478285703915a30166.parquet": "ce959bf5798a308725670bde14e390b86db318200d5121b6c2ac3b705fc4f055",
+    "ac87094e7ffb44eca2a99b207d86e330.parquet": "8cb31a09c27d247f42d5b7951e15f377572099a5c7b438d509045c485046baf1",
+    "aee77233405d49cf94deee4ad5adc331.parquet": "dc26ebedc65818cc4694a04fc4d49b8c42cddd6b8d284a74436224177744c0f2",
+    "aef4d40845184d61a4887ef38c5010c9.parquet": "af5246e684d2ead645ca7c7e1749fc4d4bcbcf9e3753fb5184590df3649e781f",
+    "af4a599412174341a7fb9ecebf834945.parquet": "fee5ee85cdc8afd8b327744b2318f629d1a63bf8c4487a761277b363376fede7",
+    "b1a8730754734707bbfe963f722ff33c.parquet": "a64cc5f1af547c45a163d41cc6fc386bdd23fc3d6ffd094a97a4d6f976b274f5",
+    "b2905a0d37324356ab82db86631b5e18.parquet": "1fc3663c51a55a8e6d65e9a040d1b2143acb1ba8d021edaae6cb2e72baf0ea20",
+    "b7350293fb28472a91cca00e6b871ec5.parquet": "987e58e1320d1d3a3654c02ab8fe3c517f6d92a0620b1569945abeb1eaf89c4e",
+    "ba5872b644b242c09ba1d6acb0a99137.parquet": "e323d25490077089bd3baf652ca9917c053891982d7a5af102d6988ba047e955",
+    "be4fe0dfc34943798a3e9d41f5c2b172.parquet": "dbb30437688dd5271865015ebb2e7bcbec411fd7b9d2a0d691cdab32ca0e3283",
+    "bfa2b79e1e964838916afaf22c388d5b.parquet": "1c60a6c1dc1cfbda2fc37851a98755895870e1643a597f46061d292cd71b321f",
+    "c02893cca37d4d15971d7772891b995a.parquet": "a46746a588990ad3678fdc1f3bab1abee2d1122466df6b446f0586f306cfd3a9",
+    "c4c22f6315a0490db0f523a826bcf11e.parquet": "2df275fafbacd68c10e3df766adab3a830435779b698ceb5da757e196c269f2e",
+    "c896dcd9cfd74dd9890406c2e38b33d4.parquet": "a89a3cab9b8cda248f0712e5067a077efdc0a9744f80ef3ad0ff06d6c32d83d6",
+    "c8ebec610e93493683895df022bda3f6.parquet": "4be051f88778e430db18dbd2cce6682b0dd0491dda066d5f522c589a35f591aa",
+    "ca1c7638c3594781a44c4dd5cb07a7cb.parquet": "d8fcf585a3f86c6b9aadb549a6c3b4800695417b346ed74e94027393cf25d21c",
+    "ca76be31835c475fbd0b293b48f3645b.parquet": "dedef11d980b212979ad35c54aa74ba3bdd88ae7d84992cec55918cd9748e7f3",
+    "cd7de25daeaf4815838451e0b6de9339.parquet": "f09a0566be3cafece81254dfdc8bc8dc31182c45b5dcc42881cc499a11b3d0db",
+    "cfddd09c05da438b93e2963a45b393f6.parquet": "1d6507f3f3ff8272880bd584b097e3fd1a82e9fb053036908ae65186a4f5feaa",
+    "d138a46fa6d242b6a1429fe03a845bc4.parquet": "a9d1ecd55eee8f3dfcd689f102dff78650a29587001fe4e87f060fdc1eacbc1a",
+    "e05ce07866674e3293ac1cd414b7cf4e.parquet": "01697d89be3b3656cf339e4014f20ef7e6f6789b8b56f4b67b458f721fac689b",
+    "e0730384d9cc458cabf53084ccfdb5f0.parquet": "3942dde90691c71b0d3fbe505d3f630bd096e35e6bb5d0ea10e46fcae4bf187b",
+    "e12ca0fd837b45b3928cf75e5fd632f3.parquet": "ff59f291bcef8459cac414f7302c73257df1852b3ed7d1143233c99dc1c295d0",
+    "e135a1090db64d1abeafc79bd525365b.parquet": "5f28658e0ee26ad336d9dda1ffe0519252f888a6fe03c627403af2ada32f90f7",
+    "e44a246e432544e6891abad6d40a2e1c.parquet": "f4278c157bbe390f8c52130c905f272665ac0af83c83f4f9f3913f2d6b7a8729",
+    "e4eb49c23e264bd595d14826ab9ea9f6.parquet": "06a8e31176cee40b4e96cf488043ccdb1c1d66a57630c9721e1920c658eab7e0",
+    "e4f68f7470d048289efc7a79f981c766.parquet": "76d1a879e0bd00bc9008ff27c697f42afc4517f1af9143532637146dbe5d92d2",
+    "eb9734bdad5841879bdcac7d993c609d.parquet": "c164cc382dbbf3ddb22196e067e7be63cd5550a474212919380af9ccb8f88eea",
+    "ebdc8e21a5cd48aa8d4aec06c85c5eca.parquet": "132ae3602cfad0cc3159d0d651f039a00474305b3543bc7959bd42ace5e32db7",
+    "ee1e721928b14cb793b4f4bf25220031.parquet": "7c7483e480dd96491b2b506e805fe007e6ea9c3432a6f49b0aeb071852bb5846",
+    "f22affc24bf44ba7be417453bec3d337.parquet": "547adf96b0404ba75928e064682b566dbe2edda864b72c075ea34e4cf08e29c1",
+    "f2de6b131fc945ceb6f4557e0d4f3596.parquet": "efd8344de8cd33fe16cf9c3d3b5b353a88286ea59beb64054de5d75dd0487e92",
+    "f798242888a0444cade1e6bf94415fe0.parquet": "bba777a5c6dcee4d605490f93528be190baaf27b6626f99588e9a15538271518",
+    "f8678521f2324af28a99074f92bcbadc.parquet": "06dac94fc20f6fbe6d1841e57457cb0e101f6d8e824a924fab99dda1f1cea86d",
+    "fbe4c2c1bfb94c8ca1d95127ec211019.parquet": "4ef82aa576bb4d64b5c0b434c6b381f2eaaf019c1c1693a2724019cc386f5785"
+  },
+  "exchange_timestamp_field_mismatches": 0,
+  "raw_file_rows": 15620,
+  "selected_session_raw": 15295,
+  "valid_quotes_before_dedup": 15295,
+  "feature_event_rows": 15295,
+  "latency_seconds": {
+    "min": 0.154782,
+    "median": 0.261054,
+    "p95": 0.3929874999999998,
+    "max": 0.899578
+  },
+  "feature_receipt_age_seconds": {
+    "min": 1e-05,
+    "median": 0.1115245,
+    "p95": 0.6556118000000001,
+    "max": 1.855678
+  },
+  "feature_exchange_age_seconds": {
+    "min": 0.168,
+    "median": 0.369,
+    "p95": 0.9513000000000001,
+    "max": 2.12
+  },
+  "horizons": {
+    "1": {
+      "candidate_grid_pairs": 2561,
+      "invalid_path_pairs": 7,
+      "forward_labels": 2554,
+      "zero_returns": 2334,
+      "nonzero_before_purging": 220,
+      "splits": {
+        "train": {
+          "before_purging": 1530,
+          "purged": 1,
+          "after_purging": 1529,
+          "zero_returns": 1428,
+          "directional": 101,
+          "down": 43,
+          "up": 58
+        },
+        "validation": {
+          "before_purging": 512,
+          "purged": 1,
+          "after_purging": 511,
+          "zero_returns": 449,
+          "directional": 62,
+          "down": 20,
+          "up": 42
+        },
+        "test": {
+          "before_purging": 512,
+          "purged": 0,
+          "after_purging": 512,
+          "zero_returns": 456,
+          "directional": 56,
+          "down": 30,
+          "up": 26
+        }
+      },
+      "purged_total": 2,
+      "split_boundaries_ns": [
+        1791351774600000000,
+        1791352286800000000
+      ],
+      "train_last_label_end_ns": 1791351774000000000,
+      "validation_first_start_ns": 1791351775000000000,
+      "validation_last_label_end_ns": 1791352286000000000,
+      "test_first_start_ns": 1791352287000000000,
+      "endpoint_quote_received_after_start": 2512,
+      "endpoint_quote_not_after_start": 42,
+      "nonzero_endpoint_not_after_start": 0,
+      "endpoint_receipt_after_target": 0,
+      "endpoint_exchange_not_after_start": 79,
+      "nonzero_endpoint_exchange_not_after_start": 0,
+      "nonzero_outcome_arrival_after_start_seconds": {
+        "min": 0.642562,
+        "median": 0.9483204999999999,
+        "p95": 0.9926688,
+        "max": 0.999902
+      },
+      "target_receipt_age_seconds": {
+        "min": 1e-05,
+        "median": 0.1112325,
+        "p95": 0.6556662,
+        "max": 1.855678
+      },
+      "effective_receipt_interval_seconds": {
+        "min": 0.0,
+        "median": 1.00384,
+        "p95": 1.476265,
+        "max": 2.763794
+      },
+      "nonzero_effective_receipt_interval_seconds": {
+        "min": 0.764035,
+        "median": 1.032672,
+        "p95": 1.467298,
+        "max": 2.463102
+      },
+      "adjacent_test_label_overlap_count": 0,
+      "test_price_baseline_states": {
+        "missing_previous_grid": 0,
+        "down": 12,
+        "zero_previous_return": 39,
+        "up": 5
+      },
+      "models": {
+        "baseline": {
+          "metrics": {
+            "train": {
+              "n": 101,
+              "accuracy": 0.5742574257425742,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  43
+                ],
+                [
+                  0,
+                  58
+                ]
+              ]
+            },
+            "validation": {
+              "n": 62,
+              "accuracy": 0.6774193548387096,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  20
+                ],
+                [
+                  0,
+                  42
+                ]
+              ]
+            },
+            "test": {
+              "n": 56,
+              "accuracy": 0.4642857142857143,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  30
+                ],
+                [
+                  0,
+                  26
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 18,
+              "nonempty_blocks": 16,
+              "directional_observations_per_block": [
+                4,
+                2,
+                9,
+                1,
+                6,
+                6,
+                3,
+                0,
+                1,
+                2,
+                2,
+                0,
+                4,
+                3,
+                5,
+                2,
+                5,
+                1
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.23502400960384154,
+                  0.6666666666666666
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                3,
+                3,
+                5,
+                5,
+                3,
+                5,
+                5,
+                2,
+                1,
+                2,
+                0,
+                2,
+                1,
+                5,
+                2,
+                5,
+                3,
+                4
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.2585505212510024,
+                  0.6551865460712266
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                6,
+                10,
+                12,
+                3,
+                3,
+                2,
+                7,
+                7,
+                6
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.22916666666666666,
+                  0.6666666666666666
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 10,
+              "nonempty_blocks": 10,
+              "directional_observations_per_block": [
+                4,
+                11,
+                7,
+                9,
+                1,
+                4,
+                4,
+                8,
+                7,
+                1
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.21739130434782608,
+                  0.6747063253012048
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                16,
+                15,
+                5,
+                14,
+                6
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.2894736842105263,
+                  0.5846153846153846
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                6,
+                22,
+                6,
+                9,
+                13
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.15151515151515152,
+                  0.6216216216216216
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "price_change": {
+          "metrics": {
+            "train": {
+              "n": 101,
+              "accuracy": 0.6435643564356436,
+              "balanced_accuracy": 0.5844025661587811,
+              "roc_auc": 0.6475541299117883,
+              "confusion_matrix": [
+                [
+                  8,
+                  35
+                ],
+                [
+                  1,
+                  57
+                ]
+              ]
+            },
+            "validation": {
+              "n": 62,
+              "accuracy": 0.7096774193548387,
+              "balanced_accuracy": 0.5630952380952381,
+              "roc_auc": 0.6398809523809523,
+              "confusion_matrix": [
+                [
+                  3,
+                  17
+                ],
+                [
+                  1,
+                  41
+                ]
+              ]
+            },
+            "test": {
+              "n": 56,
+              "accuracy": 0.5357142857142857,
+              "balanced_accuracy": 0.5564102564102564,
+              "roc_auc": 0.5987179487179488,
+              "confusion_matrix": [
+                [
+                  8,
+                  22
+                ],
+                [
+                  4,
+                  22
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 18,
+              "nonempty_blocks": 16,
+              "directional_observations_per_block": [
+                4,
+                2,
+                9,
+                1,
+                6,
+                6,
+                3,
+                0,
+                1,
+                2,
+                2,
+                0,
+                4,
+                3,
+                5,
+                2,
+                5,
+                1
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.37735849056603776,
+                  0.7015084153699588
+                ],
+                "balanced_accuracy": [
+                  0.46451734241368386,
+                  0.644680829228243
+                ],
+                "roc_auc": [
+                  0.4567052512704687,
+                  0.7017017422139994
+                ],
+                "accuracy_gain": [
+                  -0.02861471861471861,
+                  0.20010204081632646
+                ],
+                "balanced_accuracy_gain": [
+                  -0.03548265758631616,
+                  0.144680829228243
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                3,
+                3,
+                5,
+                5,
+                3,
+                5,
+                5,
+                2,
+                1,
+                2,
+                0,
+                2,
+                1,
+                5,
+                2,
+                5,
+                3,
+                4
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3888157894736842,
+                  0.6811594202898551
+                ],
+                "balanced_accuracy": [
+                  0.4464023109243697,
+                  0.6619517893364242
+                ],
+                "roc_auc": [
+                  0.47385544427887233,
+                  0.7055717054263566
+                ],
+                "accuracy_gain": [
+                  -0.06006249999999999,
+                  0.23404255319148937
+                ],
+                "balanced_accuracy_gain": [
+                  -0.053597689075630284,
+                  0.16195178933642423
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                6,
+                10,
+                12,
+                3,
+                3,
+                2,
+                7,
+                7,
+                6
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3829787234042553,
+                  0.6508281573498965
+                ],
+                "balanced_accuracy": [
+                  0.44614510489510484,
+                  0.6289696874464317
+                ],
+                "roc_auc": [
+                  0.45109962406015036,
+                  0.6826032066052227
+                ],
+                "accuracy_gain": [
+                  -0.05555555555555555,
+                  0.2222222222222222
+                ],
+                "balanced_accuracy_gain": [
+                  -0.053854895104895134,
+                  0.12896968744643164
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 10,
+              "nonempty_blocks": 10,
+              "directional_observations_per_block": [
+                4,
+                11,
+                7,
+                9,
+                1,
+                4,
+                4,
+                8,
+                7,
+                1
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.35413602941176475,
+                  0.7166745283018868
+                ],
+                "balanced_accuracy": [
+                  0.46959841628959276,
+                  0.6351957994579945
+                ],
+                "roc_auc": [
+                  0.4675324675324676,
+                  0.6882409502262442
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.18181818181818182
+                ],
+                "balanced_accuracy_gain": [
+                  -0.030401583710407243,
+                  0.13519579945799456
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                16,
+                15,
+                5,
+                14,
+                6
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3333333333333333,
+                  0.6516335227272726
+                ],
+                "balanced_accuracy": [
+                  0.4253246753246753,
+                  0.6104529616724739
+                ],
+                "roc_auc": [
+                  0.4290909090909091,
+                  0.6776785714285715
+                ],
+                "accuracy_gain": [
+                  0.02702702702702703,
+                  0.1038961038961039
+                ],
+                "balanced_accuracy_gain": [
+                  -0.07467532467532467,
+                  0.11045296167247387
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                6,
+                22,
+                6,
+                9,
+                13
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.391304347826087,
+                  0.6282051282051282
+                ],
+                "balanced_accuracy": [
+                  0.4867216117216117,
+                  0.6666666666666666
+                ],
+                "roc_auc": [
+                  0.4515384615384615,
+                  0.7045454545454546
+                ],
+                "accuracy_gain": [
+                  -0.03333333333333333,
+                  0.3076923076923077
+                ],
+                "balanced_accuracy_gain": [
+                  -0.013278388278388287,
+                  0.16666666666666663
+                ]
+              }
+            }
+          }
+        },
+        "obi": {
+          "metrics": {
+            "train": {
+              "n": 101,
+              "accuracy": 0.9207920792079208,
+              "balanced_accuracy": 0.9099839615076183,
+              "roc_auc": 0.9755412991178829,
+              "confusion_matrix": [
+                [
+                  36,
+                  7
+                ],
+                [
+                  1,
+                  57
+                ]
+              ]
+            },
+            "validation": {
+              "n": 62,
+              "accuracy": 0.967741935483871,
+              "balanced_accuracy": 0.963095238095238,
+              "roc_auc": 0.9857142857142857,
+              "confusion_matrix": [
+                [
+                  19,
+                  1
+                ],
+                [
+                  1,
+                  41
+                ]
+              ]
+            },
+            "test": {
+              "n": 56,
+              "accuracy": 0.8035714285714286,
+              "balanced_accuracy": 0.7987179487179488,
+              "roc_auc": 0.8641025641025641,
+              "confusion_matrix": [
+                [
+                  26,
+                  4
+                ],
+                [
+                  7,
+                  19
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 18,
+              "nonempty_blocks": 16,
+              "directional_observations_per_block": [
+                4,
+                2,
+                9,
+                1,
+                6,
+                6,
+                3,
+                0,
+                1,
+                2,
+                2,
+                0,
+                4,
+                3,
+                5,
+                2,
+                5,
+                1
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6666666666666666,
+                  0.9189298169136879
+                ],
+                "balanced_accuracy": [
+                  0.6541108597285067,
+                  0.9174540441176471
+                ],
+                "roc_auc": [
+                  0.7441406825888249,
+                  0.9610514485514485
+                ],
+                "accuracy_gain": [
+                  0.07839366515837104,
+                  0.6316228070175438
+                ],
+                "balanced_accuracy_gain": [
+                  0.15411085972850674,
+                  0.4174540441176471
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                3,
+                3,
+                5,
+                5,
+                3,
+                5,
+                5,
+                2,
+                1,
+                2,
+                0,
+                2,
+                1,
+                5,
+                2,
+                5,
+                3,
+                4
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6606737012987013,
+                  0.9400294117647058
+                ],
+                "balanced_accuracy": [
+                  0.6451963083213084,
+                  0.9375
+                ],
+                "roc_auc": [
+                  0.7368276460381723,
+                  0.9710237091311261
+                ],
+                "accuracy_gain": [
+                  0.09432488207547171,
+                  0.6154761904761904
+                ],
+                "balanced_accuracy_gain": [
+                  0.14519630832130834,
+                  0.4375
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                6,
+                10,
+                12,
+                3,
+                3,
+                2,
+                7,
+                7,
+                6
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6170124113475177,
+                  0.9375
+                ],
+                "balanced_accuracy": [
+                  0.622857996245093,
+                  0.9354183467741936
+                ],
+                "roc_auc": [
+                  0.7351988749502191,
+                  0.9793525345622118
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.6613282601176061
+                ],
+                "balanced_accuracy_gain": [
+                  0.12285799624509301,
+                  0.43541834677419355
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 10,
+              "nonempty_blocks": 10,
+              "directional_observations_per_block": [
+                4,
+                11,
+                7,
+                9,
+                1,
+                4,
+                4,
+                8,
+                7,
+                1
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6818181818181818,
+                  0.9166666666666666
+                ],
+                "balanced_accuracy": [
+                  0.6323518099547512,
+                  0.9234353288987436
+                ],
+                "roc_auc": [
+                  0.7221666666666666,
+                  0.9815821256038646
+                ],
+                "accuracy_gain": [
+                  0.13880649717514126,
+                  0.6250726744186046
+                ],
+                "balanced_accuracy_gain": [
+                  0.1323518099547511,
+                  0.4234353288987436
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                16,
+                15,
+                5,
+                14,
+                6
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.660377358490566,
+                  0.8955223880597015
+                ],
+                "balanced_accuracy": [
+                  0.615007012622721,
+                  0.8959821428571428
+                ],
+                "roc_auc": [
+                  0.7307152875175316,
+                  0.9520676691729324
+                ],
+                "accuracy_gain": [
+                  0.20833333333333334,
+                  0.5003378378378376
+                ],
+                "balanced_accuracy_gain": [
+                  0.11500701262272095,
+                  0.39598214285714284
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                6,
+                22,
+                6,
+                9,
+                13
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6111111111111112,
+                  0.9743589743589743
+                ],
+                "balanced_accuracy": [
+                  0.5759203296703297,
+                  0.984375
+                ],
+                "roc_auc": [
+                  0.7189175824175825,
+                  1.0
+                ],
+                "accuracy_gain": [
+                  0.0784313725490196,
+                  0.8181818181818182
+                ],
+                "balanced_accuracy_gain": [
+                  0.07592032967032963,
+                  0.484375
+                ]
+              }
+            }
+          }
+        },
+        "obi_spread_microprice": {
+          "metrics": {
+            "train": {
+              "n": 101,
+              "accuracy": 0.9207920792079208,
+              "balanced_accuracy": 0.9099839615076183,
+              "roc_auc": 0.9759422614274258,
+              "confusion_matrix": [
+                [
+                  36,
+                  7
+                ],
+                [
+                  1,
+                  57
+                ]
+              ]
+            },
+            "validation": {
+              "n": 62,
+              "accuracy": 0.967741935483871,
+              "balanced_accuracy": 0.963095238095238,
+              "roc_auc": 0.9857142857142857,
+              "confusion_matrix": [
+                [
+                  19,
+                  1
+                ],
+                [
+                  1,
+                  41
+                ]
+              ]
+            },
+            "test": {
+              "n": 56,
+              "accuracy": 0.8035714285714286,
+              "balanced_accuracy": 0.7987179487179488,
+              "roc_auc": 0.8705128205128205,
+              "confusion_matrix": [
+                [
+                  26,
+                  4
+                ],
+                [
+                  7,
+                  19
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 18,
+              "nonempty_blocks": 16,
+              "directional_observations_per_block": [
+                4,
+                2,
+                9,
+                1,
+                6,
+                6,
+                3,
+                0,
+                1,
+                2,
+                2,
+                0,
+                4,
+                3,
+                5,
+                2,
+                5,
+                1
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6666666666666666,
+                  0.9189298169136879
+                ],
+                "balanced_accuracy": [
+                  0.6541108597285067,
+                  0.9174540441176471
+                ],
+                "roc_auc": [
+                  0.7517631052420968,
+                  0.9648323754789272
+                ],
+                "accuracy_gain": [
+                  0.07839366515837104,
+                  0.6316228070175438
+                ],
+                "balanced_accuracy_gain": [
+                  0.15411085972850674,
+                  0.4174540441176471
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                3,
+                3,
+                5,
+                5,
+                3,
+                5,
+                5,
+                2,
+                1,
+                2,
+                0,
+                2,
+                1,
+                5,
+                2,
+                5,
+                3,
+                4
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6606737012987013,
+                  0.9400294117647058
+                ],
+                "balanced_accuracy": [
+                  0.6451963083213084,
+                  0.9375
+                ],
+                "roc_auc": [
+                  0.7427879348801605,
+                  0.9745650875869093
+                ],
+                "accuracy_gain": [
+                  0.09432488207547171,
+                  0.6154761904761904
+                ],
+                "balanced_accuracy_gain": [
+                  0.14519630832130834,
+                  0.4375
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                6,
+                10,
+                12,
+                3,
+                3,
+                2,
+                7,
+                7,
+                6
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6170124113475177,
+                  0.9375
+                ],
+                "balanced_accuracy": [
+                  0.622857996245093,
+                  0.9354183467741936
+                ],
+                "roc_auc": [
+                  0.7405561802109181,
+                  0.9896762672811059
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.6613282601176061
+                ],
+                "balanced_accuracy_gain": [
+                  0.12285799624509301,
+                  0.43541834677419355
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 10,
+              "nonempty_blocks": 10,
+              "directional_observations_per_block": [
+                4,
+                11,
+                7,
+                9,
+                1,
+                4,
+                4,
+                8,
+                7,
+                1
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6818181818181818,
+                  0.9166666666666666
+                ],
+                "balanced_accuracy": [
+                  0.6323518099547512,
+                  0.9234353288987436
+                ],
+                "roc_auc": [
+                  0.7230735930735931,
+                  0.9958594271341307
+                ],
+                "accuracy_gain": [
+                  0.13880649717514126,
+                  0.6250726744186046
+                ],
+                "balanced_accuracy_gain": [
+                  0.1323518099547511,
+                  0.4234353288987436
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                16,
+                15,
+                5,
+                14,
+                6
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.660377358490566,
+                  0.8955223880597015
+                ],
+                "balanced_accuracy": [
+                  0.615007012622721,
+                  0.8959821428571428
+                ],
+                "roc_auc": [
+                  0.7307152875175316,
+                  0.9642857142857143
+                ],
+                "accuracy_gain": [
+                  0.20833333333333334,
+                  0.5003378378378376
+                ],
+                "balanced_accuracy_gain": [
+                  0.11500701262272095,
+                  0.39598214285714284
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                6,
+                22,
+                6,
+                9,
+                13
+              ],
+              "blocks_with_both_classes": 4,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6111111111111112,
+                  0.9743589743589743
+                ],
+                "balanced_accuracy": [
+                  0.5759203296703297,
+                  0.984375
+                ],
+                "roc_auc": [
+                  0.7238804945054945,
+                  1.0
+                ],
+                "accuracy_gain": [
+                  0.0784313725490196,
+                  0.8181818181818182
+                ],
+                "balanced_accuracy_gain": [
+                  0.07592032967032963,
+                  0.484375
+                ]
+              }
+            }
+          }
+        }
+      },
+      "model_parameters": {
+        "obi": {
+          "scaler_mean": [
+            0.23455133931617728
+          ],
+          "scaler_scale": [
+            0.8375876444478941
+          ],
+          "training_samples": 101,
+          "coefficients": [
+            [
+              2.6827193375750165
+            ]
+          ],
+          "intercept": [
+            0.20194280542973786
+          ]
+        },
+        "obi_spread_microprice": {
+          "scaler_mean": [
+            0.2345513393161771,
+            0.13993449035874259,
+            0.019457970800617067
+          ],
+          "scaler_scale": [
+            0.8375876444478942,
+            0.1266018632090373,
+            0.074696707655626
+          ],
+          "training_samples": 101,
+          "coefficients": [
+            [
+              1.922911320117038,
+              -0.1112648410582193,
+              1.3353849160410909
+            ]
+          ],
+          "intercept": [
+            0.25520919341532594
+          ]
+        }
+      },
+      "obi_vs_price_baseline": {
+        "30": {
+          "block_seconds": 30,
+          "offset_seconds": 0,
+          "blocks": 18,
+          "nonempty_blocks": 16,
+          "directional_observations_per_block": [
+            4,
+            2,
+            9,
+            1,
+            6,
+            6,
+            3,
+            0,
+            1,
+            2,
+            2,
+            0,
+            4,
+            3,
+            5,
+            2,
+            5,
+            1
+          ],
+          "blocks_with_both_classes": 5,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.6666666666666666,
+              0.9189298169136879
+            ],
+            "balanced_accuracy": [
+              0.6541108597285067,
+              0.9174540441176471
+            ],
+            "roc_auc": [
+              0.7441406825888249,
+              0.9610514485514485
+            ],
+            "accuracy_gain": [
+              0.07686567164179105,
+              0.4634364111498258
+            ],
+            "balanced_accuracy_gain": [
+              0.12481971153846155,
+              0.3444621749408983
+            ]
+          }
+        },
+        "60": {
+          "block_seconds": 60,
+          "offset_seconds": 0,
+          "blocks": 9,
+          "nonempty_blocks": 9,
+          "directional_observations_per_block": [
+            6,
+            10,
+            12,
+            3,
+            3,
+            2,
+            7,
+            7,
+            6
+          ],
+          "blocks_with_both_classes": 6,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.6170124113475177,
+              0.9375
+            ],
+            "balanced_accuracy": [
+              0.622857996245093,
+              0.9354183467741936
+            ],
+            "roc_auc": [
+              0.7351988749502191,
+              0.9793525345622118
+            ],
+            "accuracy_gain": [
+              0.026919533169533178,
+              0.4815134099616858
+            ],
+            "balanced_accuracy_gain": [
+              0.10712632275132276,
+              0.344030112044818
+            ]
+          }
+        },
+        "120": {
+          "block_seconds": 120,
+          "offset_seconds": 0,
+          "blocks": 5,
+          "nonempty_blocks": 5,
+          "directional_observations_per_block": [
+            16,
+            15,
+            5,
+            14,
+            6
+          ],
+          "blocks_with_both_classes": 5,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.660377358490566,
+              0.8955223880597015
+            ],
+            "balanced_accuracy": [
+              0.615007012622721,
+              0.8959821428571428
+            ],
+            "roc_auc": [
+              0.7307152875175316,
+              0.9520676691729324
+            ],
+            "accuracy_gain": [
+              0.14285714285714285,
+              0.4594594594594595
+            ],
+            "balanced_accuracy_gain": [
+              0.11158301158301165,
+              0.32738095238095233
+            ]
+          }
+        }
+      },
+      "frozen_pilot_predictions_verified": true
+    },
+    "5": {
+      "candidate_grid_pairs": 2557,
+      "invalid_path_pairs": 19,
+      "forward_labels": 2538,
+      "zero_returns": 1740,
+      "nonzero_before_purging": 798,
+      "splits": {
+        "train": {
+          "before_purging": 1518,
+          "purged": 5,
+          "after_purging": 1513,
+          "zero_returns": 1122,
+          "directional": 391,
+          "down": 163,
+          "up": 228
+        },
+        "validation": {
+          "before_purging": 512,
+          "purged": 5,
+          "after_purging": 507,
+          "zero_returns": 296,
+          "directional": 211,
+          "down": 61,
+          "up": 150
+        },
+        "test": {
+          "before_purging": 508,
+          "purged": 0,
+          "after_purging": 508,
+          "zero_returns": 321,
+          "directional": 187,
+          "down": 89,
+          "up": 98
+        }
+      },
+      "purged_total": 10,
+      "split_boundaries_ns": [
+        1791351774600000000,
+        1791352286800000000
+      ],
+      "train_last_label_end_ns": 1791351774000000000,
+      "validation_first_start_ns": 1791351775000000000,
+      "validation_last_label_end_ns": 1791352286000000000,
+      "test_first_start_ns": 1791352287000000000,
+      "endpoint_quote_received_after_start": 2538,
+      "endpoint_quote_not_after_start": 0,
+      "nonzero_endpoint_not_after_start": 0,
+      "endpoint_receipt_after_target": 0,
+      "endpoint_exchange_not_after_start": 0,
+      "nonzero_endpoint_exchange_not_after_start": 0,
+      "nonzero_outcome_arrival_after_start_seconds": {
+        "min": 3.5368,
+        "median": 4.919026000000001,
+        "p95": 4.99053085,
+        "max": 4.999902
+      },
+      "target_receipt_age_seconds": {
+        "min": 1e-05,
+        "median": 0.1106675,
+        "p95": 0.6526358500000002,
+        "max": 1.855678
+      },
+      "effective_receipt_interval_seconds": {
+        "min": 3.239925,
+        "median": 4.9992785,
+        "p95": 5.4590328,
+        "max": 6.815597
+      },
+      "nonzero_effective_receipt_interval_seconds": {
+        "min": 3.710929,
+        "median": 5.015803,
+        "p95": 5.50491025,
+        "max": 6.478276
+      },
+      "adjacent_test_label_overlap_count": 164,
+      "test_price_baseline_states": {
+        "missing_previous_grid": 0,
+        "down": 20,
+        "zero_previous_return": 158,
+        "up": 9
+      },
+      "models": {
+        "baseline": {
+          "metrics": {
+            "train": {
+              "n": 391,
+              "accuracy": 0.5831202046035806,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  163
+                ],
+                [
+                  0,
+                  228
+                ]
+              ]
+            },
+            "validation": {
+              "n": 211,
+              "accuracy": 0.7109004739336493,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  61
+                ],
+                [
+                  0,
+                  150
+                ]
+              ]
+            },
+            "test": {
+              "n": 187,
+              "accuracy": 0.5240641711229946,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  89
+                ],
+                [
+                  0,
+                  98
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                11,
+                7,
+                24,
+                5,
+                18,
+                19,
+                12,
+                0,
+                7,
+                8,
+                7,
+                0,
+                17,
+                8,
+                18,
+                8,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.2792074728550138,
+                  0.7679558011049724
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                11,
+                16,
+                14,
+                11,
+                13,
+                18,
+                7,
+                5,
+                10,
+                0,
+                7,
+                5,
+                15,
+                14,
+                12,
+                15,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.29119601328903655,
+                  0.7222222222222222
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                18,
+                29,
+                37,
+                12,
+                15,
+                7,
+                25,
+                26,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.296747311827957,
+                  0.7514064301268092
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                11,
+                31,
+                23,
+                31,
+                7,
+                15,
+                17,
+                26,
+                26
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.2552563949318671,
+                  0.75424638660705
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                47,
+                49,
+                22,
+                51,
+                18
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3435114503816794,
+                  0.6111111111111112
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                18,
+                66,
+                27,
+                32,
+                44
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.22123893805309736,
+                  0.6761133603238867
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "price_change": {
+          "metrics": {
+            "train": {
+              "n": 391,
+              "accuracy": 0.6214833759590793,
+              "balanced_accuracy": 0.5468867721450866,
+              "roc_auc": 0.5781804972554084,
+              "confusion_matrix": [
+                [
+                  16,
+                  147
+                ],
+                [
+                  1,
+                  227
+                ]
+              ]
+            },
+            "validation": {
+              "n": 211,
+              "accuracy": 0.7393364928909952,
+              "balanced_accuracy": 0.5540437158469945,
+              "roc_auc": 0.5775409836065574,
+              "confusion_matrix": [
+                [
+                  7,
+                  54
+                ],
+                [
+                  1,
+                  149
+                ]
+              ]
+            },
+            "test": {
+              "n": 187,
+              "accuracy": 0.5561497326203209,
+              "balanced_accuracy": 0.5373194221508828,
+              "roc_auc": 0.5573836276083468,
+              "confusion_matrix": [
+                [
+                  13,
+                  76
+                ],
+                [
+                  7,
+                  91
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                11,
+                7,
+                24,
+                5,
+                18,
+                19,
+                12,
+                0,
+                7,
+                8,
+                7,
+                0,
+                17,
+                8,
+                18,
+                8,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.35829293305985455,
+                  0.7571323615845772
+                ],
+                "balanced_accuracy": [
+                  0.48219128743775436,
+                  0.5871581966119781
+                ],
+                "roc_auc": [
+                  0.4859104204981921,
+                  0.6252714790555609
+                ],
+                "accuracy_gain": [
+                  -0.030977325160979303,
+                  0.10062893081761007
+                ],
+                "balanced_accuracy_gain": [
+                  -0.01780871256224563,
+                  0.08715819661197806
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                11,
+                16,
+                14,
+                11,
+                13,
+                18,
+                7,
+                5,
+                10,
+                0,
+                7,
+                5,
+                15,
+                14,
+                12,
+                15,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3741469635348453,
+                  0.7149640019860972
+                ],
+                "balanced_accuracy": [
+                  0.4802166546059944,
+                  0.5900041631772984
+                ],
+                "roc_auc": [
+                  0.4844485992402659,
+                  0.6181847681459389
+                ],
+                "accuracy_gain": [
+                  -0.03354363321132729,
+                  0.1087126358695652
+                ],
+                "balanced_accuracy_gain": [
+                  -0.01978334539400564,
+                  0.09000416317729842
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                18,
+                29,
+                37,
+                12,
+                15,
+                7,
+                25,
+                26,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3693181818181818,
+                  0.7291016871283085
+                ],
+                "balanced_accuracy": [
+                  0.481910261979227,
+                  0.5794987962594619
+                ],
+                "roc_auc": [
+                  0.47636091258810237,
+                  0.6167796196118905
+                ],
+                "accuracy_gain": [
+                  -0.03682707055214724,
+                  0.1067575974662544
+                ],
+                "balanced_accuracy_gain": [
+                  -0.018089738020773016,
+                  0.07949879625946187
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                11,
+                31,
+                23,
+                31,
+                7,
+                15,
+                17,
+                26,
+                26
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.341259007408911,
+                  0.7526985301622945
+                ],
+                "balanced_accuracy": [
+                  0.48870383349410984,
+                  0.5798123756787269
+                ],
+                "roc_auc": [
+                  0.49331289555021346,
+                  0.6185930334530653
+                ],
+                "accuracy_gain": [
+                  -0.016131211857018306,
+                  0.09776988768216835
+                ],
+                "balanced_accuracy_gain": [
+                  -0.011296166505890132,
+                  0.0798123756787269
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                47,
+                49,
+                22,
+                51,
+                18
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.36220472440944884,
+                  0.6506217530673151
+                ],
+                "balanced_accuracy": [
+                  0.47100271002710026,
+                  0.5705711920529801
+                ],
+                "roc_auc": [
+                  0.4807588075880759,
+                  0.6055698604146904
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.05179282868525897
+                ],
+                "balanced_accuracy_gain": [
+                  -0.028997289972899742,
+                  0.07057119205298013
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                18,
+                66,
+                27,
+                32,
+                44
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.36879432624113473,
+                  0.6518218623481782
+                ],
+                "balanced_accuracy": [
+                  0.5029429271708683,
+                  0.5965909090909091
+                ],
+                "roc_auc": [
+                  0.5138655462184873,
+                  0.6047619047619048
+                ],
+                "accuracy_gain": [
+                  -0.024291497975708502,
+                  0.1504424778761062
+                ],
+                "balanced_accuracy_gain": [
+                  0.0029429271708683396,
+                  0.09659090909090906
+                ]
+              }
+            }
+          }
+        },
+        "obi": {
+          "metrics": {
+            "train": {
+              "n": 391,
+              "accuracy": 0.8388746803069054,
+              "balanced_accuracy": 0.8251130125928319,
+              "roc_auc": 0.904356366376063,
+              "confusion_matrix": [
+                [
+                  121,
+                  42
+                ],
+                [
+                  21,
+                  207
+                ]
+              ]
+            },
+            "validation": {
+              "n": 211,
+              "accuracy": 0.9146919431279621,
+              "balanced_accuracy": 0.9108196721311476,
+              "roc_auc": 0.9652459016393443,
+              "confusion_matrix": [
+                [
+                  55,
+                  6
+                ],
+                [
+                  12,
+                  138
+                ]
+              ]
+            },
+            "test": {
+              "n": 187,
+              "accuracy": 0.7272727272727273,
+              "balanced_accuracy": 0.7279293739967898,
+              "roc_auc": 0.7929373996789727,
+              "confusion_matrix": [
+                [
+                  66,
+                  23
+                ],
+                [
+                  28,
+                  70
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                11,
+                7,
+                24,
+                5,
+                18,
+                19,
+                12,
+                0,
+                7,
+                8,
+                7,
+                0,
+                17,
+                8,
+                18,
+                8,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5906341374269006,
+                  0.8743176551368981
+                ],
+                "balanced_accuracy": [
+                  0.5872530554998999,
+                  0.866993489888499
+                ],
+                "roc_auc": [
+                  0.6163475555349981,
+                  0.9404484640066657
+                ],
+                "accuracy_gain": [
+                  -0.052038239538239536,
+                  0.47187374548374134
+                ],
+                "balanced_accuracy_gain": [
+                  0.08725305549989988,
+                  0.366993489888499
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                11,
+                16,
+                14,
+                11,
+                13,
+                18,
+                7,
+                5,
+                10,
+                0,
+                7,
+                5,
+                15,
+                14,
+                12,
+                15,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6256684491978609,
+                  0.8368449656750573
+                ],
+                "balanced_accuracy": [
+                  0.6202516431353456,
+                  0.8358486137743688
+                ],
+                "roc_auc": [
+                  0.6592819730330687,
+                  0.9076329384403595
+                ],
+                "accuracy_gain": [
+                  -0.005852204494767536,
+                  0.4611458333333333
+                ],
+                "balanced_accuracy_gain": [
+                  0.12025164313534564,
+                  0.3358486137743688
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                18,
+                29,
+                37,
+                12,
+                15,
+                7,
+                25,
+                26,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6161169332597904,
+                  0.8597738230289279
+                ],
+                "balanced_accuracy": [
+                  0.623007869235489,
+                  0.8709544144794451
+                ],
+                "roc_auc": [
+                  0.677464731578999,
+                  0.9367988191108862
+                ],
+                "accuracy_gain": [
+                  -0.11594526397515528,
+                  0.547474401865369
+                ],
+                "balanced_accuracy_gain": [
+                  0.12300786923548902,
+                  0.37095441447944516
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                11,
+                31,
+                23,
+                31,
+                7,
+                15,
+                17,
+                26,
+                26
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5825381591119334,
+                  0.8883007163176474
+                ],
+                "balanced_accuracy": [
+                  0.5587095783149265,
+                  0.8823632924043403
+                ],
+                "roc_auc": [
+                  0.5822663647641676,
+                  0.9534793447293448
+                ],
+                "accuracy_gain": [
+                  -0.009146805273833667,
+                  0.5206881063600431
+                ],
+                "balanced_accuracy_gain": [
+                  0.058709578314926465,
+                  0.38236329240434036
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                47,
+                49,
+                22,
+                51,
+                18
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6775597215125192,
+                  0.772020725388601
+                ],
+                "balanced_accuracy": [
+                  0.658320292123109,
+                  0.764720179738562
+                ],
+                "roc_auc": [
+                  0.6870109546165886,
+                  0.8645342312008979
+                ],
+                "accuracy_gain": [
+                  0.13360323886639677,
+                  0.37404580152671757
+                ],
+                "balanced_accuracy_gain": [
+                  0.15832029212310905,
+                  0.26472017973856204
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                18,
+                66,
+                27,
+                32,
+                44
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6044444444444445,
+                  0.9361702127659575
+                ],
+                "balanced_accuracy": [
+                  0.6256098619859168,
+                  0.9583333333333333
+                ],
+                "roc_auc": [
+                  0.6510883482714468,
+                  1.0
+                ],
+                "accuracy_gain": [
+                  -0.03643724696356275,
+                  0.7021276595744681
+                ],
+                "balanced_accuracy_gain": [
+                  0.1256098619859168,
+                  0.45833333333333326
+                ]
+              }
+            }
+          }
+        },
+        "obi_spread_microprice": {
+          "metrics": {
+            "train": {
+              "n": 391,
+              "accuracy": 0.8414322250639387,
+              "balanced_accuracy": 0.8281804972554085,
+              "roc_auc": 0.9053250457431923,
+              "confusion_matrix": [
+                [
+                  122,
+                  41
+                ],
+                [
+                  21,
+                  207
+                ]
+              ]
+            },
+            "validation": {
+              "n": 211,
+              "accuracy": 0.9146919431279621,
+              "balanced_accuracy": 0.9108196721311476,
+              "roc_auc": 0.9652459016393443,
+              "confusion_matrix": [
+                [
+                  55,
+                  6
+                ],
+                [
+                  12,
+                  138
+                ]
+              ]
+            },
+            "test": {
+              "n": 187,
+              "accuracy": 0.7272727272727273,
+              "balanced_accuracy": 0.7279293739967898,
+              "roc_auc": 0.789153863792708,
+              "confusion_matrix": [
+                [
+                  66,
+                  23
+                ],
+                [
+                  28,
+                  70
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                11,
+                7,
+                24,
+                5,
+                18,
+                19,
+                12,
+                0,
+                7,
+                8,
+                7,
+                0,
+                17,
+                8,
+                18,
+                8,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5906341374269006,
+                  0.8743176551368981
+                ],
+                "balanced_accuracy": [
+                  0.5872530554998999,
+                  0.866993489888499
+                ],
+                "roc_auc": [
+                  0.6196030100740381,
+                  0.9397981216175548
+                ],
+                "accuracy_gain": [
+                  -0.052038239538239536,
+                  0.47187374548374134
+                ],
+                "balanced_accuracy_gain": [
+                  0.08725305549989988,
+                  0.366993489888499
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                11,
+                16,
+                14,
+                11,
+                13,
+                18,
+                7,
+                5,
+                10,
+                0,
+                7,
+                5,
+                15,
+                14,
+                12,
+                15,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6256684491978609,
+                  0.8368449656750573
+                ],
+                "balanced_accuracy": [
+                  0.6202516431353456,
+                  0.8358486137743688
+                ],
+                "roc_auc": [
+                  0.6568264153364126,
+                  0.9010054861189304
+                ],
+                "accuracy_gain": [
+                  -0.005852204494767536,
+                  0.4611458333333333
+                ],
+                "balanced_accuracy_gain": [
+                  0.12025164313534564,
+                  0.3358486137743688
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                18,
+                29,
+                37,
+                12,
+                15,
+                7,
+                25,
+                26,
+                18
+              ],
+              "blocks_with_both_classes": 6,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6161169332597904,
+                  0.8597738230289279
+                ],
+                "balanced_accuracy": [
+                  0.623007869235489,
+                  0.8709544144794451
+                ],
+                "roc_auc": [
+                  0.6697264254385964,
+                  0.9385459900923818
+                ],
+                "accuracy_gain": [
+                  -0.11594526397515528,
+                  0.547474401865369
+                ],
+                "balanced_accuracy_gain": [
+                  0.12300786923548902,
+                  0.37095441447944516
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                11,
+                31,
+                23,
+                31,
+                7,
+                15,
+                17,
+                26,
+                26
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5825381591119334,
+                  0.8883007163176474
+                ],
+                "balanced_accuracy": [
+                  0.5587095783149265,
+                  0.8823632924043403
+                ],
+                "roc_auc": [
+                  0.5815716349438464,
+                  0.9533231707317072
+                ],
+                "accuracy_gain": [
+                  -0.009146805273833667,
+                  0.5206881063600431
+                ],
+                "balanced_accuracy_gain": [
+                  0.058709578314926465,
+                  0.38236329240434036
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                47,
+                49,
+                22,
+                51,
+                18
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6775597215125192,
+                  0.772020725388601
+                ],
+                "balanced_accuracy": [
+                  0.658320292123109,
+                  0.764720179738562
+                ],
+                "roc_auc": [
+                  0.6831855329507911,
+                  0.8616161616161616
+                ],
+                "accuracy_gain": [
+                  0.13360323886639677,
+                  0.37404580152671757
+                ],
+                "balanced_accuracy_gain": [
+                  0.15832029212310905,
+                  0.26472017973856204
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                18,
+                66,
+                27,
+                32,
+                44
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.6044444444444445,
+                  0.9361702127659575
+                ],
+                "balanced_accuracy": [
+                  0.6256098619859168,
+                  0.9583333333333333
+                ],
+                "roc_auc": [
+                  0.6484475032010243,
+                  1.0
+                ],
+                "accuracy_gain": [
+                  -0.03643724696356275,
+                  0.7021276595744681
+                ],
+                "balanced_accuracy_gain": [
+                  0.1256098619859168,
+                  0.45833333333333326
+                ]
+              }
+            }
+          }
+        }
+      },
+      "model_parameters": {
+        "obi": {
+          "scaler_mean": [
+            0.26615531378856216
+          ],
+          "scaler_scale": [
+            0.7325658608310928
+          ],
+          "training_samples": 391,
+          "coefficients": [
+            [
+              2.1078764721505485
+            ]
+          ],
+          "intercept": [
+            0.3420510077757749
+          ]
+        },
+        "obi_spread_microprice": {
+          "scaler_mean": [
+            0.2661553137885622,
+            0.12423789041146507,
+            0.017234966244036597
+          ],
+          "scaler_scale": [
+            0.7325658608310931,
+            0.06500802544812058,
+            0.051915221046727904
+          ],
+          "training_samples": 391,
+          "coefficients": [
+            [
+              1.222087472237822,
+              -0.08899372938387756,
+              1.0816841577080887
+            ]
+          ],
+          "intercept": [
+            0.3623678702744574
+          ]
+        }
+      },
+      "obi_vs_price_baseline": {
+        "30": {
+          "block_seconds": 30,
+          "offset_seconds": 0,
+          "blocks": 17,
+          "nonempty_blocks": 15,
+          "directional_observations_per_block": [
+            11,
+            7,
+            24,
+            5,
+            18,
+            19,
+            12,
+            0,
+            7,
+            8,
+            7,
+            0,
+            17,
+            8,
+            18,
+            8,
+            18
+          ],
+          "blocks_with_both_classes": 6,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.5906341374269006,
+              0.8743176551368981
+            ],
+            "balanced_accuracy": [
+              0.5872530554998999,
+              0.866993489888499
+            ],
+            "roc_auc": [
+              0.6163475555349981,
+              0.9404484640066657
+            ],
+            "accuracy_gain": [
+              -0.05236290989253238,
+              0.39116145941099373
+            ],
+            "balanced_accuracy_gain": [
+              0.06354039822184973,
+              0.3029801447884879
+            ]
+          }
+        },
+        "60": {
+          "block_seconds": 60,
+          "offset_seconds": 0,
+          "blocks": 9,
+          "nonempty_blocks": 9,
+          "directional_observations_per_block": [
+            18,
+            29,
+            37,
+            12,
+            15,
+            7,
+            25,
+            26,
+            18
+          ],
+          "blocks_with_both_classes": 6,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.6161169332597904,
+              0.8597738230289279
+            ],
+            "balanced_accuracy": [
+              0.623007869235489,
+              0.8709544144794451
+            ],
+            "roc_auc": [
+              0.677464731578999,
+              0.9367988191108862
+            ],
+            "accuracy_gain": [
+              -0.09206382785820061,
+              0.45454545454545453
+            ],
+            "balanced_accuracy_gain": [
+              0.09980445272277787,
+              0.31127897210051986
+            ]
+          }
+        },
+        "120": {
+          "block_seconds": 120,
+          "offset_seconds": 0,
+          "blocks": 5,
+          "nonempty_blocks": 5,
+          "directional_observations_per_block": [
+            47,
+            49,
+            22,
+            51,
+            18
+          ],
+          "blocks_with_both_classes": 5,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.6775597215125192,
+              0.772020725388601
+            ],
+            "balanced_accuracy": [
+              0.658320292123109,
+              0.764720179738562
+            ],
+            "roc_auc": [
+              0.6870109546165886,
+              0.8645342312008979
+            ],
+            "accuracy_gain": [
+              0.08558558558558559,
+              0.3511450381679389
+            ],
+            "balanced_accuracy_gain": [
+              0.15997815997816,
+              0.2314511986301368
+            ]
+          }
+        }
+      },
+      "frozen_pilot_predictions_verified": true
+    },
+    "10": {
+      "candidate_grid_pairs": 2552,
+      "invalid_path_pairs": 34,
+      "forward_labels": 2518,
+      "zero_returns": 1223,
+      "nonzero_before_purging": 1295,
+      "splits": {
+        "train": {
+          "before_purging": 1503,
+          "purged": 10,
+          "after_purging": 1493,
+          "zero_returns": 852,
+          "directional": 641,
+          "down": 270,
+          "up": 371
+        },
+        "validation": {
+          "before_purging": 512,
+          "purged": 10,
+          "after_purging": 502,
+          "zero_returns": 168,
+          "directional": 334,
+          "down": 93,
+          "up": 241
+        },
+        "test": {
+          "before_purging": 503,
+          "purged": 0,
+          "after_purging": 503,
+          "zero_returns": 202,
+          "directional": 301,
+          "down": 135,
+          "up": 166
+        }
+      },
+      "purged_total": 20,
+      "split_boundaries_ns": [
+        1791351774600000000,
+        1791352286800000000
+      ],
+      "train_last_label_end_ns": 1791351774000000000,
+      "validation_first_start_ns": 1791351775000000000,
+      "validation_last_label_end_ns": 1791352286000000000,
+      "test_first_start_ns": 1791352287000000000,
+      "endpoint_quote_received_after_start": 2518,
+      "endpoint_quote_not_after_start": 0,
+      "nonzero_endpoint_not_after_start": 0,
+      "endpoint_receipt_after_target": 0,
+      "endpoint_exchange_not_after_start": 0,
+      "nonzero_endpoint_exchange_not_after_start": 0,
+      "nonzero_outcome_arrival_after_start_seconds": {
+        "min": 8.144322,
+        "median": 9.906948,
+        "p95": 9.990834,
+        "max": 9.999902
+      },
+      "target_receipt_age_seconds": {
+        "min": 1e-05,
+        "median": 0.1100615,
+        "p95": 0.65154825,
+        "max": 1.855678
+      },
+      "effective_receipt_interval_seconds": {
+        "min": 8.205439,
+        "median": 10.0009275,
+        "p95": 10.48868965,
+        "max": 11.825132
+      },
+      "nonzero_effective_receipt_interval_seconds": {
+        "min": 8.643425,
+        "median": 10.009123,
+        "p95": 10.501079299999999,
+        "max": 11.424609
+      },
+      "adjacent_test_label_overlap_count": 291,
+      "test_price_baseline_states": {
+        "missing_previous_grid": 0,
+        "down": 22,
+        "zero_previous_return": 262,
+        "up": 17
+      },
+      "models": {
+        "baseline": {
+          "metrics": {
+            "train": {
+              "n": 641,
+              "accuracy": 0.5787831513260531,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  270
+                ],
+                [
+                  0,
+                  371
+                ]
+              ]
+            },
+            "validation": {
+              "n": 334,
+              "accuracy": 0.7215568862275449,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  93
+                ],
+                [
+                  0,
+                  241
+                ]
+              ]
+            },
+            "test": {
+              "n": 301,
+              "accuracy": 0.5514950166112956,
+              "balanced_accuracy": 0.5,
+              "roc_auc": 0.5,
+              "confusion_matrix": [
+                [
+                  0,
+                  135
+                ],
+                [
+                  0,
+                  166
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                20,
+                13,
+                29,
+                11,
+                27,
+                27,
+                22,
+                0,
+                17,
+                11,
+                12,
+                0,
+                27,
+                16,
+                30,
+                16,
+                23
+              ],
+              "blocks_with_both_classes": 8,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.33192649572649574,
+                  0.7843244109632954
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                21,
+                21,
+                24,
+                16,
+                25,
+                24,
+                12,
+                10,
+                18,
+                0,
+                12,
+                12,
+                18,
+                28,
+                21,
+                25,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.31509691750082375,
+                  0.7520661157024794
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                33,
+                40,
+                54,
+                22,
+                28,
+                12,
+                43,
+                46,
+                23
+              ],
+              "blocks_with_both_classes": 7,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.35560076603959584,
+                  0.7500413907284768
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                20,
+                42,
+                38,
+                49,
+                17,
+                23,
+                27,
+                46,
+                39
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.2777777777777778,
+                  0.7719064832089552
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                73,
+                76,
+                40,
+                89,
+                23
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.38537331142752834,
+                  0.6358974358974359
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                33,
+                94,
+                50,
+                55,
+                69
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3088235294117647,
+                  0.6987951807228916
+                ],
+                "balanced_accuracy": [
+                  0.5,
+                  0.5
+                ],
+                "roc_auc": [
+                  0.5,
+                  0.5
+                ],
+                "accuracy_gain": [
+                  0.0,
+                  0.0
+                ],
+                "balanced_accuracy_gain": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "price_change": {
+          "metrics": {
+            "train": {
+              "n": 641,
+              "accuracy": 0.6037441497659907,
+              "balanced_accuracy": 0.5311420585005491,
+              "roc_auc": 0.5533642807227713,
+              "confusion_matrix": [
+                [
+                  19,
+                  251
+                ],
+                [
+                  3,
+                  368
+                ]
+              ]
+            },
+            "validation": {
+              "n": 334,
+              "accuracy": 0.7455089820359282,
+              "balanced_accuracy": 0.546312407977513,
+              "roc_auc": 0.5736179895596307,
+              "confusion_matrix": [
+                [
+                  9,
+                  84
+                ],
+                [
+                  1,
+                  240
+                ]
+              ]
+            },
+            "test": {
+              "n": 301,
+              "accuracy": 0.584717607973422,
+              "balanced_accuracy": 0.5411869701026327,
+              "roc_auc": 0.555198572066042,
+              "confusion_matrix": [
+                [
+                  16,
+                  119
+                ],
+                [
+                  6,
+                  160
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                20,
+                13,
+                29,
+                11,
+                27,
+                27,
+                22,
+                0,
+                17,
+                11,
+                12,
+                0,
+                27,
+                16,
+                30,
+                16,
+                23
+              ],
+              "blocks_with_both_classes": 8,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.39317601471900093,
+                  0.7785634147327565
+                ],
+                "balanced_accuracy": [
+                  0.5123085854643231,
+                  0.5669983051138558
+                ],
+                "roc_auc": [
+                  0.494985037551188,
+                  0.5983481190342128
+                ],
+                "accuracy_gain": [
+                  -0.009964650432050274,
+                  0.07869972874159688
+                ],
+                "balanced_accuracy_gain": [
+                  0.012308585464323164,
+                  0.06699830511385584
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                21,
+                21,
+                24,
+                16,
+                25,
+                24,
+                12,
+                10,
+                18,
+                0,
+                12,
+                12,
+                18,
+                28,
+                21,
+                25,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3833260233918129,
+                  0.7549214572192513
+                ],
+                "balanced_accuracy": [
+                  0.5059681105053725,
+                  0.5769755514930619
+                ],
+                "roc_auc": [
+                  0.4968011450309416,
+                  0.5978478283399283
+                ],
+                "accuracy_gain": [
+                  -0.010610414320661671,
+                  0.08551207859068204
+                ],
+                "balanced_accuracy_gain": [
+                  0.005968110505372506,
+                  0.0769755514930619
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                33,
+                40,
+                54,
+                22,
+                28,
+                12,
+                43,
+                46,
+                23
+              ],
+              "blocks_with_both_classes": 7,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.42645521136211134,
+                  0.7412630982724441
+                ],
+                "balanced_accuracy": [
+                  0.5084781689962096,
+                  0.5646363952179113
+                ],
+                "roc_auc": [
+                  0.4885273063927452,
+                  0.5934206402400561
+                ],
+                "accuracy_gain": [
+                  -0.013751280081925242,
+                  0.0787771118721461
+                ],
+                "balanced_accuracy_gain": [
+                  0.00847816899620952,
+                  0.06463639521791135
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                20,
+                42,
+                38,
+                49,
+                17,
+                23,
+                27,
+                46,
+                39
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.34809106098579784,
+                  0.7788509206798867
+                ],
+                "balanced_accuracy": [
+                  0.5104774010478966,
+                  0.5647358757949185
+                ],
+                "roc_auc": [
+                  0.5011838153524887,
+                  0.5988789671218633
+                ],
+                "accuracy_gain": [
+                  -0.002950290170951393,
+                  0.07917953187250995
+                ],
+                "balanced_accuracy_gain": [
+                  0.010477401047896661,
+                  0.06473587579491843
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                73,
+                76,
+                40,
+                89,
+                23
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.4265267308766053,
+                  0.6712962962962963
+                ],
+                "balanced_accuracy": [
+                  0.5156512654378022,
+                  0.5534617664943752
+                ],
+                "roc_auc": [
+                  0.5021624472573839,
+                  0.5842879827595985
+                ],
+                "accuracy_gain": [
+                  0.022935779816513763,
+                  0.040503423168876326
+                ],
+                "balanced_accuracy_gain": [
+                  0.01565126543780216,
+                  0.053461766494375146
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                33,
+                94,
+                50,
+                55,
+                69
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.3951612903225806,
+                  0.6987951807228916
+                ],
+                "balanced_accuracy": [
+                  0.5253448506763091,
+                  0.5694444444444444
+                ],
+                "roc_auc": [
+                  0.5197033614570779,
+                  0.5879770347855453
+                ],
+                "accuracy_gain": [
+                  -0.0026595744680851063,
+                  0.10294117647058823
+                ],
+                "balanced_accuracy_gain": [
+                  0.025344850676309094,
+                  0.06944444444444442
+                ]
+              }
+            }
+          }
+        },
+        "obi": {
+          "metrics": {
+            "train": {
+              "n": 641,
+              "accuracy": 0.7722308892355694,
+              "balanced_accuracy": 0.7543326345213137,
+              "roc_auc": 0.8266147549166417,
+              "confusion_matrix": [
+                [
+                  173,
+                  97
+                ],
+                [
+                  49,
+                  322
+                ]
+              ]
+            },
+            "validation": {
+              "n": 334,
+              "accuracy": 0.874251497005988,
+              "balanced_accuracy": 0.860036585909963,
+              "roc_auc": 0.9337438093963325,
+              "confusion_matrix": [
+                [
+                  77,
+                  16
+                ],
+                [
+                  26,
+                  215
+                ]
+              ]
+            },
+            "test": {
+              "n": 301,
+              "accuracy": 0.6976744186046512,
+              "balanced_accuracy": 0.6954707719767961,
+              "roc_auc": 0.7392681838464971,
+              "confusion_matrix": [
+                [
+                  91,
+                  44
+                ],
+                [
+                  47,
+                  119
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                20,
+                13,
+                29,
+                11,
+                27,
+                27,
+                22,
+                0,
+                17,
+                11,
+                12,
+                0,
+                27,
+                16,
+                30,
+                16,
+                23
+              ],
+              "blocks_with_both_classes": 8,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5493053611422172,
+                  0.8523073725055432
+                ],
+                "balanced_accuracy": [
+                  0.5421478184256141,
+                  0.8460445432144021
+                ],
+                "roc_auc": [
+                  0.5448549750902693,
+                  0.9058463500558135
+                ],
+                "accuracy_gain": [
+                  -0.09391799221225546,
+                  0.4178775817555938
+                ],
+                "balanced_accuracy_gain": [
+                  0.0421478184256141,
+                  0.3460445432144021
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                21,
+                21,
+                24,
+                16,
+                25,
+                24,
+                12,
+                10,
+                18,
+                0,
+                12,
+                12,
+                18,
+                28,
+                21,
+                25,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5952331759149941,
+                  0.8059335443037975
+                ],
+                "balanced_accuracy": [
+                  0.5907005267628482,
+                  0.8059442651640124
+                ],
+                "roc_auc": [
+                  0.5909544455841916,
+                  0.8752842222247024
+                ],
+                "accuracy_gain": [
+                  -0.05248087431693989,
+                  0.40328572353931846
+                ],
+                "balanced_accuracy_gain": [
+                  0.09070052676284827,
+                  0.3059442651640124
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                33,
+                40,
+                54,
+                22,
+                28,
+                12,
+                43,
+                46,
+                23
+              ],
+              "blocks_with_both_classes": 7,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5815110410094637,
+                  0.8416484505593416
+                ],
+                "balanced_accuracy": [
+                  0.5578634779422738,
+                  0.8483196677885814
+                ],
+                "roc_auc": [
+                  0.5857615926726114,
+                  0.9233151776664588
+                ],
+                "accuracy_gain": [
+                  -0.1362487100103199,
+                  0.45525159744408933
+                ],
+                "balanced_accuracy_gain": [
+                  0.0578634779422738,
+                  0.34831966778858137
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                20,
+                42,
+                38,
+                49,
+                17,
+                23,
+                27,
+                46,
+                39
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5383606557377049,
+                  0.8617886178861789
+                ],
+                "balanced_accuracy": [
+                  0.5210259103641456,
+                  0.855004536422265
+                ],
+                "roc_auc": [
+                  0.5010020571614938,
+                  0.9195118018629362
+                ],
+                "accuracy_gain": [
+                  -0.07849157159572911,
+                  0.47156712118302285
+                ],
+                "balanced_accuracy_gain": [
+                  0.021025910364145587,
+                  0.35500453642226504
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                73,
+                76,
+                40,
+                89,
+                23
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.628140703517588,
+                  0.7351351351351352
+                ],
+                "balanced_accuracy": [
+                  0.6238583113161665,
+                  0.7545182163006406
+                ],
+                "roc_auc": [
+                  0.6518490566037736,
+                  0.7946385013644653
+                ],
+                "accuracy_gain": [
+                  0.09254258614014711,
+                  0.25862068965517243
+                ],
+                "balanced_accuracy_gain": [
+                  0.12385831131616648,
+                  0.25451821630064064
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                33,
+                94,
+                50,
+                55,
+                69
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.584958217270195,
+                  0.8911290322580645
+                ],
+                "balanced_accuracy": [
+                  0.5637947145239409,
+                  0.9210526315789473
+                ],
+                "roc_auc": [
+                  0.5607185797511989,
+                  0.9974937343358395
+                ],
+                "accuracy_gain": [
+                  -0.10638297872340426,
+                  0.5806451612903226
+                ],
+                "balanced_accuracy_gain": [
+                  0.06379471452394088,
+                  0.42105263157894735
+                ]
+              }
+            }
+          }
+        },
+        "obi_spread_microprice": {
+          "metrics": {
+            "train": {
+              "n": 641,
+              "accuracy": 0.7722308892355694,
+              "balanced_accuracy": 0.7543326345213137,
+              "roc_auc": 0.8275731256863331,
+              "confusion_matrix": [
+                [
+                  173,
+                  97
+                ],
+                [
+                  49,
+                  322
+                ]
+              ]
+            },
+            "validation": {
+              "n": 334,
+              "accuracy": 0.874251497005988,
+              "balanced_accuracy": 0.860036585909963,
+              "roc_auc": 0.9337438093963325,
+              "confusion_matrix": [
+                [
+                  77,
+                  16
+                ],
+                [
+                  26,
+                  215
+                ]
+              ]
+            },
+            "test": {
+              "n": 301,
+              "accuracy": 0.6976744186046512,
+              "balanced_accuracy": 0.6954707719767961,
+              "roc_auc": 0.7364123159303883,
+              "confusion_matrix": [
+                [
+                  91,
+                  44
+                ],
+                [
+                  47,
+                  119
+                ]
+              ]
+            }
+          },
+          "bootstrap": {
+            "30s_offset0": {
+              "block_seconds": 30,
+              "offset_seconds": 0,
+              "blocks": 17,
+              "nonempty_blocks": 15,
+              "directional_observations_per_block": [
+                20,
+                13,
+                29,
+                11,
+                27,
+                27,
+                22,
+                0,
+                17,
+                11,
+                12,
+                0,
+                27,
+                16,
+                30,
+                16,
+                23
+              ],
+              "blocks_with_both_classes": 8,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5493053611422172,
+                  0.8523073725055432
+                ],
+                "balanced_accuracy": [
+                  0.5421478184256141,
+                  0.8460445432144021
+                ],
+                "roc_auc": [
+                  0.5416924109175133,
+                  0.9062756658172468
+                ],
+                "accuracy_gain": [
+                  -0.09391799221225546,
+                  0.4178775817555938
+                ],
+                "balanced_accuracy_gain": [
+                  0.0421478184256141,
+                  0.3460445432144021
+                ]
+              }
+            },
+            "30s_offset15": {
+              "block_seconds": 30,
+              "offset_seconds": 15,
+              "blocks": 18,
+              "nonempty_blocks": 17,
+              "directional_observations_per_block": [
+                6,
+                21,
+                21,
+                24,
+                16,
+                25,
+                24,
+                12,
+                10,
+                18,
+                0,
+                12,
+                12,
+                18,
+                28,
+                21,
+                25,
+                8
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5952331759149941,
+                  0.8059335443037975
+                ],
+                "balanced_accuracy": [
+                  0.5907005267628482,
+                  0.8059442651640124
+                ],
+                "roc_auc": [
+                  0.5890396012538399,
+                  0.8705153842051939
+                ],
+                "accuracy_gain": [
+                  -0.05248087431693989,
+                  0.40328572353931846
+                ],
+                "balanced_accuracy_gain": [
+                  0.09070052676284827,
+                  0.3059442651640124
+                ]
+              }
+            },
+            "60s_offset0": {
+              "block_seconds": 60,
+              "offset_seconds": 0,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                33,
+                40,
+                54,
+                22,
+                28,
+                12,
+                43,
+                46,
+                23
+              ],
+              "blocks_with_both_classes": 7,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5815110410094637,
+                  0.8416484505593416
+                ],
+                "balanced_accuracy": [
+                  0.5578634779422738,
+                  0.8483196677885814
+                ],
+                "roc_auc": [
+                  0.580241897560235,
+                  0.9216877270201134
+                ],
+                "accuracy_gain": [
+                  -0.1362487100103199,
+                  0.45525159744408933
+                ],
+                "balanced_accuracy_gain": [
+                  0.0578634779422738,
+                  0.34831966778858137
+                ]
+              }
+            },
+            "60s_offset30": {
+              "block_seconds": 60,
+              "offset_seconds": 30,
+              "blocks": 9,
+              "nonempty_blocks": 9,
+              "directional_observations_per_block": [
+                20,
+                42,
+                38,
+                49,
+                17,
+                23,
+                27,
+                46,
+                39
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.5383606557377049,
+                  0.8617886178861789
+                ],
+                "balanced_accuracy": [
+                  0.5210259103641456,
+                  0.855004536422265
+                ],
+                "roc_auc": [
+                  0.5001609917142193,
+                  0.9128341123405964
+                ],
+                "accuracy_gain": [
+                  -0.07849157159572911,
+                  0.47156712118302285
+                ],
+                "balanced_accuracy_gain": [
+                  0.021025910364145587,
+                  0.35500453642226504
+                ]
+              }
+            },
+            "120s_offset0": {
+              "block_seconds": 120,
+              "offset_seconds": 0,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                73,
+                76,
+                40,
+                89,
+                23
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.628140703517588,
+                  0.7351351351351352
+                ],
+                "balanced_accuracy": [
+                  0.6238583113161665,
+                  0.7545182163006406
+                ],
+                "roc_auc": [
+                  0.6518490566037737,
+                  0.7911544433875596
+                ],
+                "accuracy_gain": [
+                  0.09254258614014711,
+                  0.25862068965517243
+                ],
+                "balanced_accuracy_gain": [
+                  0.12385831131616648,
+                  0.25451821630064064
+                ]
+              }
+            },
+            "120s_offset60": {
+              "block_seconds": 120,
+              "offset_seconds": 60,
+              "blocks": 5,
+              "nonempty_blocks": 5,
+              "directional_observations_per_block": [
+                33,
+                94,
+                50,
+                55,
+                69
+              ],
+              "blocks_with_both_classes": 5,
+              "valid_repeats": {
+                "accuracy": 1000,
+                "balanced_accuracy": 1000,
+                "roc_auc": 1000,
+                "accuracy_gain": 1000,
+                "balanced_accuracy_gain": 1000
+              },
+              "ci95": {
+                "accuracy": [
+                  0.584958217270195,
+                  0.8911290322580645
+                ],
+                "balanced_accuracy": [
+                  0.5637947145239409,
+                  0.9210526315789473
+                ],
+                "roc_auc": [
+                  0.5500870496852819,
+                  0.9974937343358395
+                ],
+                "accuracy_gain": [
+                  -0.10638297872340426,
+                  0.5806451612903226
+                ],
+                "balanced_accuracy_gain": [
+                  0.06379471452394088,
+                  0.42105263157894735
+                ]
+              }
+            }
+          }
+        }
+      },
+      "model_parameters": {
+        "obi": {
+          "scaler_mean": [
+            0.2738111356832525
+          ],
+          "scaler_scale": [
+            0.6737990233694887
+          ],
+          "training_samples": 641,
+          "coefficients": [
+            [
+              1.459795372779562
+            ]
+          ],
+          "intercept": [
+            0.3355141724744754
+          ]
+        },
+        "obi_spread_microprice": {
+          "scaler_mean": [
+            0.273811135683252,
+            0.12210719635449123,
+            0.01713261815992719
+          ],
+          "scaler_scale": [
+            0.6737990233694885,
+            0.05084212104303297,
+            0.0457206802225359
+          ],
+          "training_samples": 641,
+          "coefficients": [
+            [
+              0.7276828933065992,
+              -0.07891389076431934,
+              0.8400608071109045
+            ]
+          ],
+          "intercept": [
+            0.346365584984597
+          ]
+        }
+      },
+      "obi_vs_price_baseline": {
+        "30": {
+          "block_seconds": 30,
+          "offset_seconds": 0,
+          "blocks": 17,
+          "nonempty_blocks": 15,
+          "directional_observations_per_block": [
+            20,
+            13,
+            29,
+            11,
+            27,
+            27,
+            22,
+            0,
+            17,
+            11,
+            12,
+            0,
+            27,
+            16,
+            30,
+            16,
+            23
+          ],
+          "blocks_with_both_classes": 8,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.5493053611422172,
+              0.8523073725055432
+            ],
+            "balanced_accuracy": [
+              0.5421478184256141,
+              0.8460445432144021
+            ],
+            "roc_auc": [
+              0.5448549750902693,
+              0.9058463500558135
+            ],
+            "accuracy_gain": [
+              -0.08830841728956776,
+              0.3448933372296902
+            ],
+            "balanced_accuracy_gain": [
+              0.013280374649859898,
+              0.29000565932032385
+            ]
+          }
+        },
+        "60": {
+          "block_seconds": 60,
+          "offset_seconds": 0,
+          "blocks": 9,
+          "nonempty_blocks": 9,
+          "directional_observations_per_block": [
+            33,
+            40,
+            54,
+            22,
+            28,
+            12,
+            43,
+            46,
+            23
+          ],
+          "blocks_with_both_classes": 7,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.5815110410094637,
+              0.8416484505593416
+            ],
+            "balanced_accuracy": [
+              0.5578634779422738,
+              0.8483196677885814
+            ],
+            "roc_auc": [
+              0.5857615926726114,
+              0.9233151776664588
+            ],
+            "accuracy_gain": [
+              -0.128141801259239,
+              0.38259602817310484
+            ],
+            "balanced_accuracy_gain": [
+              0.0416768259751083,
+              0.2932185719373219
+            ]
+          }
+        },
+        "120": {
+          "block_seconds": 120,
+          "offset_seconds": 0,
+          "blocks": 5,
+          "nonempty_blocks": 5,
+          "directional_observations_per_block": [
+            73,
+            76,
+            40,
+            89,
+            23
+          ],
+          "blocks_with_both_classes": 5,
+          "valid_repeats": {
+            "accuracy": 1000,
+            "balanced_accuracy": 1000,
+            "roc_auc": 1000,
+            "accuracy_gain": 1000,
+            "balanced_accuracy_gain": 1000
+          },
+          "ci95": {
+            "accuracy": [
+              0.628140703517588,
+              0.7351351351351352
+            ],
+            "balanced_accuracy": [
+              0.6238583113161665,
+              0.7545182163006406
+            ],
+            "roc_auc": [
+              0.6518490566037736,
+              0.7946385013644653
+            ],
+            "accuracy_gain": [
+              0.059233449477351915,
+              0.22818791946308725
+            ],
+            "balanced_accuracy_gain": [
+              0.1082546104321257,
+              0.20339145124788827
+            ]
+          }
+        }
+      },
+      "frozen_pilot_predictions_verified": true
+    }
+  },
+  "code_sha256": {
+    "research/audit.py": "7edc16ae8d428b163a8957c8a13c73df1cae5cd3703c237fce54ab04d694a1be",
+    "src/obi_research/features.py": "4285b6d1d0aec3ea304fc509269d3ce7221411dc28e137ffee658262261519ca",
+    "src/obi_research/statistics.py": "c56f1ad7c757aef2a07a1a4a86134176597bd4d85387e4ad5cb434379330b05d"
+  }
+}

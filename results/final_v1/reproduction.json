@@ -1,0 +1,15 @@
+{
+  "consumed_primary_replay_byte_identical": true,
+  "unchanged_recorded_json_png_artifacts": 13,
+  "reproduced": [
+    "primary",
+    "exploration",
+    "delay_summary",
+    "summary_tables",
+    "7 PNGs"
+  ],
+  "prior_artifacts_preserved": 69,
+  "fit_disabled": true,
+  "primary_sha256": "f7d5787259f309626834b666eb966af9523a354bbf966ddf85c9cb96197bc2b7",
+  "protocol_sha256": "332f92af1d6274e3010a4858e6fd73fef100a59b90ca650d7899c1d50e49950e"
+}

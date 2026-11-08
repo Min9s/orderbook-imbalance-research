@@ -1,0 +1,17 @@
+{
+  "source": "hyperliquid",
+  "coin": "BTC",
+  "date": "2026-10-07",
+  "hour": "05",
+  "session_rule": "longest receipt-duration session in first stored hour; earliest session had only 44 seconds",
+  "sample_seconds": 1,
+  "maximum_receipt_age_seconds": 2,
+  "maximum_exchange_receipt_lag_seconds": 2,
+  "horizons_seconds": [1, 5, 10],
+  "split_fractions": [0.6, 0.2, 0.2],
+  "logistic_C": 1.0,
+  "threshold": 0.5,
+  "bootstrap_block_seconds": [30, 60],
+  "bootstrap_repeats": 1000,
+  "seed": 20261108
+}

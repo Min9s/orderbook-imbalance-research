@@ -1,0 +1,11 @@
+{
+  "raw_delay_quantiles_seconds": [
+    0.186293,
+    0.341711,
+    0.8716431999999981,
+    7.062499
+  ],
+  "raw_rows": 77143,
+  "raw_lag_over1s": 3403,
+  "raw_lag_over2s": 1841
+}

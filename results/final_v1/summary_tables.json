@@ -1,0 +1,191 @@
+{
+  "large_session_count": 11,
+  "conditional_large_session_metrics": {
+    "1": {
+      "baseline": {
+        "n": 12306,
+        "accuracy": 0.5067446773931416,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            0,
+            6070
+          ],
+          [
+            0,
+            6236
+          ]
+        ]
+      },
+      "price_change": {
+        "n": 12306,
+        "accuracy": 0.6396066959206891,
+        "balanced_accuracy": 0.6355229453679703,
+        "confusion_matrix": [
+          [
+            2020,
+            4050
+          ],
+          [
+            385,
+            5851
+          ]
+        ]
+      },
+      "obi": {
+        "n": 12306,
+        "accuracy": 0.8868844466114091,
+        "balanced_accuracy": 0.8870458558637575,
+        "confusion_matrix": [
+          [
+            5457,
+            613
+          ],
+          [
+            779,
+            5457
+          ]
+        ]
+      },
+      "obi_spread_microprice": {
+        "n": 12306,
+        "accuracy": 0.8868844466114091,
+        "balanced_accuracy": 0.8870612049078899,
+        "confusion_matrix": [
+          [
+            5464,
+            606
+          ],
+          [
+            786,
+            5450
+          ]
+        ]
+      }
+    },
+    "5": {
+      "baseline": {
+        "n": 31941,
+        "accuracy": 0.4973544973544973,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            0,
+            16055
+          ],
+          [
+            0,
+            15886
+          ]
+        ]
+      },
+      "price_change": {
+        "n": 31941,
+        "accuracy": 0.5633511787357941,
+        "balanced_accuracy": 0.5652954935494344,
+        "confusion_matrix": [
+          [
+            3176,
+            12879
+          ],
+          [
+            1068,
+            14818
+          ]
+        ]
+      },
+      "obi": {
+        "n": 31941,
+        "accuracy": 0.7615603769449923,
+        "balanced_accuracy": 0.7614907531954651,
+        "confusion_matrix": [
+          [
+            12437,
+            3618
+          ],
+          [
+            3998,
+            11888
+          ]
+        ]
+      },
+      "obi_spread_microprice": {
+        "n": 31941,
+        "accuracy": 0.761309915156069,
+        "balanced_accuracy": 0.7612382965471087,
+        "confusion_matrix": [
+          [
+            12439,
+            3616
+          ],
+          [
+            4008,
+            11878
+          ]
+        ]
+      }
+    },
+    "10": {
+      "baseline": {
+        "n": 42794,
+        "accuracy": 0.49277936159274666,
+        "balanced_accuracy": 0.5,
+        "confusion_matrix": [
+          [
+            0,
+            21706
+          ],
+          [
+            0,
+            21088
+          ]
+        ]
+      },
+      "price_change": {
+        "n": 42794,
+        "accuracy": 0.5379959807449642,
+        "balanced_accuracy": 0.5435637123229216,
+        "confusion_matrix": [
+          [
+            3430,
+            18276
+          ],
+          [
+            1495,
+            19593
+          ]
+        ]
+      },
+      "obi": {
+        "n": 42794,
+        "accuracy": 0.6980651493199981,
+        "balanced_accuracy": 0.697880994003602,
+        "confusion_matrix": [
+          [
+            15425,
+            6281
+          ],
+          [
+            6640,
+            14448
+          ]
+        ]
+      },
+      "obi_spread_microprice": {
+        "n": 42794,
+        "accuracy": 0.698088517081834,
+        "balanced_accuracy": 0.6979020039248465,
+        "confusion_matrix": [
+          [
+            15429,
+            6277
+          ],
+          [
+            6643,
+            14445
+          ]
+        ]
+      }
+    }
+  }
+}

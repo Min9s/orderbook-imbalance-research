@@ -1,0 +1,18 @@
+{
+  "repeated_with_logistic_fit_disabled": true,
+  "total_artifact_hashes_preserved": 17,
+  "regenerated_byte_identical": [
+    "first_external.json",
+    "chronological_robustness.json",
+    "session_model_metrics.csv",
+    "date_model_metrics.csv",
+    "quantile_return.png",
+    "quantile_probability.png",
+    "horizon_performance.png",
+    "session_performance.png",
+    "daily_obi_distribution.png"
+  ],
+  "models_sha256": "a113817a95b9eee78df3f9a864b15e02217e2d2d4460fe0ecc7334087d5bdb20",
+  "protocol_sha256": "87d4f6eef8e458081363cf3f78bde430439b947e01ff64898b47410037c4e6e3",
+  "original_artifact_count_preserved": 19
+}

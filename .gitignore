@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/*
+!data/.gitkeep
+**/input_manifest.json
+
+**/clock_features.parquet
+results/reproduced/
+
+# Private market-derived row records and local execution evidence
+results/predictions_*.csv
+*.log
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+build/
+dist/

@@ -1,0 +1,29 @@
+{
+  "python": "3.11.6 (main, Nov  2 2023, 04:39:43) [Clang 14.0.3 (clang-1403.0.22.14.1)]",
+  "executable": ".venv/bin/python",
+  "packages": {
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1",
+    "pytest": "9.2.0"
+  },
+  "same_inventory": true,
+  "same_audit_session_horizon_values": true,
+  "byte_identical": {
+    "model_metrics.csv": true,
+    "predictions_1s.csv": true,
+    "predictions_5s.csv": true,
+    "predictions_10s.csv": true,
+    "quantiles.csv": true,
+    "obi_histogram.png": true,
+    "quantile_return.png": true,
+    "quantile_probability.png": true,
+    "horizon_performance.png": true
+  },
+  "runtime_import_trace": {
+    "original_project_imports": [],
+    "feature_module_path": "src/obi_research/features.py"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "version": "obi-external-v1",
+  "created_utc": "2026-11-08T04:30:26.106159+00:00",
+  "models_sha256": "a113817a95b9eee78df3f9a864b15e02217e2d2d4460fe0ecc7334087d5bdb20",
+  "inventory_sha256": "ecf50eab2d1b20faf39b6c818af2072bc9482c133e68359ead73060def920440",
+  "source_sha256": {
+    "src/obi_research/features.py": "4285b6d1d0aec3ea304fc509269d3ce7221411dc28e137ffee658262261519ca",
+    "src/obi_research/legacy_book.py": "a4276d7b9ba4a774b8b73a1211fd9046791346875d2c43ba253c442c042dfb3e",
+    "research/design.json": "2c85c036e26c677920ca66bb41e9fe91a41a56beca455a239a18f43b0f03559b",
+    "research/oos.py": "7cbbee84af89e0eb25b14b2e33284400db93f48cd6a22254dc6722d1505fb3b2"
+  },
+  "pilot_reproduction": {
+    "1": {
+      "original_test_predictions": true,
+      "train_rows": 101,
+      "test_rows": 56
+    },
+    "5": {
+      "original_test_predictions": true,
+      "train_rows": 391,
+      "test_rows": 187
+    },
+    "10": {
+      "original_test_predictions": true,
+      "train_rows": 641,
+      "test_rows": 301
+    }
+  },
+  "first_external_session": "95a74716c1c140eb8e896cb11f924151",
+  "reserved_final_session": "df37f36553464010ae9c34cd83d0eeac",
+  "primary": "First external session, 1s OBI balanced accuracy and paired BA gain over training-majority baseline",
+  "secondary": "5s/10s, combined logistic, price-change baseline, quantile means and up probability; all disclosed",
+  "data_units": "Receipt UTC day within session. Never join session paths. Drop labels crossing UTC date boundaries.",
+  "exclude": "Entire pilot session excluded from external robustness; latest session reserved; all other sessions reported including empty/one-class results",
+  "zero_returns": "Kept in statistical quantiles and class coverage; excluded from direction-model fit and scoring",
+  "timing": "1s receipt-clock as-of; max receipt age2s, exchange-to-receipt lag[0,2]s; valid entire label path",
+  "fit": "No new fit/preprocessing/threshold selection on external data; fitted parameter JSON only",
+  "baselines": "Frozen original-training up prior; sign of previous1s return, zero/missing -> that prior",
+  "uncertainty": "1000 paired nonoverlapping clock-block bootstrap replicates at30/60/120s, origin0 and half-block shift; stratify by session-date, retain empty time blocks; no date bootstrap",
+  "regimes": "Causal trailing60s RMS past1s return (60 valid increments); spread/lag/vol low-high cutoffs from original training only; no parameter fitting on new sessions",
+  "sensitivity": "Fixed additional diagnostics only: receipt TTL1s, exchange lag<=0.5s, decision every2s with exact1/5/10s endpoints. Primary remains unchanged.",
+  "interpretation": "Only2 archived UTC dates and one new date; no independent28-day claim. Block intervals are exploratory conditional-on-model/session-composition; no multiple-testing correction or profitability claim."
+}

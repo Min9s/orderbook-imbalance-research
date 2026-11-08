@@ -1,0 +1,28 @@
+{
+  "python": "3.11.6",
+  "environment": "fresh standalone .venv",
+  "implementation": "CPython",
+  "packages": {
+    "numpy": "2.4.6",
+    "pyarrow": "25.0.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "scipy": "1.17.1",
+    "pytest": "9.2.0"
+  },
+  "package_import": "src/obi_research/__init__.py",
+  "raw_data_present": false,
+  "event_predictions_present": false,
+  "tests_passed": 33,
+  "minimum_example": "passed",
+  "pip_check": "passed",
+  "numeric_evidence_unchanged": [
+    "results/final_v1/primary_holdout.json",
+    "results/final_v1/protocol.json",
+    "results/final_v1/consumption.json",
+    "results/final_v1/exploration.json",
+    "results/oos/frozen_models.json"
+  ],
+  "archive_fingerprint": "c8b2eb8d40537abf8a3703a8f8c1daa43a69082a76de0fd56d04f8fb71d4bf71",
+  "private_cached_prediction_audit": "12 final model/horizon metrics exactly matched; local rows not bundled; no refit"
+}

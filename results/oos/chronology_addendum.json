@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-11-08T04:38:01.077909+00:00",
+  "reason": "Pre-training44-second session cannot be called prospective/out-of-time validation",
+  "timing": "Identified after registered robustness outcomes; not a pre-registered exclusion",
+  "rule": "Only non-pilot, non-reserved sessions starting strictly after the entire original pilot session ended",
+  "cutoff_ns": 1791359051358403000,
+  "excluded_session_ids": [
+    "f1d0c0b3bd1f4c7b844074508477be4c"
+  ],
+  "original_robustness_sha256": "781e876b25c488317343328cc939b7a866279ba71d37c664c7505b5b75794683",
+  "frozen_model_sha256": "a113817a95b9eee78df3f9a864b15e02217e2d2d4460fe0ecc7334087d5bdb20",
+  "source_sha256": "c6d82592616ceecb6235748bc6e5e06d53378d9f67af7fa18c9b42be00aff929",
+  "unchanged": "Feature/filter/model/threshold/metrics and first external validation remain unchanged; original all-role result preserved"
+}

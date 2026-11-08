@@ -1,0 +1,285 @@
+{
+  "file_count": 3173,
+  "sessions": [
+    {
+      "session_id": "f1d0c0b3bd1f4c7b844074508477be4c",
+      "rows": 325,
+      "first_ns": 1791350096346948000,
+      "last_ns": 1791350140684687000,
+      "files": 9,
+      "lag_min_ns": 202191000,
+      "lag_max_ns": 500982000,
+      "duration_seconds": 44.337739
+    },
+    {
+      "session_id": "e29a1088ea904b0f83335013adb7c384",
+      "rows": 55310,
+      "first_ns": 1791350237181025000,
+      "last_ns": 1791359051358403000,
+      "files": 296,
+      "lag_min_ns": 134502000,
+      "lag_max_ns": 1629428000,
+      "duration_seconds": 8814.177378
+    },
+    {
+      "session_id": "61ad52b42c094b1dafbc9fc5c1e29102",
+      "rows": 711,
+      "first_ns": 1791359161791937000,
+      "last_ns": 1791359243757069000,
+      "files": 2,
+      "lag_min_ns": 150850000,
+      "lag_max_ns": 53585668000,
+      "duration_seconds": 81.965132
+    },
+    {
+      "session_id": "a0460445c46d4fa0885ef42cfc842006",
+      "rows": 122,
+      "first_ns": 1791359281232045000,
+      "last_ns": 1791359299259039000,
+      "files": 1,
+      "lag_min_ns": 145372000,
+      "lag_max_ns": 727020000,
+      "duration_seconds": 18.026994
+    },
+    {
+      "session_id": "e092d868777d4b77bbb9aaa9838bce63",
+      "rows": 63,
+      "first_ns": 1791359392280443000,
+      "last_ns": 1791359399065756000,
+      "files": 1,
+      "lag_min_ns": 150587000,
+      "lag_max_ns": 534392000,
+      "duration_seconds": 6.785313
+    },
+    {
+      "session_id": "6d21d8afdf8b4d5290ba079778895b88",
+      "rows": 1254,
+      "first_ns": 1791361136176787000,
+      "last_ns": 1791361279083367000,
+      "files": 5,
+      "lag_min_ns": 127606000,
+      "lag_max_ns": 493978000,
+      "duration_seconds": 142.90658
+    },
+    {
+      "session_id": "bf0a38528fe54bd9953042336d082753",
+      "rows": 80587,
+      "first_ns": 1791361357252054000,
+      "last_ns": 1791372173983432000,
+      "files": 363,
+      "lag_min_ns": 105000000,
+      "lag_max_ns": 2889223000,
+      "duration_seconds": 10816.731378
+    },
+    {
+      "session_id": "e25bf6d83b7045eb84fba4f1876b8e89",
+      "rows": 90157,
+      "first_ns": 1791372176824937000,
+      "last_ns": 1791382797131379000,
+      "files": 356,
+      "lag_min_ns": 81668000,
+      "lag_max_ns": 1768089000,
+      "duration_seconds": 10620.306442
+    },
+    {
+      "session_id": "1f8bc06730564ab0ab8ae4e5ba6daa51",
+      "rows": 88121,
+      "first_ns": 1791382799721195000,
+      "last_ns": 1791393676555003000,
+      "files": 365,
+      "lag_min_ns": 42222000,
+      "lag_max_ns": 2443016000,
+      "duration_seconds": 10876.833808
+    },
+    {
+      "session_id": "fa8185efa43e4b6daae26552be8930c0",
+      "rows": 66386,
+      "first_ns": 1791393680064938000,
+      "last_ns": 1791404070432279000,
+      "files": 348,
+      "lag_min_ns": -1898328000,
+      "lag_max_ns": 1197910000,
+      "duration_seconds": 10390.367341
+    },
+    {
+      "session_id": "8d46cf66bef94c26bdd9a6b666e00394",
+      "rows": 48403,
+      "first_ns": 1791404073642417000,
+      "last_ns": 1791414301917702000,
+      "files": 344,
+      "lag_min_ns": -1840435000,
+      "lag_max_ns": 1652104000,
+      "duration_seconds": 10228.275285
+    },
+    {
+      "session_id": "00a32f7bcd4e421a8540d5cbd0fdabe7",
+      "rows": 60896,
+      "first_ns": 1791414304857899000,
+      "last_ns": 1791424571556643000,
+      "files": 344,
+      "lag_min_ns": 51214000,
+      "lag_max_ns": 1834549000,
+      "duration_seconds": 10266.698744
+    },
+    {
+      "session_id": "95a74716c1c140eb8e896cb11f924151",
+      "rows": 16945,
+      "first_ns": 1791424574396905000,
+      "last_ns": 1791427190017688000,
+      "files": 89,
+      "lag_min_ns": 162014000,
+      "lag_max_ns": 1692953000,
+      "duration_seconds": 2615.620783
+    },
+    {
+      "session_id": "f84a23a19e4640afaea55db02b298d96",
+      "rows": 23789,
+      "first_ns": 1791428976948737000,
+      "last_ns": 1791432106838107000,
+      "files": 106,
+      "lag_min_ns": 107803000,
+      "lag_max_ns": 2868336000,
+      "duration_seconds": 3129.88937
+    },
+    {
+      "session_id": "f6411dec62e64c7bbafad54f92756460",
+      "rows": 9633,
+      "first_ns": 1791433909114820000,
+      "last_ns": 1791434920593951000,
+      "files": 34,
+      "lag_min_ns": 127460000,
+      "lag_max_ns": 926521000,
+      "duration_seconds": 1011.479131
+    },
+    {
+      "session_id": "c666f085288a4b6d97852a41605383c5",
+      "rows": 47,
+      "first_ns": 1791435914365398000,
+      "last_ns": 1791435919105922000,
+      "files": 1,
+      "lag_min_ns": 244136000,
+      "lag_max_ns": 636605000,
+      "duration_seconds": 4.740524
+    },
+    {
+      "session_id": "3f2232407e7e4c629486bd1f1142d562",
+      "rows": 15,
+      "first_ns": 1791439827086373000,
+      "last_ns": 1791439827917736000,
+      "files": 1,
+      "lag_min_ns": 271736000,
+      "lag_max_ns": 739373000,
+      "duration_seconds": 0.831363
+    },
+    {
+      "session_id": "30c11f8b470f4025ab29efa373c45090",
+      "rows": 15062,
+      "first_ns": 1791440483332820000,
+      "last_ns": 1791442598956689000,
+      "files": 71,
+      "lag_min_ns": 159880000,
+      "lag_max_ns": 832800000,
+      "duration_seconds": 2115.623869
+    },
+    {
+      "session_id": "d71a6296b750428c928b1db3ff980339",
+      "rows": 31,
+      "first_ns": 1791442750877230000,
+      "last_ns": 1791442756798094000,
+      "files": 1,
+      "lag_min_ns": 250753000,
+      "lag_max_ns": 464625000,
+      "duration_seconds": 5.920864
+    },
+    {
+      "session_id": "132178fdc51c4501b24acea81871fa5a",
+      "rows": 36,
+      "first_ns": 1791447662963447000,
+      "last_ns": 1791447666855930000,
+      "files": 1,
+      "lag_min_ns": 117585000,
+      "lag_max_ns": 315674000,
+      "duration_seconds": 3.892483
+    },
+    {
+      "session_id": "d5e4f076679b46be98947996d5397589",
+      "rows": 40931,
+      "first_ns": 1791453612704734000,
+      "last_ns": 1791458983471473000,
+      "files": 180,
+      "lag_min_ns": -97977000,
+      "lag_max_ns": 3646637000,
+      "duration_seconds": 5370.766739
+    },
+    {
+      "session_id": "aba1fc356d75465088617f88c5016c89",
+      "rows": 271,
+      "first_ns": 1791459144054468000,
+      "last_ns": 1791459174661077000,
+      "files": 2,
+      "lag_min_ns": -72633000,
+      "lag_max_ns": 575905000,
+      "duration_seconds": 30.606609
+    },
+    {
+      "session_id": "bf87b53c4aab4739aae7c6a2db1a5860",
+      "rows": 1358,
+      "first_ns": 1791459236163768000,
+      "last_ns": 1791459397919870000,
+      "files": 2,
+      "lag_min_ns": -92883000,
+      "lag_max_ns": 112348174000,
+      "duration_seconds": 161.756102
+    },
+    {
+      "session_id": "1b1961b8bc54492a962972f0d38adc35",
+      "rows": 274,
+      "first_ns": 1791468492584853000,
+      "last_ns": 1791468520141314000,
+      "files": 1,
+      "lag_min_ns": 191789000,
+      "lag_max_ns": 803744000,
+      "duration_seconds": 27.556461
+    },
+    {
+      "session_id": "de574dbd54dc4bc9bed8d45e02779b19",
+      "rows": 3506,
+      "first_ns": 1791469642488327000,
+      "last_ns": 1791470006079910000,
+      "files": 5,
+      "lag_min_ns": 185082000,
+      "lag_max_ns": 222854827000,
+      "duration_seconds": 363.591583
+    },
+    {
+      "session_id": "f2e394cfb3cc4baba411ada736c6e338",
+      "rows": 373,
+      "first_ns": 1791470988943382000,
+      "last_ns": 1791471031951977000,
+      "files": 2,
+      "lag_min_ns": 214159000,
+      "lag_max_ns": 905235000,
+      "duration_seconds": 43.008595
+    },
+    {
+      "session_id": "0f972725979643149fcacf1c203cedb4",
+      "rows": 275,
+      "first_ns": 1791472121824800000,
+      "last_ns": 1791472150019754000,
+      "files": 1,
+      "lag_min_ns": 204972000,
+      "lag_max_ns": 717414000,
+      "duration_seconds": 28.194954
+    },
+    {
+      "session_id": "df37f36553464010ae9c34cd83d0eeac",
+      "rows": 77143,
+      "first_ns": 1791472556594595000,
+      "last_ns": 1791479756455088000,
+      "files": 242,
+      "lag_min_ns": 186293000,
+      "lag_max_ns": 7062499000,
+      "duration_seconds": 7199.860493
+    }
+  ]
+}
