@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7608,
-      "sha256": "249587c3e4c9da2e8087f01ac0feddae40b0320995efe31fdac0229de47ae874"
+      "bytes": 5104,
+      "sha256": "467e10f97d1b742cbfa70875397ee9f290ac78dca6ccd0085d45b56c62311a48"
     },
     {
       "path": "assets/readme/final_holdout.png",
@@ -507,6 +507,16 @@
       "path": "assets/readme/research-coverage.svg",
       "bytes": 2358,
       "sha256": "d8f8bcd33f5d8aa6a4787589518b6e09d81ef9b579de18080d6e76a0e1600a88"
+    },
+    {
+      "path": "assets/readme/editorial.py",
+      "bytes": 3562,
+      "sha256": "0408958d67b54f699e44626fec129efce4bdd59b885d96bd39da56fd138fe8f5"
+    },
+    {
+      "path": "assets/readme/finding.png",
+      "bytes": 104085,
+      "sha256": "492c8b59f5bf5004d7aa6386e43e0c31fd8a178e0189446716d8b1a2debde3e3"
     }
   ]
 }
