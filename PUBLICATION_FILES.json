@@ -30,8 +30,23 @@
     },
     {
       "path": "README.md",
-      "bytes": 12039,
-      "sha256": "4a4b93b0c27a96486484f59c26bad47b4fcde62a409986582a93b33e76386c56"
+      "bytes": 5501,
+      "sha256": "80a54c923ba2f5bcc96ef594d3d158a9f058b2a7af901ee47cedc88c74afda42"
+    },
+    {
+      "path": "assets/readme/final_holdout.png",
+      "bytes": 58628,
+      "sha256": "a9939f9fe5d29f5eead7325453a0fd16150a82d592bd639996b1c501bb372423"
+    },
+    {
+      "path": "assets/readme/generate_figures.py",
+      "bytes": 3824,
+      "sha256": "1b27246d126b52963ce824725240812cba5f4d676f801a7e00068eabcaaba346"
+    },
+    {
+      "path": "assets/readme/outcome_coverage.png",
+      "bytes": 40479,
+      "sha256": "d97cc28aa8fa49bee4ecaa22075916ba699304acc85e364adc4b1900642fb483"
     },
     {
       "path": "examples/verify_public_results.py",
