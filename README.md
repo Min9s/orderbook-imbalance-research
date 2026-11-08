@@ -1,128 +1,44 @@
-# Order Book Imbalance
+# BTC 호가에서 찾은 단기 가격 정보
 
-**BTC Short-Horizon Price Prediction**
+Order Book Imbalance · Short-Horizon Price Prediction
 
-매수·매도 호가 수량의 차이가 1·5·10초 뒤 BTC 가격 방향을 예측하는 데 도움이 되는지 분석합니다.
+**호가 수량 차이로 1·5·10초 뒤 가격 방향을 예측하고, 이후 데이터에서 검증했습니다.**
 
-`Python 3.11+` · `scikit-learn` · `NumPy` · `PyArrow` · `Matplotlib`
+682,024건의 BBO · 28개 세션 · 2개 UTC 날짜
 
-**682,024건의 BBO · 28개 세션 · 2개 UTC 날짜**
+Python · scikit-learn · NumPy / PyArrow · Matplotlib
 
-[주요 결과](#주요-결과) · [분석 방법](#분석-방법) · [실행과 재현](#실행과-재현) · [코드 안내](#코드-안내)
+## 1초에서 가장 높고, 10초에서는 약해진 예측력
 
-```mermaid
-flowchart TB
-    subgraph data["데이터 준비"]
-        direction LR
-        A["BBO"] --> B["특징 생성"]
-    end
-    subgraph model["모델 검증"]
-        direction LR
-        C["Logistic 학습"] --> D["고정 모델 평가"]
-    end
-    data --> model
-```
+![최종 구간 OBI와 과거 가격 방향의 조건부 Balanced Accuracy. 세로축 0부터 1.](assets/readme/performance.png)
 
-OBI·Spread·Microprice를 계산하고, 학습한 모델을 고정해 이후 데이터를 평가했습니다. **예측 점수는 실제 거래 수익성을 의미하지 않습니다.**
+**OBI 0.764 → 0.625 → 0.577.** 각 구간의 기준 모델은 0.635 / 0.560 / 0.534입니다. 예측 점수의 차이는 실제 거래 수익의 차이가 아닙니다.
 
-## 주요 결과
+Balanced Accuracy는 상승·하락 재현율 평균이며 **미래 가격이 변한 표본만** 평가했습니다. 최종 구간은 2026-10-08 15:15–17:15 UTC이며, 모델을 다시 학습하지 않았습니다. 변화 표본은 1·5·10초에서 4,184 / 6,464 / 6,760개입니다.
 
-| 예측 구간 | OBI BA¹ | 과거 가격 방향 BA | 변화 발생 표본 |
-|---|---:|---:|---:|
-| 1초 | **0.764** | 0.635 | 4,184 |
-| 5초 | **0.625** | 0.560 | 6,464 |
-| 10초 | **0.577** | 0.534 | 6,760 |
+## 점수가 설명하지 못하는 것
 
-¹ 가격이 변한 경우만 평가한 Balanced Accuracy(상승·하락 재현율의 평균)입니다. 최종 검증은 2026-10-08의 약 2시간 구간이며, 앞선 평가보다 예측력이 약해졌습니다.
+![유효 라벨의 가격 변화·무변화 비중. 정확도가 아닌 표본 구성입니다.](assets/readme/coverage.png)
 
-<details>
-<summary>표본 수·신뢰구간·무변화 포함 평가</summary>
+막대 전체는 각 예측 구간의 **유효 라벨 100%**입니다. 정확도 그래프가 아닙니다. 1초에서는 7,034개 중 2,850개가 무변화입니다. 가격 변화가 발생한 4,184개에서의 방향 Accuracy는 0.767이지만, 무변화를 포함해 같은 모델에 상승·하락을 강제로 선택시키면 전체 일치율은 0.456입니다. 분모와 예측 과제가 다릅니다.
 
-최종 평가 구간은 **2026-10-08 15:15:56–17:15:56 UTC, BBO 77,143건**입니다.
-아래 Balanced Accuracy(BA)는 상승·하락 각각의 재현율 평균이며, **미래 가격이 변한 경우만** 평가한 값입니다.
+5·10초의 유효 라벨은 각각 7,010·6,980개입니다. 조건부 모델은 **언제 가격이 움직일지, 실제 거래가 수익일지**를 입증하지 않습니다.
 
-| 구간 | 유효 라벨 / 가격 변화 발생 | OBI BA [95% 구간] | 과거 가격 방향 BA |
-|---|---:|---|---:|
-| 1초 | 7,034 / 4,184 | 0.764 [0.746, 0.781] | 0.635 |
-| 5초 | 7,010 / 6,464 | 0.625 [0.609, 0.641] | 0.560 |
-| 10초 | 6,980 / 6,760 | 0.577 [0.563, 0.592] | 0.534 |
+[지표·혼동행렬 원본](results/final_v1/primary_holdout.json) · [전체 라벨 분석](results/final_v1/exploration.json)
 
-95% 구간은 60초 시간 블록을 재표본추출한 pointwise 구간입니다. 고정 모델과 관측 세션에 조건부이며, 새로운 거래일에 대한 일반화나 여러 비교를 보정한 유의성을 보장하지 않습니다.
+## 어떻게 검증했는가
 
-**가격 무변화를 포함하면 평가 대상이 달라집니다.** 다음은 BA가 아닌 단순 일치율(Accuracy)입니다. 전체 평가에서는 동일 모델이 매번 상승·하락을 선택하므로 무변화는 맞힐 수 없습니다.
+1. **미래 정보 차단:** 해당 시점까지 수신한 호가만 사용하고, 오래되거나 시각이 잘못된 관측을 제외했습니다. 미래 라벨은 세션·UTC 날짜 경계를 넘지 않습니다.
+2. **시간순 학습:** 초기 구간을 60/20/20으로 나누고 경계를 넘는 라벨을 제거했습니다. 스케일러와 분위수 경계는 학습 데이터로만 계산했습니다.
+3. **모델 고정:** Logistic Regression의 계수·전처리·0.5 임계값을 유지한 채 이후 세션과 최종 구간을 평가했습니다. 결과를 보고 재학습하지 않았습니다.
 
-| 구간 | 무변화 라벨 | 변화 발생 시 방향 Accuracy | 무변화 포함 전체 강제 방향 일치율 |
-|---|---:|---:|---:|
-| 1초 | 2,850 | 0.767 | 0.456 |
-| 5초 | 546 | 0.629 | 0.580 |
-| 10초 | 220 | 0.582 | 0.564 |
+OBI는 매수·매도 표시 수량의 상대적 차이입니다. Spread와 Microprice도 비교했지만 일관된 큰 개선은 없었습니다. 최종 구간은 앞선 다음 날 세션보다 점수가 낮았으며, 가격 평가 구간을 1초 늦춘 분석에서도 예측력이 약해졌습니다. 실제 주문 지연 측정은 아닙니다.
 
-- 앞선 다음 날 세션의 BA 0.909/0.800/0.726보다 최종 BA는 낮았습니다. 세션 길이·가격 변화 빈도도 달라 하락 원인을 하나로 단정하지 않습니다.
-- Spread·Microprice 추가는 일관된 큰 개선을 보이지 않았습니다. OBI 극단 구간의 차이는 관찰되지만 최종 10초 중간 구간의 평균 수익률은 단조롭지 않았습니다.
-- 특징은 원래 시점에 고정하고 가격 평가 구간만 1초 늦추면 BA는 0.605/0.558/0.535였습니다. 평가 대상·표본도 달라지며 **실제 주문 지연 측정이 아닙니다.**
-
-근거: [최종 지표·혼동행렬](results/final_v1/primary_holdout.json), [전체 라벨·지연 분석](results/final_v1/exploration.json), [전체 보고서·그림·추가 비교](research/final_v1/REPORT.md).
-
-</details>
-
-<details>
-<summary>기존 결과 그래프 보기</summary>
-
-![최종 평가: 조건부 방향 BA와 무변화 포함 전체 일치율](results/final_v1/horizon_performance.png)
-
-왼쪽은 가격 변화가 발생한 경우의 BA, 오른쪽은 무변화를 포함한 일치율입니다. 평가 대상과 분모가 다르며 거래 수익을 나타내지 않습니다.
-[원본 크기로 보기](results/final_v1/horizon_performance.png)
-
-</details>
-
-## 분석 방법
-
-**현재까지 수신한 호가 → OBI·Spread·Microprice → 시간순 학습 → 모델 고정 → 이후 구간 평가**
-
-초기 구간은 시간순 60/20/20으로 나누고, 경계에 걸친 미래 라벨을 제거했습니다. 스케일러와 분위수 경계는 학습 데이터에서만 계산하며, 이후 평가에서는 재학습하지 않습니다.
-
-<details>
-<summary>데이터·특징·학습 조건</summary>
-
-### 데이터와 특징
-
-원천 자료는 **Hyperliquid BTC perpetual BBO, 2026-10-07/08 UTC의 28개 세션·682,024건**입니다.
-28개 거래일이나 연속 관측 자료가 아니며, 날짜는 이틀뿐입니다.
-
-```mermaid
-flowchart TB
-    A["비공개 원천 BBO<br/>호가·시각 검증"] --> B["1초 간격 특징 생성<br/>1·5·10초 후 가격 변화 라벨"]
-    B --> C["초기 구간 시간순 60/20/20 분할<br/>Logistic 학습·검증·테스트"]
-    C --> D["모델·전처리·임계값 고정"]
-    D --> E["이후 세션·최종 구간 평가<br/>무변화 포함 결과와 한계 비교"]
-```
-
-| 변수 | 의미 |
-|---|---|
-| Order Book Imbalance (OBI) | `(bid_size − ask_size) / (bid_size + ask_size)`: 최우선 매수·매도 수량의 상대적 차이 |
-| Spread | `ask − bid`: 최우선 매수·매도 가격 간격 |
-| Microprice | `(ask × bid_size + bid × ask_size) / (bid_size + ask_size)`: 표시 수량을 반영한 가격 |
-
-예측 대상은 현재와 **1·5·10초 후 중간가격** `mid=(bid+ask)/2` 사이의 로그 수익률 방향입니다. 호가 이벤트 개수가 아닌 실제 초 단위를 사용합니다.
-Logistic Regression으로 OBI 단독 모델과 OBI+Spread+Microprice 모델을 비교합니다.
-학습 구간 상승 비율과 과거 1초 가격 방향을 기준 모델로 둡니다.
-Microprice offset은 `OBI × Spread / 2`이므로 독립적인 새 데이터가 아닙니다.
-
-### 미래 정보 사용 방지
-
-- 각 시점까지 **수신한 마지막 호가만** 사용합니다. 수신 후 2초 초과, 거래소–수신 시각 차이 범위 [0, 2]초 이탈, 유효하지 않은 호가는 제외하며 보간하지 않습니다.
-- 미래 가격까지 중간 경로가 유효해야 하며, 세션·UTC 날짜 경계를 넘는 라벨은 만들지 않습니다.
-- 초기 42분 구간을 경과 시간 기준 60/20/20으로 분리하고, 다음 구간에 걸치는 미래 라벨을 앞 구간에서 제거합니다(purging).
-- 스케일러·분위수 경계는 학습 데이터에서만 계산합니다. Logistic 설정은 `C=1`, `lbfgs`, `max_iter=2000`, 방향 임계값은 0.5입니다.
-- 이후 평가에서는 저장한 계수·전처리·임계값을 유지합니다. 최종 평가 전에 protocol과 소스·모델 해시를 기록했으며, 이미 평가한 holdout을 다시 미사용 데이터로 취급하지 않습니다.
-
-자세한 조건은 [평가 protocol](research/final_v1/PROTOCOL.md)과 [고정 모델](results/oos/frozen_models.json)에 있습니다.
-
-</details>
+[평가 protocol](research/final_v1/PROTOCOL.md) · [고정 모델](results/oos/frozen_models.json) · [전체 결과와 신뢰구간](research/final_v1/REPORT.md)
 
 ## 실행과 재현
 
-Python **3.11+**가 필요합니다. 다른 프로젝트나 API Key·원시 시장 데이터 없이 테스트와 공개 집계 검증을 실행할 수 있습니다.
+Python 3.11+. 원시 데이터나 API Key 없이 공개 계산·집계 검증을 실행할 수 있습니다.
 
 ```bash
 git clone https://github.com/Min9s/orderbook-imbalance-research.git
@@ -135,69 +51,18 @@ python examples/verify_public_results.py
 python -m pip check
 ```
 
-**공개 테스트 33개**는 합성 호가로 계산·시간 경계·미래 정보 차단을 검증하고, 공개 결과의 혼동행렬·분모·고정 모델·소스 해시를 확인합니다.
-집계 검증 예제는 12개 모델/예측 구간 조합을 확인합니다. 원시 데이터 실험을 재실행하거나 혼동행렬에서 ROC-AUC·시각 품질·신뢰구간을 재구성하는 검사는 아닙니다.
-권장 설치는 위 `pyproject.toml` 기반 명령입니다. `requirements-audit.txt`와 `requirements-reproduction.txt`는 서로 다른 과거 실험 환경 기록으로 보존합니다.
+**33개 공개 테스트**는 계산·시간 조건·집계 결과의 일관성을 검증합니다. 원시 데이터 실험이나 ROC-AUC·신뢰구간을 재구성하는 검사는 아닙니다. 같은 과거 실험의 전체 재실행에는 비공개 archive가 필요합니다. [데이터 접근 안내](research/final_v1/DATA_ACCESS.md)
 
-<details>
-<summary>공개 자료와 비공개 원본 데이터의 차이</summary>
+그림은 `python assets/readme/generate_figures.py`로 다시 생성합니다. Matplotlib과 지원 한국어 글꼴이 필요하며, 원본 JSON을 읽기만 합니다.
 
-| 공개 저장소에 포함 | 별도 비공개 입력이 필요한 것 |
-|---|---|
-| 코드·합성 테스트·저장 모델·protocol·집계 통계·그림 | 원시 BBO archive·행별 예측·입력 파일 manifest·실행 로그 |
-| 계산과 공개 집계의 일관성 검증 | 동일한 과거 시장 데이터 전체 재실험 |
+## 범위와 한계
 
-정확히 같은 원시 데이터의 공개 다운로드 경로나 재배포 권한은 확인되지 않아 원시·행별 자료를 배포하지 않습니다.
-전체 재실험에는 변경되지 않은 원본 archive가 필요하며, [데이터 접근·재실험 명령](research/final_v1/DATA_ACCESS.md)을 따릅니다.
-새 데이터 수집은 방법을 재현할 수 있지만 같은 과거 수치를 재현하지는 않습니다.
+자료는 2026-10-07/08 UTC **이틀**뿐이며 최종 구간도 이미 관측한 날짜의 뒤쪽입니다. 독립적인 새 거래일의 일반화는 확인하지 못했습니다. 시간 블록 신뢰구간은 고정 모델과 관측 세션에 조건부이며, 중첩 라벨·시각 품질에 따른 표본 제외도 해석을 제한합니다.
 
-</details>
+실제 체결·queue position·slippage·시장 충격·지급 수수료·PnL은 검증하지 않았습니다. 비용 가정과 spread 비교는 수익성 입증이 아닙니다. 이미 사용한 holdout은 새로운 미사용 검증 자료로 취급할 수 없습니다.
 
-## 코드 안내
+[전체 보고서](research/final_v1/REPORT.md) · [한국어 요약](research/final_v1/SUMMARY_KO.md) · [공개 범위](PUBLICATION.md) · [출처·AI 보조 사용](PROVENANCE.md)
 
-**추천 순서:** [특징 계산](src/obi_research/features.py) → [계산·시간 조건 테스트](tests/test_research.py) → [초기 학습](research/run.py) → [고정 모델 평가](research/oos.py) → [최종 평가](research/final_v1/run.py) → [최종 검증 테스트](tests/test_final.py).
-먼저 결과를 확인하려면 [공개 집계 검증 예제](examples/verify_public_results.py)를 실행하세요.
+[특징 계산](src/obi_research/features.py) → [고정 모델 평가](research/oos.py) → [최종 평가](research/final_v1/run.py)
 
-<details>
-<summary>주요 파일과 역할 펼쳐보기</summary>
-
-```text
-src/obi_research/
-  features.py                    # 호가 검증·수신 시점 특징·미래 라벨·시간 분할
-  legacy_book.py                 # 재사용한 기본 호가 계산
-  statistics.py                  # 평가 지표·시간 블록 재표본추출
-research/
-  run.py                         # 초기 학습·분석
-  audit.py                       # 초기 결과 검산
-  oos.py                         # 모델 고정·이후 세션 평가
-  final_v1/run.py                 # 최종 protocol·holdout·전체 라벨·지연 분석
-  final_v1/REPORT.md              # 상세 결과와 해석
-results/                         # 초기·외부·최종 평가의 집계 근거와 그림
-tests/                           # 계산·시간 조건·고정 모델·결과 일관성
-examples/verify_public_results.py # 원시 데이터 없이 집계 결과 검증
-PUBLICATION_FILES.json           # 공개 파일 크기·SHA-256 목록
-```
-
-</details>
-
-## 해석의 한계
-
-데이터는 이틀뿐이고, 최종 구간도 이미 관측한 날짜의 뒤쪽입니다. 가격이 움직일 시점·실제 체결·수수료·PnL은 검증하지 않았습니다.
-
-<details>
-<summary>통계적 범위와 매매 활용의 한계</summary>
-
-- 데이터는 이틀뿐이며 최종 구간도 이미 관측한 날짜의 뒤쪽입니다. 독립적인 새 거래일의 검증이 아닙니다.
-- 미래 가격이 변할지는 의사결정 시점에 알 수 없습니다. 조건부 방향 점수는 무조건적인 상승 확률이나 매매 성공률이 아닙니다.
-- Logistic은 가격 변화 크기를 예측하지 않습니다. 별도 학습 구간 OBI 분위수 평균과 spread를 비교했지만, 가정한 왕복 비용 1bp를 더하면 이를 넘는 예측은 없었습니다. 이는 실측 수수료나 수익성 검증이 아닙니다.
-- 실제 체결·queue position·slippage·시장 충격·지급 수수료·PnL을 검증하지 않았습니다. 호가·중간가격 변화에서 실현 수익을 주장하지 않습니다.
-- 중첩 라벨·지속적인 호가 상태·시각 품질에 따른 제외·미검증 절대 시계 정렬이 해석을 제한합니다.
-
-</details>
-
-## 상세 문서
-
-[한국어 연구 요약](research/final_v1/SUMMARY_KO.md) · [영문 소개·면접과 문서 안내](PORTFOLIO.md) ·
-[재현 기록](research/final_v1/VERIFICATION.md) · [공개 범위](PUBLICATION.md) · [출처·AI 보조 사용](PROVENANCE.md)
-
-별도 open-source LICENSE나 원시 데이터 재배포 라이선스를 주장하지 않는 공개 소스 포트폴리오입니다.
+기존 실험 결과·모델·그림은 변경하지 않았습니다. 공개 소스 포트폴리오이며 별도 open-source LICENSE나 원시 데이터 재배포 권한을 주장하지 않습니다.
