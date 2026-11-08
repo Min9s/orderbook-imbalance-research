@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9952,
-      "sha256": "d4b3d1a817bbbcda4d7b1bb6389eccb91ff3f55235860384e2c620aa03443c0d"
+      "bytes": 12039,
+      "sha256": "4a4b93b0c27a96486484f59c26bad47b4fcde62a409986582a93b33e76386c56"
     },
     {
       "path": "examples/verify_public_results.py",
