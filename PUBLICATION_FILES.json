@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5104,
-      "sha256": "467e10f97d1b742cbfa70875397ee9f290ac78dca6ccd0085d45b56c62311a48"
+      "bytes": 5698,
+      "sha256": "eacc8b5b5d13564c37e7f2d2e1ce40597cedc8717c933228f3a5192075c85e32"
     },
     {
       "path": "assets/readme/final_holdout.png",
@@ -517,6 +517,26 @@
       "path": "assets/readme/finding.png",
       "bytes": 104085,
       "sha256": "492c8b59f5bf5004d7aa6386e43e0c31fd8a178e0189446716d8b1a2debde3e3"
+    },
+    {
+      "path": "assets/readme/plot_holdout.py",
+      "bytes": 3540,
+      "sha256": "841dd85b9f96f55b618f84f13d87ef8d1a70ffeef86d2c63c1b9adcb0c0a34e7"
+    },
+    {
+      "path": "assets/readme/holdout.png",
+      "bytes": 47622,
+      "sha256": "b48f8e6261b75a8fb79009a7107e91f7b6e0b1f72a26ebf157fe93fd76e589ec"
+    },
+    {
+      "path": "assets/readme/holdout-dark.png",
+      "bytes": 46236,
+      "sha256": "d99296847d33dfb80cd628d185aa513fd2df64a2366d1c130a32c0e7a8d419ca"
+    },
+    {
+      "path": "assets/readme/holdout-mobile.png",
+      "bytes": 37867,
+      "sha256": "4668d72871ce13f8ece8def7dd8f293b7c1bb0291ba4049ea2654f69ba293b10"
     }
   ]
 }
