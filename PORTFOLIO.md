@@ -1,5 +1,15 @@
 # Portfolio summary
 
+## 현재 소개와 과거 기록 읽기
+
+프로젝트의 한국어 개요·구조·실행 방법은 [README](README.md), 최종 실험의 해석은
+[한국어 요약](research/final_v1/SUMMARY_KO.md)과 [최종 보고서](research/final_v1/REPORT.md)를 기준으로 읽으세요.
+아래 영문 소개와 [최종 면접 질문](research/final_v1/PORTFOLIO.md)은 같은 최종 평가 범위를 설명합니다.
+[초기 소개](research/PORTFOLIO_SUMMARY.md), [초기 이력서 문장](research/RESUME_BULLETS.md),
+[평가 전 README](research/final_v1/README_before_final.txt)는 과거 시점의 기록입니다.
+과거의 reserved holdout 표기는 현재 미사용 검증 데이터가 남아 있다는 뜻이 아닙니다.
+기록과 검증 근거를 보존하기 위해 파일을 삭제하거나 이동하지 않았습니다.
+
 **One-sentence introduction**
 
 A reproducible BTC market-microstructure study that separates order-book imbalance's conditional predictive information from all-time decision coverage and executable trading profitability.

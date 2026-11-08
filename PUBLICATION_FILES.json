@@ -5,13 +5,13 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 285,
-      "sha256": "64b463e0cda7fe061bb2233966cd65215a1de04629395e38403c5eb808ce6890"
+      "bytes": 368,
+      "sha256": "19a6f705b62a95ecfe5f5385278d34c0e2beb6ac5e312ed41e5c29839e450b99"
     },
     {
       "path": "PORTFOLIO.md",
-      "bytes": 2380,
-      "sha256": "c98a32c179121131a64f82bb54898b2104bfce494d2a59ec47a27424e33f0e08"
+      "bytes": 3211,
+      "sha256": "b711d2efea69a8ecc92fdf0c6211fc7a48f69ad4dccd0c05cfccf486ada005e5"
     },
     {
       "path": "PROVENANCE.md",
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8345,
-      "sha256": "a45dac817f5d699ddcbdcbbd9ad5cedc5ef7790713dfe369634aed17f7002cc7"
+      "bytes": 9952,
+      "sha256": "d4b3d1a817bbbcda4d7b1bb6389eccb91ff3f55235860384e2c620aa03443c0d"
     },
     {
       "path": "examples/verify_public_results.py",

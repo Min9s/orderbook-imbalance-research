@@ -19,3 +19,7 @@ results/predictions_*.csv
 *.key
 build/
 dist/
+
+# Compiled Python files and local environment activation secrets
+*.py[cod]
+.envrc
