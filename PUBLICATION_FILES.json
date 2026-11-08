@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5501,
-      "sha256": "80a54c923ba2f5bcc96ef594d3d158a9f058b2a7af901ee47cedc88c74afda42"
+      "bytes": 6442,
+      "sha256": "a013e2b1a7056d46df2ced53254fea304eadd2c874179ec949460b31c6c45fd3"
     },
     {
       "path": "assets/readme/final_holdout.png",
@@ -40,8 +40,8 @@
     },
     {
       "path": "assets/readme/generate_figures.py",
-      "bytes": 3824,
-      "sha256": "1b27246d126b52963ce824725240812cba5f4d676f801a7e00068eabcaaba346"
+      "bytes": 4748,
+      "sha256": "46ea73219e406b4acbdbd8988ebbdf396265f6bb2a34210d5e289815ece0b0a1"
     },
     {
       "path": "assets/readme/outcome_coverage.png",
@@ -477,6 +477,11 @@
       "path": "tests/test_research.py",
       "bytes": 5043,
       "sha256": "57515c1929d3c6a965198a99f450488fc15d1226363d126fc78f99bc2ef1cf46"
+    },
+    {
+      "path": "assets/readme/coverage_horizons.png",
+      "bytes": 44391,
+      "sha256": "0e80ff973ca24174575bafc007dbe23b98a6b7c31f7982729414e5bb8544dacb"
     }
   ]
 }

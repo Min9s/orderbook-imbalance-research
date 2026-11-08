@@ -60,7 +60,21 @@ def main():
     fig.text(.06,.08,'1초 유효 라벨 7,034개 = 100%  /  정확도가 아닌 표본 구성',color=MUTED,fontsize=13)
     fig.subplots_adjust(left=.06,right=.96,top=.75,bottom=.25)
     fig.savefig(OUT/'outcome_coverage.png',dpi=200);plt.close(fig)
-    print('PASS: two presentation figures; BA verified from matrices; 1s outcome counts verified.')
+    fig,ax=plt.subplots(figsize=(6.8,4.0))
+    y=np.arange(3)
+    changed=[r['directional'] for r in rows]; flat=[r['zero'] for r in rows]
+    ax.barh(y,changed,color=BLUE,height=.48,label='가격 변화')
+    ax.barh(y,flat,left=changed,color='#E4E9EF',height=.48,label='무변화')
+    for i,(a,b) in enumerate(zip(changed,flat)):
+        ax.text(a/2,i,f'{a:,}',ha='center',va='center',color='white',fontsize=18)
+        ax.text(a+b+100,i,f'{b:,}',ha='left',va='center',fontsize=16)
+    ax.set(yticks=y,yticklabels=['1초','5초','10초'],xlim=(0,8200),xticks=[0,3500,7000],xlabel='유효 라벨 수',ylim=(2.6,-.6))
+    ax.tick_params(length=0,pad=8)
+    for spine in ax.spines.values():spine.set_visible(False)
+    fig.legend(loc='upper left',bbox_to_anchor=(.1,1),ncol=2,frameon=False)
+    fig.subplots_adjust(left=.13,right=.97,top=.80,bottom=.20)
+    fig.savefig(OUT/'coverage_horizons.png',dpi=200);plt.close(fig)
+    print('PASS: three presentation figures; BA verified from matrices; 1s outcome counts verified.')
 
 
 if __name__=='__main__':main()
