@@ -30,8 +30,23 @@
     },
     {
       "path": "README.md",
-      "bytes": 12039,
-      "sha256": "4a4b93b0c27a96486484f59c26bad47b4fcde62a409986582a93b33e76386c56"
+      "bytes": 5004,
+      "sha256": "eaf1bbfd7b4329c2df96338757d29405c76724c92de0d6d956761af9a47ccc7d"
+    },
+    {
+      "path": "assets/readme/coverage.png",
+      "bytes": 39798,
+      "sha256": "32389cced0412a1be8e13f8378fedc3e9678f70109ac6538423e7f96ca045662"
+    },
+    {
+      "path": "assets/readme/generate_figures.py",
+      "bytes": 3905,
+      "sha256": "add50172c66457c3ddb2b8be54849816dcae8b7c7e37964127ad61bca9f2063a"
+    },
+    {
+      "path": "assets/readme/performance.png",
+      "bytes": 56498,
+      "sha256": "2727ac7d5f7c9c72a9d714ce10285de3f874460bfb78efc78412a69b4b383eaa"
     },
     {
       "path": "examples/verify_public_results.py",
