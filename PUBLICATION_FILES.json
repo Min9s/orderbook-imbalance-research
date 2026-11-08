@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6442,
-      "sha256": "a013e2b1a7056d46df2ced53254fea304eadd2c874179ec949460b31c6c45fd3"
+      "bytes": 7608,
+      "sha256": "249587c3e4c9da2e8087f01ac0feddae40b0320995efe31fdac0229de47ae874"
     },
     {
       "path": "assets/readme/final_holdout.png",
@@ -482,6 +482,31 @@
       "path": "assets/readme/coverage_horizons.png",
       "bytes": 44391,
       "sha256": "0e80ff973ca24174575bafc007dbe23b98a6b7c31f7982729414e5bb8544dacb"
+    },
+    {
+      "path": "assets/readme/build_portfolio.py",
+      "bytes": 7284,
+      "sha256": "be0b1c001a418a21e57bb337c177514630b9674284e485329e4ac669cd97b709"
+    },
+    {
+      "path": "assets/readme/research-execution.svg",
+      "bytes": 2943,
+      "sha256": "a6e6c38fa8cc415d955de09958c84233a2c2471fd1a40a09a7e617bcccc33091"
+    },
+    {
+      "path": "assets/readme/research-shape.svg",
+      "bytes": 3741,
+      "sha256": "5d7ba9dd120e443167743bc03115c52d830fd86c682bdb1139fb310b5e1fd585"
+    },
+    {
+      "path": "assets/readme/research-performance.svg",
+      "bytes": 4012,
+      "sha256": "e3b9d2c51a0af3968d162da059349e8d49a40a086f7caad0474770ced9aab0e3"
+    },
+    {
+      "path": "assets/readme/research-coverage.svg",
+      "bytes": 2358,
+      "sha256": "d8f8bcd33f5d8aa6a4787589518b6e09d81ef9b579de18080d6e76a0e1600a88"
     }
   ]
 }
