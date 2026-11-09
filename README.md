@@ -44,6 +44,8 @@ The initial 60/20/20 split is chronological, with forward labels purged at split
 
 The primary endpoint was 1-second OBI BA against the original training-prior baseline. Other horizons and the past-price comparison provide context. [Experimental protocol](research/final_v1/PROTOCOL.md) · [Frozen models](results/oos/frozen_models.json)
 
+[Timing and statistical audit](research/STATISTICAL_AUDIT.md) · [Receipt-tie hardening and versioned preprocessing](research/RECEIPT_TIES.md) · [Implementation](src/obi_research/) · [Tests](tests/)
+
 ## Reproduction
 
 Python 3.11+. These commands verify published aggregates, temporal rules, and recorded hashes without API keys or the private market archive.
@@ -56,10 +58,13 @@ source .venv/bin/activate
 python -m pip install -e '.[dev]'
 python -m pytest -q
 python examples/verify_public_results.py
+python examples/verify_publication.py
 python -m pip check
 ```
 
 This checks consistency, not a replay of the market experiment. Reconstructing price paths, ranking AUC, and bootstrap intervals requires the unchanged private archive. See [data access](research/final_v1/DATA_ACCESS.md) and [reproduction records](research/final_v1/VERIFICATION.md). Regenerate the README figure with `python assets/readme/plot_holdout.py`.
+
+[Public verification CI](https://github.com/Min9s/orderbook-imbalance-research/actions/workflows/public-verification.yml) runs the public checks without private inputs. Publication verification also checks the original snapshot in Git history; shallow clones must fetch that history first. See [publication manifests and historical records](PUBLICATION.md#publication-manifests-and-historical-records).
 
 ## Full research and limitations
 

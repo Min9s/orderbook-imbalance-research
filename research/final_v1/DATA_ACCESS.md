@@ -10,7 +10,7 @@ The original-source/API/rights inspection is documented in the
 [historical data-access review](../DATA_ACCESS.md). No new raw-data redistribution
 grant or exact public historical-download URL has been established. Raw BBO and
 row-level derived predictions are not bundled or uploaded. A public clone can run
-all 33 public tests and inspect aggregate/model/protocol evidence without raw inputs, but
+the [public test suite](../../tests/) and inspect aggregate/model/protocol evidence without raw inputs, but
 full market replay needs the original archive. New public BBO observations would
 reproduce the method, not the historical numerical results.
 
