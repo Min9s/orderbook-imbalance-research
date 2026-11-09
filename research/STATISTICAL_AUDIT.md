@@ -161,4 +161,4 @@ OBI의 lag-1 상관은 약0.910이다. 1초 라벨도 기계적 중첩은 없지
 - spread·microprice의 추가 우월성, 비용 후 alpha, 슬리피지/시장충격/queue 체결 성과를 측정했다는 주장.
 - 원시 데이터와 환경을 제공하지 않고 공개 clone만으로 동일 역사 실험 전체가 재현된다는 주장.
 
-검증·재현 상태는 [VERIFICATION.md](VERIFICATION.md), 보수적인 이력서 문구는 [RESUME_BULLETS.md](RESUME_BULLETS.md)에 기록했다. commit/push나 새 데이터 수집은 수행하지 않았다.
+검증·재현 상태는 [VERIFICATION.md](VERIFICATION.md)에 기록했다. commit/push나 새 데이터 수집은 수행하지 않았다.

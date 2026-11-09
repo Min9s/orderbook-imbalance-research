@@ -2,7 +2,8 @@
 
 The analysis is versioned under `research/final_v1/` and `results/final_v1/`.
 Earlier numerical outputs and frozen evaluation sources remain unchanged. The
-previous README is preserved verbatim in README_before_final.txt.
+previous README was preserved verbatim as README_before_final.txt; it is now
+available through the [historical publication snapshot](../../PUBLICATION.md#publication-manifests-and-historical-records).
 
 ## Before final disclosure
 
